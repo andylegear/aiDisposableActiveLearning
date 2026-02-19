@@ -1,0 +1,238 @@
+{
+  "schema": "dsqi-expert-review-v1",
+  "timestamp": "2026-02-19T15:59:18.754Z",
+  "reviewer": {
+    "name": "Liam McNamara",
+    "email": "liam.mcnamara@horizon-globex.ie",
+    "role": "Software Engineer",
+    "experience_years": 30,
+    "institution": "Horizon Globex Ireland DAC"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "01-unit-testing-gauntlet",
+      "icap": {
+        "level": "interactive",
+        "justification": "It teaches TDD by first having a failing test, then gets you to fix the code to make the test pass and finally you need to refactor working code to make it more concise.  All real-world software development tasks."
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "Writing a unit test from reading a spec.  Fixing a bug.  Refactoring code."
+        },
+        "learning_through_building": {
+          "score": 4,
+          "justification": "Focuses on the core goals, no frills, understanding the concepts necessary to write code and tests."
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 5,
+        "consistency_and_standards": 5,
+        "error_prevention": 4,
+        "recognition_over_recall": 4,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 4,
+        "instructional_scaffolding": 4,
+        "comments": "The example assert syntax was provided in the first test but not in tests 2 and 3.  I got an error on arr.filter not existing in Chrome."
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "Clear and simple instructions, focusing on the three stages of TDD."
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "The tool is very config-driven and looks easy to repurpose."
+        }
+      },
+      "open_ended": {
+        "most_positive": "It's a simple but useful tool that is fun to use.",
+        "most_negative": "Chrome not working with the required version of JavaScript.",
+        "other_comments": ""
+      }
+    },
+    {
+      "artifact_id": "02-big-o-visualiser",
+      "icap": {
+        "level": "constructive",
+        "justification": "You need to understand the code snippet and identify the notation being used."
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "The graphs were a little tricky, I tried to drag a line the first time.  It would be nice to be able to undo."
+        },
+        "learning_through_building": {
+          "score": 4,
+          "justification": "I'm not sure \"making\" is the right term, but you need to understand code and select the right notation as well as draw the performance graph of that notation."
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 2,
+        "consistency_and_standards": 5,
+        "error_prevention": 4,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 2,
+        "instructional_scaffolding": 5,
+        "comments": "Can't undo a click, either a button for O notation or clicking the graph."
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "Forces the user to understand the implications of simple algorithms and a very exciting algo race too!"
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "The tool is easy to understand the various screens and is config-driven."
+        }
+      },
+      "open_ended": {
+        "most_positive": "Matching code snippets to O notation is a very useful skill.",
+        "most_negative": "No undo/redo.",
+        "other_comments": ""
+      }
+    },
+    {
+      "artifact_id": "03-sql-injection-simulator",
+      "icap": {
+        "level": "interactive",
+        "justification": "Forces you to think how SQL Injection works and what techniques are commonly used."
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "A working snippet that demonstrates the weakness with some extra goals thrown in beyond the basics."
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "You need to understand the weakness and exploit it."
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 5,
+        "consistency_and_standards": 5,
+        "error_prevention": 5,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 4,
+        "instructional_scaffolding": 5,
+        "comments": "It isn't *too* helpful to the users, which is a good thing - it forces you to think."
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "It shows common security holes and how to exploit them (and therefore why they're bad and how to avoid them)."
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "Another template/config driven app with a clear sturucture."
+        }
+      },
+      "open_ended": {
+        "most_positive": "The exploits were fun and interesting.",
+        "most_negative": "None, it's great.",
+        "other_comments": ""
+      }
+    },
+    {
+      "artifact_id": "04-css-flexbox-trainer",
+      "icap": {
+        "level": "interactive",
+        "justification": "A really nice tool, the best so far.  Shows you the desired layout and the property to use to match the example."
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 5,
+          "justification": "CSS is notoriously tricky, covers some core tweaks to organise a UI."
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "User is presented with the property and they must use the correct value to get the desired layout."
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 5,
+        "consistency_and_standards": 5,
+        "error_prevention": 5,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 5,
+        "instructional_scaffolding": 5,
+        "comments": "A nice tool that is easy to use, updates instantly and is very clear what the objective is and how you are doing."
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "Teaches core concepts of layout with simple examples."
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "Another config-driven app that is well structured."
+        }
+      },
+      "open_ended": {
+        "most_positive": "It's very well put together, everything is laid out simply and is very easy to understand what is going on.",
+        "most_negative": "None!",
+        "other_comments": ""
+      }
+    },
+    {
+      "artifact_id": "05-lexical-analyser-trainer",
+      "icap": {
+        "level": "interactive",
+        "justification": "Instant output of matches as you type allowing you to fine-tune your pattern."
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 5,
+          "justification": "The patterns get complex and are useful for real world situations."
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "Results on the fly show instant results of your actions."
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 4,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 5,
+        "consistency_and_standards": 5,
+        "error_prevention": 5,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 4,
+        "instructional_scaffolding": 4,
+        "comments": "The \"Identifier\" pattern wasn't clear what I was looking for, and for operator I ended up wtih all operators but it said I had 1 extra."
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "Itis purely about a regex to parse text and sticks to the core."
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "Another config-driven and well structured app."
+        }
+      },
+      "open_ended": {
+        "most_positive": "Gives hints as to how to parse text and is easy to use.",
+        "most_negative": "Some text on the exact purpose of the exercise would help in a couple of sections.",
+        "other_comments": ""
+      }
+    }
+  ]
+}
