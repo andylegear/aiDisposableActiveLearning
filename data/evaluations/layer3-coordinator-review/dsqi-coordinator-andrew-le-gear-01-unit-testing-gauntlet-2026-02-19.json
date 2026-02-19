@@ -1,0 +1,30 @@
+{
+  "schema": "dsqi-coordinator-review-v1",
+  "timestamp": "2026-02-19T17:07:07.700Z",
+  "coordinator": {
+    "name": "Andrew Le Gear",
+    "email": "andrew.p.legear@ul.ie",
+    "department": "CSIS, University of Limerick"
+  },
+  "artifact_id": "01-unit-testing-gauntlet",
+  "artifact_name": "The Unit Testing Gauntlet",
+  "module": "CS5703",
+  "module_name": "Software Quality",
+  "pedagogical_alignment": {
+    "Q1_curriculum_relevance": 5,
+    "Q2_concept_challenge": 5,
+    "Q3_objective_coverage": 5,
+    "P1_average": 5
+  },
+  "icap": {
+    "Q4_engagement_mode": "interactive"
+  },
+  "adoption_intention": {
+    "Q5_ease_of_integration": 5,
+    "Q6_likelihood_of_use": 5
+  },
+  "open_ended": {
+    "Q7_most_significant_benefit": "This can replace a large chunk of passive theoretical learning in one of the lectures during the semester.  It provides a novel  in class way to teach a difficult programming concept.",
+    "Q8_most_significant_drawback": "I think there were some mobile responsive issues with the page.  It is probably best done on a laptop screen.  I would have to ensure the students bring a laptop to class,  or maybe engage with the developer to improve the implementation for mobile."
+  }
+}
