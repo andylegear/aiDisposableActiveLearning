@@ -14,7 +14,11 @@ This repository is the **complete data pack** for reproducing and verifying the 
 
 ## Study Summary
 
-This study investigates whether large language models (Claude Opus 4, GPT-4) can generate *disposable* educational software — small, single-purpose, browser-based tools that teach one concept and are designed to be discarded rather than maintained. Five artifacts were produced across five CS modules in approximately 3.3 hours of wall-clock time, with zero lines of code written by hand. A novel composite metric, the **Disposable Software Quality Index (DSQI)**, was developed to evaluate these artifacts across four dimensions: maintenance cost, creation cost, pedagogical utility, and expert purity.
+Educational software rots. Tools built for one semester break the next, and even when they survive, teachers often reject them anyway (Levy & Ben-Ari, 2007). The conventional response is to build *more durable* software. This study asks the opposite question: **what if the software is designed to be thrown away?**
+
+We invert Wiley's (2013) disposable-versus-renewable dichotomy — normally applied to student assignments — and apply it to the *tools educators use*. The instrument is ephemeral; the learning it produces is not. Using large language models as a pedagogical forge, an educator can generate a bespoke, single-concept, browser-based active learning tool through prompt engineering alone — no code written by hand — and discard it when the class ends. Software rot becomes irrelevant when ephemerality is the design intent.
+
+Five such artifacts were produced across five CS modules in 199 minutes of wall-clock time (6,993 lines, zero human-authored). Each is evaluated using a novel composite metric, the **Disposable Software Quality Index (DSQI)**, which combines automated static analysis (maintenance cost, creation cost) with structured human judgement (pedagogical utility via the ICAP framework, expert purity review). The goal: determine whether AI-generated throwaway code can reliably reach the *Constructive* or *Interactive* engagement modes that the active learning literature shows produce the deepest learning (Chi & Wylie, 2014).
 
 ### Key Figures
 
