@@ -1,0 +1,30 @@
+{
+  "schema": "dsqi-coordinator-review-v1",
+  "timestamp": "2026-02-19T14:44:23.661Z",
+  "coordinator": {
+    "name": "Paddy Healy",
+    "email": "patrick.healy@ul.ie",
+    "department": "CSIS, University of Limerick"
+  },
+  "artifact_id": "02-big-o-visualiser",
+  "artifact_name": "The Big-O Dojo",
+  "module": "CS4115",
+  "module_name": "Data Structures and Algorithms",
+  "pedagogical_alignment": {
+    "Q1_curriculum_relevance": 5,
+    "Q2_concept_challenge": 5,
+    "Q3_objective_coverage": 5,
+    "P1_average": 5
+  },
+  "icap": {
+    "Q4_engagement_mode": "interactive"
+  },
+  "adoption_intention": {
+    "Q5_ease_of_integration": 5,
+    "Q6_likelihood_of_use": 5
+  },
+  "open_ended": {
+    "Q7_most_significant_benefit": "Gives students practical opportunities to come to understand one of the fundamental aspects of algorithms",
+    "Q8_most_significant_drawback": "I thought the timeout was a little too fast; the plotting was confusing -- see my botched attempts! :-)  Also, for, say, a linear-time algorithm would I have got correct marks if I plotted f(n)=20n?  I didn't even get that far but the examples seemed to assume a constant of C=1.  That's being extremely nit-picky :-)."
+  }
+}

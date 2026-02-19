@@ -1,0 +1,238 @@
+{
+  "schema": "dsqi-expert-review-v1",
+  "timestamp": "2026-02-19T15:20:01.091Z",
+  "reviewer": {
+    "name": "Peter Hall",
+    "email": "peter.hall@horizonfintex.com",
+    "role": "Infrastructure Engineer",
+    "experience_years": 30,
+    "institution": "Horizon Fintex"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "01-unit-testing-gauntlet",
+      "icap": {
+        "level": "constructive",
+        "justification": "Initially, I thought that this might just sit in the Active camp, but after reflection, I have martked it as constructive.  The answers to the challenges can be simple or complex and handle expanded scenarios such as multiple space gaps between words.  Is there a method to recognise more advanced fixes from students?"
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "good feedback mechanism"
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "I would ensure that AI tools are not available for the students else the learning becomes marginal"
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 4,
+        "user_control_and_freedom": 2,
+        "consistency_and_standards": 5,
+        "error_prevention": 5,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 4,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 4,
+        "instructional_scaffolding": 4,
+        "comments": "User control and freedom - during an exercise, how does a user return to a previous exercise or home (if required).  That might require session control and be beyond its scope."
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "Very focused"
+        },
+        "E2_process_replicability": {
+          "score": 4,
+          "justification": "Yes"
+        }
+      },
+      "open_ended": {
+        "most_positive": "It's hands-on, free form coding answers - no limit on individual creativity in finding solutions",
+        "most_negative": "Inability to view previous answers",
+        "other_comments": "Might be improved by understanding real world frequency of bugs and evaluating responses against that - so a simple fix which passes the test would score lower than one that passed the test but included logic that covered likely issues in a production environment.  I guess context would be the word"
+      }
+    },
+    {
+      "artifact_id": "02-big-o-visualiser",
+      "icap": {
+        "level": "active",
+        "justification": "There is, very much, cognitive engagement, by having to select the answer"
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 3,
+          "justification": "By dint of multiple answer, but its hardly meaningless with the explanation displayed"
+        },
+        "learning_through_building": {
+          "score": 2,
+          "justification": "The user is not building, making or fixing"
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 3,
+        "user_control_and_freedom": 3,
+        "consistency_and_standards": 5,
+        "error_prevention": 5,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 5,
+        "instructional_scaffolding": 5,
+        "comments": "It's clean, easy to use"
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 4,
+          "justification": "Yes, but why the 15 sec timer - it feels a distraction"
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "Cannot think of a reason why this could not be adapted"
+        }
+      },
+      "open_ended": {
+        "most_positive": "The feedback on answers",
+        "most_negative": "The feeling of time pressure",
+        "other_comments": ""
+      }
+    },
+    {
+      "artifact_id": "03-sql-injection-simulator",
+      "icap": {
+        "level": "constructive",
+        "justification": "Free form SQL interaction"
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 5,
+          "justification": "Feels like hands-on training against a DB - its a tremendous look and feel"
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "Except for the problem identfied below"
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 1,
+        "consistency_and_standards": 5,
+        "error_prevention": 1,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 5,
+        "instructional_scaffolding": 1,
+        "comments": "The problem is that if you do not get the last bonus question, I cannot see an obvious way to move to the next level.  Further, the hints are for the original question, not later bonus questions - should they update?"
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "Loved it"
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "As per other artifacts"
+        }
+      },
+      "open_ended": {
+        "most_positive": "Feels like you are interrogating a DB",
+        "most_negative": "If you do not get the bonus questions on level 1 - you cannot progress to the next level - or at least there is no obvious way to do so",
+        "other_comments": ""
+      }
+    },
+    {
+      "artifact_id": "04-css-flexbox-trainer",
+      "icap": {
+        "level": "interactive",
+        "justification": "I had to interact with the game"
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "They are basic, but this is the fundamental knowledge"
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "Enjoyed it"
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 5,
+        "consistency_and_standards": 5,
+        "error_prevention": 4,
+        "recognition_over_recall": 4,
+        "flexibility_and_efficiency": 2,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 5,
+        "instructional_scaffolding": 5,
+        "comments": "Error prevention - the only difference between this game and and IDE would be the use of inteli-sense to pre-complete words and offer options.  \n\nFlexibility and efficiency - this is very much geared towards novices"
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "It does stick to one topic"
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "Yes"
+        }
+      },
+      "open_ended": {
+        "most_positive": "It's quick to make progress",
+        "most_negative": "Hints are a little too easy - the other hints still needed some application - I do see that you lose points so maybe thats OK",
+        "other_comments": "I actually forgot the task.  Even though its visually represented, the initial challenge could be presented on the game page"
+      }
+    },
+    {
+      "artifact_id": "05-lexical-analyser-trainer",
+      "icap": {
+        "level": "interactive",
+        "justification": "It is interactive mut constrained within defined options - so not constructive"
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 5,
+          "justification": "It produces genuine regular expressions"
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "Progress bar works well in this scenario"
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 5,
+        "match_with_real_world": 5,
+        "user_control_and_freedom": 5,
+        "consistency_and_standards": 5,
+        "error_prevention": 5,
+        "recognition_over_recall": 5,
+        "flexibility_and_efficiency": 3,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 5,
+        "instructional_scaffolding": 5,
+        "comments": ""
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "Only covers regular expressions"
+        },
+        "E2_process_replicability": {
+          "score": 5,
+          "justification": "If AI created this, its pretty disposable"
+        }
+      },
+      "open_ended": {
+        "most_positive": "Great tool into the mysterious world of regular expressions - these cannot be learnt from reading - you do need an interactive tool",
+        "most_negative": "Remembering what the task is - you get this wording between levels and its easy to forget",
+        "other_comments": ""
+      }
+    }
+  ]
+}
