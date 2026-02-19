@@ -7,7 +7,7 @@
 | **Artifact ID**        | `02-big-o-visualiser`                                                  |
 | **Artifact Name**      | Big-O Dojo                                                             |
 | **Learning Objective** | Visualise and compare the time complexity of different algorithms       |
-| **Target Module**      | CE4003: Algorithms and Data Structures                                 |
+| **Target Module**      | CS4115: Data Structures and Algorithms                                 |
 | **Module Coordinator** | _[To be confirmed]_                                                    |
 | **Status**             | `developed`                                                            |
 | **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/02-big-o-visualiser/src/index.html |

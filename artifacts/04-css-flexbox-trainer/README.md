@@ -7,7 +7,7 @@
 | **Artifact ID**        | `04-css-flexbox-trainer`                                               |
 | **Artifact Name**      | Flexbox Forge                                                          |
 | **Learning Objective** | Master CSS Flexbox properties for layout design                        |
-| **Target Module**      | CE4026: Web Development                                                |
+| **Target Module**      | CS4141: Introduction to Programming / CS4222: Software Development     |
 | **Module Coordinator** | _[To be confirmed]_                                                    |
 | **Status**             | `developed`                                                            |
 | **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/04-css-flexbox-trainer/src/index.html |

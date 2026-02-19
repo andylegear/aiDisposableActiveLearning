@@ -7,7 +7,7 @@
 | **Artifact ID**        | `05-lexical-analyser-trainer`                                            |
 | **Artifact Name**      | Lex Arena — The Lexical Analyser Trainer                                 |
 | **Learning Objective** | Understand how lexical analysis breaks source code into tokens            |
-| **Target Module**      | CS4081: Compiler Design                                                  |
+| **Target Module**      | CS4158: Programming Language Technology                                  |
 | **Module Coordinator** | _[To be confirmed]_                                                      |
 | **Status**             | `developed`                                                              |
 | **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/05-lexical-analyser-trainer/src/index.html |

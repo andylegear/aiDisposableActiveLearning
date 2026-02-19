@@ -7,7 +7,7 @@
 | **Artifact ID**        | `03-sql-injection-simulator`                                           |
 | **Artifact Name**      | SQL Injection Lab                                                      |
 | **Learning Objective** | Understand how SQL injection vulnerabilities work and how to prevent them |
-| **Target Module**      | CS5703: Database Systems                                               |
+| **Target Module**      | CS4416: Database Systems                                               |
 | **Module Coordinator** | _[To be confirmed]_                                                    |
 | **Status**             | `developed`                                                            |
 | **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/03-sql-injection-simulator/src/index.html |

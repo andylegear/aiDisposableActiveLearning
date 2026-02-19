@@ -13,7 +13,7 @@ const ARTIFACTS = [
     id: "01-unit-testing-gauntlet",
     name: "The Unit Testing Gauntlet",
     module: "CS5703",
-    moduleName: "Software Quality Assurance",
+    moduleName: "Software Quality",
     description:
       "A gamified TDD exercise teaching Red-Green-Refactor through 5 progressive levels.",
     learningObjective:
@@ -26,8 +26,8 @@ const ARTIFACTS = [
   {
     id: "02-big-o-visualiser",
     name: "The Big-O Dojo",
-    module: "CE4003",
-    moduleName: "Algorithms and Data Structures",
+    module: "CS4115",
+    moduleName: "Data Structures and Algorithms",
     description:
       "A martial-arts themed game teaching Big-O notation through code classification, growth curve prediction, and algorithm races.",
     learningObjective:
@@ -39,7 +39,7 @@ const ARTIFACTS = [
   {
     id: "03-sql-injection-simulator",
     name: "The SQL Injection Lab",
-    module: "CE4018",
+    module: "CS4416",
     moduleName: "Database Systems",
     description:
       "A cybersecurity-themed game where students perform SQL injection attacks on simulated web apps, then learn to defend against them.",
@@ -53,8 +53,8 @@ const ARTIFACTS = [
   {
     id: "04-css-flexbox-trainer",
     name: "Flexbox Forge",
-    module: "CE4026",
-    moduleName: "Web Development",
+    module: "CS4141 / CS4222",
+    moduleName: "Introduction to Programming / Software Development",
     description:
       "A forge-themed CSS trainer where students write flexbox properties and see layouts update in real time against target layouts.",
     learningObjective:
@@ -66,8 +66,8 @@ const ARTIFACTS = [
   {
     id: "05-lexical-analyser-trainer",
     name: "Lex Arena",
-    module: "CS4081",
-    moduleName: "Compiler Design",
+    module: "CS4158",
+    moduleName: "Programming Language Technology",
     description:
       "A token-matching game where students write regex patterns to build a lexical analyser, culminating in a full multi-rule tokeniser.",
     learningObjective:

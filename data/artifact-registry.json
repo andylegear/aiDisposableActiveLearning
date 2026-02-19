@@ -58,8 +58,8 @@
       "slug": "02-big-o-visualiser",
       "learning_objective": "Visualize and compare the time complexity of different algorithms",
       "target_module": {
-        "code": "CE4003",
-        "name": "Algorithms and Data Structures",
+        "code": "CS4115",
+        "name": "Data Structures and Algorithms",
         "coordinator": null,
         "coordinator_email": null
       },
@@ -103,7 +103,7 @@
       "slug": "03-sql-injection-simulator",
       "learning_objective": "Understand how SQL injection vulnerabilities work",
       "target_module": {
-        "code": "CE4018",
+        "code": "CS4416",
         "name": "Database Systems",
         "coordinator": null,
         "coordinator_email": null
@@ -148,8 +148,8 @@
       "slug": "04-css-flexbox-trainer",
       "learning_objective": "Master CSS Flexbox properties for layout design",
       "target_module": {
-        "code": "CE4026",
-        "name": "Web Development",
+        "code": "CS4141 / CS4222",
+        "name": "Introduction to Programming / Software Development",
         "coordinator": null,
         "coordinator_email": null
       },
@@ -191,8 +191,8 @@
       "slug": "05-lexical-analyser-trainer",
       "learning_objective": "Understand how lexical analysis breaks source code into tokens",
       "target_module": {
-        "code": "CS4081",
-        "name": "Compiler Design",
+        "code": "CS4158",
+        "name": "Programming Language Technology",
         "coordinator": null,
         "coordinator_email": null
       },
