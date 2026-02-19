@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Forge</title>
+
+  <!-- CodeMirror 5 — CSS editor with syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/theme/material-darker.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/css/css.min.js"></script>
+
+  <!-- highlight.js — HTML syntax highlighting for read-only viewer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/xml.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header id="top-bar">
+    <span id="level-name">Flexbox Forge</span>
+    <span id="progress">Level 0 / 10</span>
+    <span id="score-display">Score: 0</span>
+  </header>
+
+  <!-- Main Game Grid -->
+  <main id="game-grid">
+
+    <!-- Left Column: Code Area -->
+    <div class="left-col">
+
+      <div class="panel" id="html-panel">
+        <div class="panel-label">📄 HTML (read-only)</div>
+        <pre><code id="html-viewer" class="language-xml"></code></pre>
+      </div>
+
+      <div class="panel" id="css-panel">
+        <div class="panel-label">✏️ Your CSS</div>
+        <div id="css-editor-wrap">
+          <textarea id="css-editor"></textarea>
+        </div>
+      </div>
+
+      <div class="panel" id="reference-panel">
+        <div class="panel-label">📖 Property Reference</div>
+        <div id="reference-chips"></div>
+      </div>
+
+      <div class="panel" id="hints-panel">
+        <div class="panel-label">💡 Hints</div>
+        <div id="hints-list"></div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Visual Area -->
+    <div class="right-col">
+
+      <div class="panel visual-panel" id="target-panel">
+        <div class="panel-label">🎯 Target</div>
+        <iframe id="target-frame" sandbox="allow-same-origin"></iframe>
+      </div>
+
+      <div class="panel visual-panel" id="preview-panel">
+        <div class="panel-label">👁️ Your Result</div>
+        <iframe id="preview-frame" sandbox="allow-same-origin"></iframe>
+        <div id="match-bar-container">
+          <div id="match-bar"></div>
+          <span id="match-text">0%</span>
+        </div>
+      </div>
+
+      <div class="panel" id="explanation-panel">
+        <div class="panel-label">📝 Explanation</div>
+        <div id="explanation-content"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Overlay -->
+  <div id="overlay" class="hidden">
+    <div id="overlay-content"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

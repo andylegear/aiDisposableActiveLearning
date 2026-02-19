@@ -1,0 +1,92 @@
+[
+  {
+    "artifact_id": 1,
+    "artifact_slug": "01-unit-testing-gauntlet",
+    "session_number": 1,
+    "timestamp": "2026-02-18T13:33:15.0000000+00:00",
+    "date": "2026-02-18",
+    "duration_minutes": 19,
+    "ai_tools_used": [
+      "GitHub Copilot with Claude Opus 4.6"
+    ],
+    "prompts": [
+      {
+        "prompt_number": 1,
+        "timestamp": "2026-02-18T13:33:15.0000000+00:00",
+        "type": "design",
+        "summary": "Asked AI to imagine a browser-based game concept for teaching unit testing fundamentals (Red-Green-Refactor TDD cycle) to university students in a Software Quality module.",
+        "outcome": "AI produced 'The Unit Testing Gauntlet' concept \u2014 three-panel layout, traffic-light TDD metaphor, 5 escalating levels from arithmetic to boss-round palindrome checker, scoring/streak system."
+      },
+      {
+        "prompt_number": 2,
+        "timestamp": "2026-02-18T13:40:00.0000000+00:00",
+        "type": "implementation",
+        "summary": "Asked AI to implement the full game from the design concept.",
+        "outcome": "All four source files generated: index.html, style.css, levels.js (5 levels x 3 phases), game.js (engine, sandbox test runner, scoring, UI). Zero external dependencies \u2014 pure HTML/CSS/JS."
+      }
+    ],
+    "prompt_strategy": "Collaborative design \u2014 asked AI to imagine a browser-based game concept for teaching unit testing fundamentals (Red-Green-Refactor TDD cycle) to university students in a Software Quality module. Then asked AI to implement the full game from the design concept in a single prompt.",
+    "outcome": "Complete working game implemented: index.html, style.css, levels.js (5 levels x 3 phases), game.js (engine, sandbox test runner, scoring, UI). Zero external dependencies \u2014 pure HTML/CSS/JS.",
+    "observations": "AI produced full game architecture (three-panel layout, traffic-light TDD metaphor, 5 escalating levels) from a single high-level prompt. Second prompt generated all four source files with in-browser test execution sandbox, scoring/streak system, and 5 complete levels covering arithmetic, strings, arrays, conditionals, and a boss round.",
+    "methodological_notes": {
+      "wakatime_vs_wallclock": "WakaTime captured only ~23% of wall-clock development time (264s of ~1140s). This is because WakaTime tracks active editor interaction (keystrokes, cursor movement, file opens) but cannot observe the chat pane where the primary human-AI dialogue occurs. The AI agent wrote files directly to disk via tool calls, bypassing editor interaction entirely. WakaTime's 'AI Coding' category (14.7s) is near-zero because VS Code inline completions were not used — all code was generated via the agent conversation, which WakaTime cannot attribute.",
+      "what_wakatime_measures": "The ~4 mins of WakaTime activity represents the human's review and inspection time: opening generated files, reading through code, and editing the README. It does not reflect authoring effort.",
+      "implication": "Traditional developer-activity trackers (WakaTime, RescueTime) drastically undercount effort in chat-driven AI-assisted development. Wall-clock time is the more honest total measure, but WakaTime adds value as a proxy for human review involvement. Both should be recorded and reported for all artifacts."
+    },
+    "code_written_lines": 0,
+    "code_ai_generated_lines": 1493,
+    "prompts_count": 2,
+    "challenges": [],
+    "session_closed": true,
+    "closed_timestamp": "2026-02-18T13:52:11.1058465+00:00",
+    "duration_estimate_note": "Session duration estimated from WakaTime active coding time plus AI interaction overhead. WakaTime recorded 4 mins 24 secs of active editor time; total session wall-clock time approx 19 mins (from first prompt at 13:33 to close at 13:52).",
+    "files_produced": [
+      { "file": "index.html", "lines": 110, "language": "HTML" },
+      { "file": "style.css", "lines": 448, "language": "CSS" },
+      { "file": "levels.js", "lines": 536, "language": "JavaScript" },
+      { "file": "game.js", "lines": 399, "language": "JavaScript" }
+    ],
+    "total_lines": 1493,
+    "wakatime": {
+      "project": "01-unit-testing-gauntlet",
+      "date": "2026-02-18",
+      "total_seconds": 264.198,
+      "total_text": "4 mins",
+      "categories": {
+        "writing_docs_seconds": 139.783,
+        "coding_seconds": 109.687,
+        "ai_coding_seconds": 14.728
+      },
+      "languages": {
+        "Markdown": {
+          "seconds": 139.783,
+          "percent": 52.91
+        },
+        "JavaScript": {
+          "seconds": 101.851,
+          "percent": 38.55
+        },
+        "Other": {
+          "seconds": 22.564,
+          "percent": 8.54
+        }
+      },
+      "files": [
+        {
+          "name": "README.md",
+          "seconds": 139.783
+        },
+        {
+          "name": "game.js",
+          "seconds": 101.851
+        },
+        {
+          "name": ".wakatime-project",
+          "seconds": 22.564
+        }
+      ],
+      "machine": "Andy-LeGearXPS",
+      "editor": "VS Code"
+    }
+  }
+]

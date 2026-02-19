@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unit Testing Gauntlet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== TITLE SCREEN ========== -->
+  <div id="title-screen" class="screen active">
+    <div class="title-content">
+      <h1>🧪 The Unit Testing Gauntlet</h1>
+      <p class="subtitle">Master the <span class="red">Red</span>–<span class="green">Green</span>–<span class="blue">Refactor</span> cycle of Test-Driven Development</p>
+      <div class="tdd-cycle">
+        <div class="cycle-step red-bg">🔴 RED<br><small>Write a failing test</small></div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-step green-bg">🟢 GREEN<br><small>Make it pass</small></div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-step blue-bg">🔵 REFACTOR<br><small>Clean it up</small></div>
+      </div>
+      <button id="start-btn" class="btn btn-primary">Start the Gauntlet</button>
+      <p class="credit">CS5703: Software Quality — University of Limerick</p>
+    </div>
+  </div>
+
+  <!-- ========== GAME SCREEN ========== -->
+  <div id="game-screen" class="screen">
+
+    <!-- Top Bar -->
+    <header id="game-header">
+      <div id="level-info">Level 1 / 5</div>
+      <div id="phase-badge" class="phase-red">🔴 RED — Write a Failing Test</div>
+      <div id="score-display">
+        <span id="score-value">0</span> pts
+        <span id="streak-display" class="hidden">🔥 x<span id="streak-value">1</span></span>
+      </div>
+    </header>
+
+    <!-- Spec / Instructions -->
+    <section id="instructions-bar">
+      <div id="spec-box">
+        <strong>Specification:</strong> <span id="spec-text"></span>
+      </div>
+      <div id="phase-instructions"></div>
+    </section>
+
+    <!-- Code Panels -->
+    <main id="panels">
+      <div class="panel" id="function-panel">
+        <div class="panel-header">
+          <span class="panel-title">📄 Function Code</span>
+          <span id="function-readonly-badge" class="badge badge-locked">READ ONLY</span>
+          <span id="function-editable-badge" class="badge badge-editable hidden">EDITABLE</span>
+        </div>
+        <textarea id="function-editor" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+      </div>
+      <div class="panel" id="test-panel">
+        <div class="panel-header">
+          <span class="panel-title">🧪 Test Code</span>
+          <span id="test-readonly-badge" class="badge badge-locked hidden">READ ONLY</span>
+          <span id="test-editable-badge" class="badge badge-editable">EDITABLE</span>
+        </div>
+        <textarea id="test-editor" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+      </div>
+    </main>
+
+    <!-- Controls -->
+    <div id="controls">
+      <button id="run-btn" class="btn btn-run">▶ Run Tests</button>
+      <button id="hint-btn" class="btn btn-hint">💡 Hint</button>
+      <button id="next-btn" class="btn btn-next hidden">Next →</button>
+    </div>
+
+    <!-- Console Output -->
+    <section id="console">
+      <div class="panel-header"><span class="panel-title">📟 Console Output</span></div>
+      <div id="console-output">
+        <p class="console-muted">Press <strong>Run Tests</strong> to see results here.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ========== LEVEL COMPLETE OVERLAY ========== -->
+  <div id="level-complete-overlay" class="overlay hidden">
+    <div class="overlay-content">
+      <h2 id="level-complete-title">✅ Level Complete!</h2>
+      <p id="level-complete-message"></p>
+      <p id="level-score-summary"></p>
+      <button id="next-level-btn" class="btn btn-primary">Next Level →</button>
+    </div>
+  </div>
+
+  <!-- ========== GAME COMPLETE SCREEN ========== -->
+  <div id="complete-screen" class="screen">
+    <div class="title-content">
+      <h1>🏆 Gauntlet Complete!</h1>
+      <p class="subtitle">You've mastered the Red–Green–Refactor cycle!</p>
+      <div id="final-stats">
+        <div class="stat"><span class="stat-value" id="final-score"></span><span class="stat-label">Total Score</span></div>
+        <div class="stat"><span class="stat-value" id="final-levels"></span><span class="stat-label">Levels Cleared</span></div>
+        <div class="stat"><span class="stat-value" id="final-streak"></span><span class="stat-label">Best Streak</span></div>
+      </div>
+      <div id="tdd-summary">
+        <h3>The TDD Cycle — Remember:</h3>
+        <ol>
+          <li><span class="red">RED</span> — Write a test that fails. This defines what the code <em>should</em> do.</li>
+          <li><span class="green">GREEN</span> — Write the minimum code to make the test pass. Nothing more.</li>
+          <li><span class="blue">REFACTOR</span> — Clean up the code. The tests are your safety net.</li>
+        </ol>
+      </div>
+      <button id="restart-btn" class="btn btn-primary">Play Again</button>
+    </div>
+  </div>
+
+  <script src="levels.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "disposable-software-study-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Analysis tools and utilities for the AI-Generated Disposable Software research study",
+  "scripts": {
+    "ts": "python analysis/timestamp.py --local",
+    "ts:utc": "python analysis/timestamp.py",
+    "session:start": "python analysis/session_start.py",
+    "session:close": "python analysis/session_close.py",
+    "wakatime": "python analysis/wakatime_fetch.py",
+    "dsqi:collect": "python analysis/dsqi_collect.py",
+    "validate:registry": "python analysis/validate_data.py --target registry",
+    "validate:dsqi": "python analysis/validate_data.py --target dsqi",
+    "validate:all": "python analysis/validate_data.py --target all",
+    "report:dsqi": "python analysis/generate_dsqi_report.py",
+    "report:expert": "python analysis/generate_expert_report.py",
+    "report:coordinator": "python analysis/generate_coordinator_report.py",
+    "report:summary": "python analysis/generate_summary_report.py",
+    "status": "python analysis/study_status.py"
+  },
+  "keywords": ["research", "disposable-software", "CS-education", "DSQI"],
+  "license": "UNLICENSED"
+}

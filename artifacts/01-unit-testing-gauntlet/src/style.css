@@ -1,0 +1,500 @@
+/* ============================================================
+   THE UNIT TESTING GAUNTLET — Stylesheet
+   A disposable educational tool for CS5703: Software Quality
+   ============================================================ */
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Phase colours */
+  --red: #e74c3c;
+  --red-dark: #c0392b;
+  --red-glow: rgba(231, 76, 60, 0.15);
+  --green: #2ecc71;
+  --green-dark: #27ae60;
+  --green-glow: rgba(46, 204, 113, 0.15);
+  --blue: #3498db;
+  --blue-dark: #2980b9;
+  --blue-glow: rgba(52, 152, 219, 0.15);
+
+  /* UI palette */
+  --bg: #0f0f1a;
+  --bg-panel: #1a1a2e;
+  --bg-editor: #16213e;
+  --bg-header: #0a0a14;
+  --text: #e0e0e0;
+  --text-muted: #8888aa;
+  --text-bright: #ffffff;
+  --border: #2a2a44;
+  --accent: #9b59b6;
+
+  /* Typography */
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-code: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, 'Courier New', monospace;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-ui);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ---------- Screens ---------- */
+.screen {
+  display: none;
+  min-height: 100vh;
+}
+.screen.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Title Screen ---------- */
+#title-screen {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-bright);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.red   { color: var(--red); font-weight: 700; }
+.green { color: var(--green); font-weight: 700; }
+.blue  { color: var(--blue); font-weight: 700; }
+
+.tdd-cycle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.cycle-step {
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  min-width: 160px;
+}
+.cycle-step small {
+  font-weight: 400;
+  opacity: 0.85;
+}
+.red-bg   { background: var(--red-glow); border: 2px solid var(--red); color: var(--red); }
+.green-bg { background: var(--green-glow); border: 2px solid var(--green); color: var(--green); }
+.blue-bg  { background: var(--blue-glow); border: 2px solid var(--blue); color: var(--blue); }
+
+.cycle-arrow {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+.credit {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3);
+}
+.btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(155, 89, 182, 0.5);
+}
+
+.btn-run {
+  background: var(--green-dark);
+  color: white;
+  font-size: 1.05rem;
+  padding: 0.6rem 1.8rem;
+}
+.btn-run:hover { background: var(--green); }
+
+.btn-hint {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.6rem 1.4rem;
+}
+.btn-hint:hover { color: var(--text); border-color: var(--text-muted); }
+
+.btn-next {
+  background: var(--blue);
+  color: white;
+  padding: 0.6rem 1.8rem;
+}
+.btn-next:hover { background: var(--blue-dark); }
+
+/* ---------- Game Header ---------- */
+#game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#level-info {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+#phase-badge {
+  padding: 0.35rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.3s, color 0.3s;
+}
+.phase-red    { background: var(--red-glow); color: var(--red); border: 1px solid var(--red); }
+.phase-green  { background: var(--green-glow); color: var(--green); border: 1px solid var(--green); }
+.phase-blue   { background: var(--blue-glow); color: var(--blue); border: 1px solid var(--blue); }
+
+#score-display {
+  font-weight: 600;
+  font-size: 1rem;
+}
+#streak-display {
+  margin-left: 0.75rem;
+  color: #f39c12;
+}
+
+/* ---------- Instructions Bar ---------- */
+#instructions-bar {
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+}
+
+#spec-box {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+#spec-box strong {
+  color: var(--accent);
+}
+
+#phase-instructions {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ---------- Code Panels ---------- */
+#panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  flex: 1;
+  min-height: 0;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+  min-height: 0;
+}
+.panel:last-child {
+  border-right: none;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.panel-title {
+  flex: 1;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.badge-locked {
+  background: rgba(231, 76, 60, 0.15);
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+.badge-editable {
+  background: rgba(46, 204, 113, 0.15);
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+textarea {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  background: var(--bg-editor);
+  color: var(--text-bright);
+  border: none;
+  font-family: var(--font-code);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+  tab-size: 2;
+}
+textarea:focus {
+  background: #1b2740;
+}
+textarea[readonly] {
+  color: var(--text-muted);
+  cursor: default;
+  background: var(--bg-panel);
+}
+
+/* ---------- Controls ---------- */
+#controls {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-header);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- Console ---------- */
+#console {
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+}
+
+#console-output {
+  padding: 0.75rem 1rem;
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.console-muted {
+  color: var(--text-muted);
+}
+
+.result-pass {
+  color: var(--green);
+}
+.result-pass::before {
+  content: "✓ ";
+}
+
+.result-fail {
+  color: var(--red);
+}
+.result-fail::before {
+  content: "✗ ";
+}
+
+.result-error {
+  color: #e67e22;
+}
+
+.result-summary {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  font-weight: 700;
+}
+
+.result-success-msg {
+  color: var(--green);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.result-failure-msg {
+  color: var(--red);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.hint-text {
+  color: #f1c40f;
+  font-style: italic;
+}
+
+/* ---------- Overlay ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+}
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-content {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  text-align: center;
+  max-width: 500px;
+}
+.overlay-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-bright);
+}
+.overlay-content p {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Complete Screen ---------- */
+#complete-screen {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#final-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 2rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  min-width: 140px;
+}
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+#tdd-summary {
+  max-width: 500px;
+  margin: 1.5rem auto;
+  text-align: left;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+#tdd-summary h3 {
+  margin-bottom: 0.75rem;
+  color: var(--text-bright);
+}
+#tdd-summary ol {
+  padding-left: 1.5rem;
+}
+#tdd-summary li {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Phase background glow ---------- */
+.game-phase-red #panels {
+  box-shadow: inset 0 0 60px var(--red-glow);
+}
+.game-phase-green #panels {
+  box-shadow: inset 0 0 60px var(--green-glow);
+}
+.game-phase-blue #panels {
+  box-shadow: inset 0 0 60px var(--blue-glow);
+}
+
+/* ---------- Utility ---------- */
+.hidden {
+  display: none !important;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  #panels {
+    grid-template-columns: 1fr;
+  }
+  .panel {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .title-content h1 {
+    font-size: 2rem;
+  }
+  .tdd-cycle {
+    flex-direction: column;
+  }
+  .cycle-arrow {
+    transform: rotate(90deg);
+  }
+}

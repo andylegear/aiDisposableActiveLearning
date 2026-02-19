@@ -1,0 +1,421 @@
+/* ================================================================
+   Flexbox Forge — Stylesheet
+   Dark workshop / forge theme.
+   External deps: CodeMirror (material-darker), highlight.js (atom-one-dark)
+   ================================================================ */
+
+/* ── CSS Variables ────────────────────────────────────────────── */
+:root {
+  --bg:          #1a1a2e;
+  --bg-card:     #16213e;
+  --border:      #0f3460;
+  --red:         #e94560;
+  --amber:       #f5a623;
+  --green:       #00e676;
+  --text:        #e0e0e0;
+  --text-dim:    #9e9e9e;
+  --editor-bg:   #0d1117;
+  --preview-bg:  #f5f5f5;
+  --radius:      8px;
+}
+
+/* ── Reset ────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top Bar ──────────────────────────────────────────────────── */
+#top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.2rem;
+  background: var(--bg-card);
+  border-bottom: 2px solid var(--border);
+}
+
+#level-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--amber);
+}
+
+#progress {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+#score-display {
+  font-weight: 600;
+  color: var(--green);
+}
+
+/* ── Game Grid ────────────────────────────────────────────────── */
+#game-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  overflow: hidden;
+}
+
+.left-col, .right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* ── Panels ───────────────────────────────────────────────────── */
+.panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.8rem;
+}
+
+.panel-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin-bottom: 0.4rem;
+}
+
+/* ── HTML Viewer (highlight.js) ───────────────────────────────── */
+#html-panel pre {
+  background: var(--editor-bg);
+  border-radius: 6px;
+  padding: 0.6rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#html-panel code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  background: transparent !important;
+}
+
+/* Override highlight.js background to match our theme */
+#html-panel .hljs {
+  background: transparent;
+}
+
+/* ── CSS Editor (CodeMirror) ──────────────────────────────────── */
+#css-editor-wrap {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+#css-editor-wrap .CodeMirror {
+  height: auto;
+  min-height: 120px;
+  max-height: 300px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+#css-editor-wrap .CodeMirror-focused {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 2px rgba(245, 166, 35, 0.15);
+}
+
+/* ── Property Reference Chips ─────────────────────────────────── */
+#reference-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.ref-chip {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background: var(--editor-bg);
+  border: 1px solid var(--amber);
+  border-radius: 20px;
+  font-family: 'Consolas', monospace;
+  font-size: 0.75rem;
+  color: var(--amber);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.ref-chip:hover {
+  background: rgba(245, 166, 35, 0.15);
+  box-shadow: 0 0 8px rgba(245, 166, 35, 0.3);
+}
+
+.ref-chip:active { transform: scale(0.95); }
+
+.ref-chip .chip-desc {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text);
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.ref-chip:hover .chip-desc { display: block; }
+
+/* ── Hints ────────────────────────────────────────────────────── */
+#hints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.hint-reveal-btn {
+  background: var(--border);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hint-reveal-btn:hover {
+  background: var(--amber);
+  color: var(--bg);
+}
+
+.hint-text {
+  color: var(--amber);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 0.3rem 0;
+}
+
+/* ── Visual Panels (Target & Preview) ─────────────────────────── */
+.visual-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+#target-frame, #preview-frame {
+  flex: 1;
+  width: 100%;
+  min-height: 180px;
+  border: none;
+  border-radius: 6px;
+  background: var(--preview-bg);
+}
+
+#target-frame {
+  border: 2px dashed var(--text-dim);
+}
+
+#preview-frame {
+  border: 2px solid var(--border);
+  transition: border-color 0.3s;
+}
+
+#preview-frame.matched {
+  border-color: var(--green);
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.3);
+}
+
+/* ── Match Bar ────────────────────────────────────────────────── */
+#match-bar-container {
+  width: 100%;
+  height: 24px;
+  background: #2a2a3e;
+  border-radius: 12px;
+  margin-top: 0.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#match-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--amber), var(--green));
+  border-radius: 12px;
+  transition: width 0.4s ease;
+}
+
+#match-bar.full {
+  animation: pulse-green 0.6s ease 2;
+}
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 4px var(--green); }
+  50% { box-shadow: 0 0 20px var(--green); }
+}
+
+#match-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text);
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+/* ── Explanation Panel ────────────────────────────────────────── */
+#explanation-panel {
+  border-color: var(--green);
+}
+
+#explanation-content {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+#explanation-content code {
+  background: var(--editor-bg);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  font-family: 'Consolas', monospace;
+  font-size: 0.8rem;
+  color: var(--amber);
+}
+
+/* ── Overlay ──────────────────────────────────────────────────── */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+}
+
+#overlay.hidden { display: none; }
+
+#overlay-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 2.4rem;
+  max-width: 520px;
+  width: 90%;
+  animation: slideUp 0.3s ease;
+  text-align: left;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#overlay-content h2 {
+  color: var(--amber);
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+
+#overlay-content p {
+  color: var(--text);
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+#overlay-content .overlay-subtitle {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.6rem;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.overlay-btn:hover {
+  background: #ff5a7a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
+}
+
+.overlay-score {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--green);
+  text-align: center;
+  margin: 0.8rem 0;
+}
+
+.overlay-properties {
+  background: var(--editor-bg);
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin: 0.6rem 0;
+  font-family: 'Consolas', monospace;
+  font-size: 0.85rem;
+  color: var(--amber);
+  line-height: 1.6;
+}
+
+/* ── New-property tag (level intros) ──────────────────────────── */
+.new-property {
+  display: inline-block;
+  background: rgba(245, 166, 35, 0.15);
+  border: 1px solid var(--amber);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  font-family: 'Consolas', monospace;
+  font-size: 0.85rem;
+  color: var(--amber);
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
+
+/* ── Success Animation ────────────────────────────────────────── */
+@keyframes successFlash {
+  0%   { border-color: var(--green); box-shadow: 0 0 0 var(--green); }
+  50%  { border-color: var(--green); box-shadow: 0 0 20px rgba(0, 230, 118, 0.4); }
+  100% { border-color: var(--green); box-shadow: 0 0 0 var(--green); }
+}
+
+.success-flash { animation: successFlash 0.5s ease 3; }
+
+/* ── Utility ──────────────────────────────────────────────────── */
+.hidden { display: none !important; }
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  #game-grid { grid-template-columns: 1fr; }
+  #target-frame, #preview-frame { min-height: 150px; }
+}

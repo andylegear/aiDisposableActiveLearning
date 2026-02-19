@@ -1,0 +1,133 @@
+[
+  {
+    "artifact_id": 2,
+    "artifact_slug": "02-big-o-visualiser",
+    "session_number": 1,
+    "timestamp": "2026-02-18T15:29:34.316039+00:00",
+    "date": "2026-02-18",
+    "duration_minutes": 36,
+    "ai_tools_used": [
+      "GitHub Copilot with Claude Opus 4.6"
+    ],
+    "prompts": [
+      {
+        "prompt_number": 1,
+        "timestamp": "2026-02-18T15:29:34.316039+00:00",
+        "type": "design",
+        "summary": "Asked AI to conceive of a visually appealing active-learning browser game for teaching Big-O notation concepts in a classroom setting, then produce a detailed implementation prompt for an AI agent.",
+        "outcome": "AI designed 'Big-O Dojo' \u2014 a multi-round game with 5 level types: Classify (code\u2192complexity), Growth Lab (interactive curve matching), Nested Depths (loop analysis), Log Rhythms (logarithmic patterns), and The Arena (boss rounds). Produced a full implementation prompt with game mechanics, visual design, scoring, and technical constraints."
+      },
+      {
+        "prompt_number": 2,
+        "timestamp": "2026-02-18T15:35:00.000000+00:00",
+        "type": "implementation",
+        "summary": "Provided the full implementation prompt (from prompt 1 design output) asking AI to imagine and implement the Big-O Dojo game \u2014 5 levels, 17 rounds, canvas visualisations, dark dojo theme, belt progression, scoring with streak multipliers, all in pure HTML/CSS/JS with zero dependencies.",
+        "outcome": "AI implemented complete game across 4 files: levels.js (402 lines \u2014 all 17 rounds with code snippets, ops functions, explanations), game.js (982 lines \u2014 full state machine, 5 level renderers, canvas animations for ops counters, growth curves, tree visualisations, race bars, timer, scoring), style.css (496 lines \u2014 dark dojo theme, split-panel layout, belt progress bar, syntax highlighting, responsive design), index.html (66 lines \u2014 single-page structure). Total: 1946 lines, zero dependencies."
+      }
+    ],
+    "prompt_strategy": "Collaborative design then full implementation \u2014 prompt 1 asked AI to conceive a game concept for teaching Big-O notation and produce a detailed implementation brief. Prompt 2 fed that brief back to the AI to implement the complete game in a single prompt.",
+    "outcome": "Complete working game: 4 source files, 1946 lines, zero dependencies. Five level types with distinct mechanics: timed classification, interactive curve prediction on canvas, nested loop analysis, binary tree visualisation for logarithmic complexity, and animated algorithm races.",
+    "observations": "AI produced the entire game engine including 5 distinct canvas visualisation types (bar charts, curve drawing, tree diagrams, race animations) from a single detailed prompt. The prompt design from step 1 was key \u2014 it specified exact level structures, visual design, scoring rules, and file organisation, leaving the AI to focus on implementation rather than design decisions.",
+    "code_written_lines": 0,
+    "code_ai_generated_lines": 1946,
+    "prompts_count": 2,
+    "challenges": [],
+    "testing": {
+      "started": "2026-02-18T15:45:00.000000+00:00",
+      "type": "manual",
+      "note": "Developer performed manual testing of all 5 levels, canvas visualisations, scoring, timer, and belt progression.",
+      "bugs_found": [
+        {
+          "id": 1,
+          "level": 2,
+          "description": "Growth Lab: clicking the chart always recorded y-value of 0 instead of the actual click position. Canvas bounding-rect size differed from CSS style dimensions due to flex layout, so the click-to-data coordinate mapping was wrong.",
+          "fix": "Scaled clickY by the ratio of canvas.style.height to boundingRect.height before passing to cToY(). Removed unused dpr variable from the click handler.",
+          "status": "fixed"
+        }
+      ],
+      "rounds": [
+        {
+          "round": 1,
+          "timestamp": "2026-02-18T15:45:00.000000+00:00",
+          "result": "1 bug found (Growth Lab click mapping). Fixed."
+        },
+        {
+          "round": 2,
+          "timestamp": "2026-02-18T15:55:00.000000+00:00",
+          "result": "All clear \u2014 bug fix verified, full regression pass across all 5 levels (17 rounds), all canvas animations, scoring, belt progression working correctly."
+        }
+      ]
+    },
+    "session_closed": true,
+    "closed_timestamp": "2026-02-18T16:05:23.262924+00:00",
+    "files_produced": [
+      {
+        "file": "game.js",
+        "lines": 982,
+        "language": "JavaScript"
+      },
+      {
+        "file": "index.html",
+        "lines": 66,
+        "language": "HTML"
+      },
+      {
+        "file": "levels.js",
+        "lines": 402,
+        "language": "JavaScript"
+      },
+      {
+        "file": "style.css",
+        "lines": 496,
+        "language": "CSS"
+      }
+    ],
+    "total_lines": 1946,
+    "wakatime": {
+      "project": "02-big-o-visualiser",
+      "date": "2026-02-18",
+      "total_seconds": 530.706,
+      "total_text": "8 mins",
+      "categories": {
+        "coding_seconds": 530.706
+      },
+      "languages": {
+        "HTML": {
+          "seconds": 530.706,
+          "percent": 100.0
+        }
+      },
+      "files": [
+        {
+          "name": "index.html",
+          "seconds": 530.706
+        }
+      ],
+      "machine": "Andy-LeGearXPS",
+      "editor": "VS Code"
+    },
+    "duration_estimate_note": "Session wall-clock time approx 36 mins. WakaTime active editor time: 8 mins.",
+    "dsqi_results": {
+      "collected_date": "2026-02-18",
+      "M_score": 0.1262,
+      "C_score": 0.1319,
+      "P_score": null,
+      "E_score": null,
+      "partial_dsqi": "0.4358 + 0.3×P + 0.2×E",
+      "dsqi_score": null,
+      "raw_metrics": {
+        "dependency_count": 0,
+        "cyclomatic_complexity_avg": 1.18,
+        "cyclomatic_complexity_max": 2,
+        "deployment_steps": 3,
+        "cloc_code_lines": 1603,
+        "cloc_comment_lines": 158,
+        "cloc_blank_lines": 185,
+        "cloc_total_lines": 1946,
+        "ai_generation_ratio": 1.0,
+        "wall_clock_minutes": 36,
+        "wakatime_seconds": 530.706
+      }
+    }
+  }
+]

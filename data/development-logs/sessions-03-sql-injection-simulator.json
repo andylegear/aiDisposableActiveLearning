@@ -1,0 +1,108 @@
+[
+  {
+    "artifact_id": 3,
+    "artifact_slug": "03-sql-injection-simulator",
+    "session_number": 1,
+    "timestamp": "2026-02-18T19:14:19.928673+00:00",
+    "date": "2026-02-18",
+    "duration_minutes": 53,
+    "ai_tools_used": [
+      "GitHub Copilot with Claude Opus 4.6"
+    ],
+    "prompts": [
+      {
+        "prompt_number": 1,
+        "timestamp": "2026-02-18T19:14:19.928673+00:00",
+        "type": "design",
+        "summary": "Asked AI to conceive an active-learning browser game for teaching SQL injection concepts. Constraints: client-side only, zero dependencies, ideally involving students writing SQL-like input. AI designed 'SQL Injection Lab' \u2014 a 5-level cybersecurity training game with a lightweight simulated SQL engine, visible in-memory database, real-time query builder with injection highlighting, and a defence level where students parameterise queries.",
+        "outcome": "AI produced a detailed implementation prompt covering: 5 levels (Authentication Bypass, UNION extraction, Boolean Blind, Destructive Stacked Queries, Defence Lab), a simulated SQL engine specification (SELECT/INSERT/UPDATE/DELETE/DROP, WHERE with AND/OR, UNION, SUBSTRING, comment stripping, stacked queries), visual design (dark terminal aesthetic, split panels for app/query/database/results), scoring, and file structure."
+      },
+      {
+        "prompt_number": 2,
+        "timestamp": "2026-02-18T19:25:00.000000+00:00",
+        "type": "implementation",
+        "summary": "Fed full implementation prompt to AI \u2014 included a complete SQL parser/evaluator spec (SimDB class with SELECT/INSERT/UPDATE/DELETE/DROP/UNION/SUBSTRING/stacked queries/comment stripping) plus 5-level game engine with sub-challenges, scoring, and visual design.",
+        "outcome": "FAILED \u2014 LLM processing timed out. The combined complexity of writing a tolerant SQL parser AND a 5-level game engine in a single prompt exceeded the model's effective generation capacity."
+      },
+      {
+        "prompt_number": 3,
+        "timestamp": "2026-02-18T19:35:00.000000+00:00",
+        "type": "design-revision",
+        "summary": "Revised approach: eliminated the SQL parser entirely. Replaced with pattern-matching evaluation \u2014 each level has a fixed query template, student input is string-concatenated for visual display, but attack detection uses regex/pattern matching against known injection signatures rather than actual SQL execution. Database panel uses static HTML tables manipulated via DOM. Reduces from 4 files to 3 (no sql-engine.js). Preserves the core pedagogical value (students see their input become part of SQL) while being implementable in a single prompt.",
+        "outcome": "Produced a simplified implementation prompt. Key simplifications: (1) no SQL parser \u2014 pattern matching per level, (2) database display is DOM-based not query-driven, (3) reduced from 5 to 5 levels but with simpler mechanics for blind injection (guided stepper instead of freeform), (4) 3 files instead of 4."
+      },
+      {
+        "prompt_number": 4,
+        "timestamp": "2026-02-18T19:50:00.000000+00:00",
+        "type": "implementation",
+        "summary": "Fed the simplified implementation prompt (pattern-matching approach). AI generated all 3 files: index.html (76 lines \u2014 3-column CSS Grid layout with top bar, app/query/database/results panels, overlay), style.css (413 lines \u2014 dark terminal theme with CSS variables, neon borders, SQL syntax colouring, password cracker animations, defence lab editor, damage report, responsive breakpoints), game.js (~530 lines \u2014 state machine, 5 complete levels with data/templates/detection/objectives/hints/explanations, overlay system for menu/briefings/completion, real-time query builder with injection highlighting, scoring engine, DOM-based database rendering with animations for table drops/row deletes/updates, defence lab with parameterised query validation and attack simulation).",
+        "outcome": "SUCCESS \u2014 all 3 files generated in a single prompt execution. The simplified pattern-matching approach fit within the model's generation capacity. Total: ~1020 lines across 3 files."
+      }
+    ],
+    "prompt_strategy": "Collaborative design \u2192 failed implementation (too complex) \u2192 design revision (pattern-matching instead of SQL parser) \u2192 simplified implementation (SUCCESS). Key learning: a full SQL parser + 5-level game exceeds single-prompt capacity; replacing the parser with pattern-matching made it feasible.",
+    "outcome": null,
+    "observations": "Prompt 2 failed due to excessive complexity. The SQL parser spec alone was substantial \u2014 asking for SELECT/INSERT/UPDATE/DELETE/DROP with WHERE clause boolean logic, UNION, SUBSTRING, comment stripping, stacked queries, and error tolerance. Combined with 5 game levels each with sub-challenges and visual design, the total output requirement exceeded the model's generation window. Revised to use pattern-matching instead. Prompt 4 succeeded \u2014 the simplified approach generated all 3 files cleanly.",
+    "code_written_lines": 0,
+    "code_ai_generated_lines": 1631,
+    "prompts_count": 4,
+    "manual_testing": {
+      "started": "2026-02-18T20:00:00.000000+00:00",
+      "completed": "2026-02-18T20:06:01.460430+00:00",
+      "bugs_found": [],
+      "bugs_fixed": [],
+      "observations": [
+        "Level 1: Bonus objective 'Make the query return ALL user records' requires tautology injection (e.g. ' OR '1'='1' --). Researcher needed clarification \u2014 may indicate the in-game hints are insufficient for guiding students toward tautology vs comment-bypass distinction."
+      ]
+    },
+    "challenges": [
+      {
+        "type": "prompt_complexity",
+        "description": "Implementation prompt 2 timed out \u2014 combined SQL parser + 5-level game engine was too much for a single generation. Resolved by eliminating the parser in favour of pattern-matching."
+      }
+    ],
+    "session_closed": true,
+    "closed_timestamp": "2026-02-18T20:07:08.716245+00:00",
+    "files_produced": [
+      {
+        "file": "game.js",
+        "lines": 944,
+        "language": "JavaScript"
+      },
+      {
+        "file": "index.html",
+        "lines": 77,
+        "language": "HTML"
+      },
+      {
+        "file": "style.css",
+        "lines": 610,
+        "language": "CSS"
+      }
+    ],
+    "total_lines": 1631,
+    "wakatime": {
+      "project": "03-sql-injection-simulator",
+      "date": "2026-02-18",
+      "total_seconds": 7.307,
+      "total_text": "0 secs",
+      "categories": {
+        "writing_docs_seconds": 7.307
+      },
+      "languages": {
+        "Markdown": {
+          "seconds": 7.307,
+          "percent": 100.0
+        }
+      },
+      "files": [
+        {
+          "name": "README.md",
+          "seconds": 7.307
+        }
+      ],
+      "machine": "Andy-LeGearXPS",
+      "editor": "VS Code"
+    },
+    "duration_estimate_note": "Session wall-clock time approx 53 mins. WakaTime active editor time: 0 secs."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "grand_total": {
+        "hours": 0,
+        "minutes": 0,
+        "total_seconds": 0.0,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      },
+      "range": {
+        "start": "2026-02-18T00:00:00Z",
+        "end": "2026-02-18T23:59:59Z",
+        "date": "2026-02-18",
+        "text": "Wed Feb 18th 2026",
+        "timezone": "Europe/Dublin"
+      },
+      "branches": [],
+      "entities": [],
+      "languages": [],
+      "dependencies": [],
+      "machines": [],
+      "editors": [],
+      "operating_systems": [],
+      "categories": []
+    }
+  ],
+  "start": "2026-02-18T00:00:00Z",
+  "end": "2026-02-18T23:59:59Z",
+  "branches": [],
+  "available_branches": [],
+  "color": null,
+  "cumulative_total": {
+    "seconds": 0.0,
+    "text": "0 secs",
+    "digital": "0:00",
+    "decimal": "0.00"
+  },
+  "daily_average": {
+    "holidays": 1,
+    "days_minus_holidays": 0,
+    "days_including_holidays": 1,
+    "seconds": 0,
+    "seconds_including_other_language": 0,
+    "text": "0 secs",
+    "text_including_other_language": "0 secs"
+  }
+}

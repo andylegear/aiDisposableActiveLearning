@@ -1,0 +1,167 @@
+{
+  "data": [
+    {
+      "grand_total": {
+        "hours": 0,
+        "minutes": 8,
+        "total_seconds": 530.706,
+        "digital": "0:08",
+        "decimal": "0.13",
+        "text": "8 mins",
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      },
+      "range": {
+        "start": "2026-02-18T00:00:00Z",
+        "end": "2026-02-18T23:59:59Z",
+        "date": "2026-02-18",
+        "text": "Wed Feb 18th 2026",
+        "timezone": "Europe/Dublin"
+      },
+      "branches": [
+        {
+          "name": "Unknown",
+          "total_seconds": 530.706,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 100.0
+        }
+      ],
+      "entities": [
+        {
+          "name": "C:/dev/aiActiveLearningStudy/artifacts/02-big-o-visualiser/src/index.html",
+          "total_seconds": 530.706,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "type": "file",
+          "project_root_count": 5,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "HTML",
+          "total_seconds": 530.706,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 100.0
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "\"game.js\"",
+          "total_seconds": 530.706,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 50.0
+        },
+        {
+          "name": "\"levels.js\"",
+          "total_seconds": 530.706,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 50.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "Andy-LeGearXPS",
+          "total_seconds": 530.706,
+          "machine_name_id": "eda54b6d-fc1b-4b23-bfc1-b884bca6acb7",
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 530.706,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Windows",
+          "total_seconds": 530.706,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 100.0
+        }
+      ],
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 530.706,
+          "digital": "0:08:50",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 50,
+          "percent": 100.0
+        }
+      ]
+    }
+  ],
+  "start": "2026-02-18T00:00:00Z",
+  "end": "2026-02-18T23:59:59Z",
+  "branches": [],
+  "available_branches": [],
+  "color": null,
+  "cumulative_total": {
+    "seconds": 530.706,
+    "text": "8 mins",
+    "digital": "0:08",
+    "decimal": "0.13"
+  },
+  "daily_average": {
+    "holidays": 0,
+    "days_minus_holidays": 1,
+    "days_including_holidays": 1,
+    "seconds": 531,
+    "seconds_including_other_language": 531,
+    "text": "8 mins",
+    "text_including_other_language": "8 mins"
+  }
+}

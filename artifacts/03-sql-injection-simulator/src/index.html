@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Injection Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header id="top-bar">
+    <div class="top-left">
+      <span id="level-name">SQL Injection Lab</span>
+    </div>
+    <div class="top-centre">
+      <span id="progress">Level — / 5</span>
+    </div>
+    <div class="top-right">
+      <span id="score-display">Score: 0</span>
+    </div>
+  </header>
+
+  <!-- Main 3-Column Grid -->
+  <main id="game-grid">
+
+    <!-- Left Column: Target App + Query Builder -->
+    <section id="left-col">
+      <div id="target-app">
+        <h3 id="app-title">Target Application</h3>
+        <div id="app-form"></div>
+      </div>
+      <div id="query-builder">
+        <h3>Query Builder</h3>
+        <div id="vulnerable-code"></div>
+        <div id="live-query"></div>
+      </div>
+    </section>
+
+    <!-- Centre Column: Database View -->
+    <section id="centre-col">
+      <h3>Database</h3>
+      <div id="db-tables"></div>
+    </section>
+
+    <!-- Right Column: Results + Objectives -->
+    <section id="right-col">
+      <div id="results-panel">
+        <h3>Results</h3>
+        <div id="results-content"></div>
+      </div>
+      <div id="objectives-panel">
+        <h3>Objectives</h3>
+        <div id="objectives-list"></div>
+      </div>
+      <div id="hints-panel">
+        <h3 id="hints-header">Hints <span id="hint-cost">(−10 pts each)</span></h3>
+        <div id="hints-list"></div>
+      </div>
+      <div id="explanation-panel" class="hidden">
+        <h3>Explanation</h3>
+        <div id="explanation-content"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Overlay for menus / mission briefs / results -->
+  <div id="overlay" class="hidden">
+    <div id="overlay-box">
+      <div id="overlay-content"></div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

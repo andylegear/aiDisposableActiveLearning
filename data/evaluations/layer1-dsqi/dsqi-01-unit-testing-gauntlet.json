@@ -1,0 +1,132 @@
+{
+  "artifact_id": 1,
+  "artifact_slug": "01-unit-testing-gauntlet",
+  "evaluator": "self (automated collection + manual scoring)",
+  "date": "2026-02-18",
+  "notes": "M and C metrics collected automatically by dsqi_collect.py. P and E metrics require human evaluators \u2014 fill in after reviews are complete.",
+  "maintenance_cost": {
+    "dependency_count": 0,
+    "dependency_count_normalized": 0.0,
+    "cyclomatic_complexity_avg": 4.07,
+    "cyclomatic_complexity_normalized": 0.2713,
+    "deployment_steps": 3,
+    "deployment_steps_normalized": 0.3,
+    "M_score": 0.1904
+  },
+  "creation_cost": {
+    "lines_of_code": 1396,
+    "lines_of_code_normalized": 0.2792,
+    "ai_generation_ratio": 1.0,
+    "development_time_minutes": 19,
+    "development_time_normalized": 0.0396,
+    "C_score": 0.1063
+  },
+  "pedagogical_alignment": {
+    "concept_coverage": null,
+    "icap_level": null,
+    "icap_score": null,
+    "P_score": null
+  },
+  "pedagogical_purity": {
+    "conceptual_fidelity_raw": null,
+    "conceptual_fidelity_normalized": null,
+    "process_replicability_raw": null,
+    "process_replicability_normalized": null,
+    "E_score": null
+  },
+  "weights": {
+    "w1_maintenance": 0.3,
+    "w2_creation": 0.2,
+    "w3_pedagogical": 0.3,
+    "w4_purity": 0.2
+  },
+  "dsqi_score": null,
+  "raw_metrics": {
+    "collected_at": "2026-02-18T15:14:12.848002+00:00",
+    "collector_version": "1.0.0",
+    "cloc": {
+      "header": {
+        "cloc_url": "github.com/AlDanial/cloc",
+        "cloc_version": "2.06",
+        "elapsed_seconds": 0.240577936172485,
+        "n_files": 4,
+        "n_lines": 1650,
+        "files_per_second": 16.6266286245475,
+        "lines_per_second": 6858.48430762583
+      },
+      "JavaScript": {
+        "nFiles": 2,
+        "blank": 94,
+        "comment": 67,
+        "code": 868
+      },
+      "CSS": {
+        "nFiles": 1,
+        "blank": 52,
+        "comment": 21,
+        "code": 427
+      },
+      "HTML": {
+        "nFiles": 1,
+        "blank": 11,
+        "comment": 9,
+        "code": 101
+      },
+      "SUM": {
+        "blank": 157,
+        "comment": 97,
+        "code": 1396,
+        "nFiles": 4
+      }
+    },
+    "complexity": {
+      "tool": "regex-based cyclomatic complexity (dsqi_collect.py)",
+      "files": [
+        {
+          "file": "game.js",
+          "functions": 12,
+          "average_complexity": 4.08,
+          "max_complexity": 21,
+          "total_complexity": 49
+        },
+        {
+          "file": "levels.js",
+          "functions": 1,
+          "average_complexity": 4,
+          "max_complexity": 4,
+          "total_complexity": 4
+        }
+      ],
+      "overall_average": 4.07,
+      "overall_max": 21
+    },
+    "dependency_analysis": {
+      "has_package_json": false,
+      "has_requirements_txt": false,
+      "production_dependencies": [],
+      "dependency_count": 0
+    },
+    "deployment": {
+      "method": "GitHub Pages (static)",
+      "steps_description": [
+        "git add .",
+        "git commit -m 'deploy'",
+        "git push origin main"
+      ],
+      "steps_count": 3
+    },
+    "dev_time": {
+      "wall_clock_minutes": 19,
+      "wakatime_seconds": 264.198,
+      "sessions": 1,
+      "source": "data\\development-logs\\sessions-01-unit-testing-gauntlet.json"
+    },
+    "ai_ratio": {
+      "ratio": 1.0,
+      "ai_generated_lines": 1493,
+      "human_written_lines": 0,
+      "total_lines": 1493,
+      "source": "data\\development-logs\\sessions-01-unit-testing-gauntlet.json"
+    }
+  }
+}

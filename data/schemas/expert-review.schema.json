@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Expert Review Result",
+  "description": "Schema for a single expert review of a disposable software artifact. Corresponds to Layer 2 of the three-layer evaluation protocol.",
+  "type": "object",
+  "required": ["artifact_id", "reviewer_id", "date"],
+  "properties": {
+    "artifact_id": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "artifact_slug": { "type": "string" },
+    "reviewer_id": { "type": "string" },
+    "reviewer_expertise": { "type": "string", "enum": ["software-engineering", "cs-education", "both"] },
+    "date": { "type": "string", "format": "date" },
+
+    "icap_assessment": {
+      "type": "object",
+      "properties": {
+        "primary_engagement_level": {
+          "type": "string",
+          "enum": ["passive", "active", "constructive", "interactive"]
+        },
+        "justification": { "type": "string" }
+      }
+    },
+
+    "constructionist_alignment": {
+      "type": "object",
+      "properties": {
+        "meaningful_artifact_creation": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "meaningful_artifact_justification": { "type": "string" },
+        "learning_through_building": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "learning_through_building_justification": { "type": "string" }
+      }
+    },
+
+    "heuristic_evaluation": {
+      "type": "object",
+      "description": "Ratings 1-5 for each of 10 adapted Nielsen heuristics for educational software.",
+      "properties": {
+        "visibility_of_system_status": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "match_with_real_world": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "user_control_and_freedom": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "consistency_and_standards": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "error_prevention": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "recognition_over_recall": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "flexibility_and_efficiency": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "aesthetic_and_minimalist_design": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "help_with_errors": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "instructional_scaffolding": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "heuristic_comments": { "type": "string" }
+      }
+    },
+
+    "dsqi_subjective_metrics": {
+      "type": "object",
+      "properties": {
+        "conceptual_fidelity_raw": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "conceptual_fidelity_justification": { "type": "string" },
+        "process_replicability_raw": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "process_replicability_justification": { "type": "string" }
+      }
+    },
+
+    "open_ended": {
+      "type": "object",
+      "properties": {
+        "greatest_strengths": { "type": "string" },
+        "significant_weaknesses": { "type": "string" },
+        "other_comments": { "type": "string" }
+      }
+    }
+  }
+}

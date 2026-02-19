@@ -1,0 +1,172 @@
+[
+  {
+    "artifact_id": 5,
+    "artifact_slug": "05-lexical-analyser-trainer",
+    "session_number": 1,
+    "timestamp": "2026-02-18T21:17:59.340027+00:00",
+    "date": "2026-02-18",
+    "duration_minutes": 54,
+    "ai_tools_used": [
+      "GitHub Copilot with Claude Opus 4.6"
+    ],
+    "prompts": [
+      {
+        "prompt_number": 1,
+        "timestamp": "2026-02-18T21:21:29+00:00",
+        "type": "design",
+        "description": "Game concept and implementation prompt for Lex Arena \u2014 a 10-level progressive lexical analysis trainer. Concept: students write regex patterns to tokenise source code with real-time visual feedback. Levels progress from integers \u2192 floats \u2192 identifiers \u2192 keywords \u2192 operators \u2192 strings \u2192 single-line comments \u2192 multi-line comments \u2192 whitespace \u2192 full combined lexer (capstone). Uses CodeMirror 5 for regex editor. Level 10 features a rule list editor with priority ordering.",
+        "result": "success",
+        "files_affected": [],
+        "notes": "Design prompt generated for user review before implementation. Concept name: Lex Arena. Libraries chosen: CodeMirror 5 (CDN). No implementation files created yet."
+      },
+      {
+        "prompt_number": 2,
+        "timestamp": "2026-02-18T21:36:07+00:00",
+        "type": "implementation",
+        "description": "Full implementation prompt for Lex Arena \u2014 3 files (index.html, style.css, game.js). Detailed specification covering layout, theme, 10 levels, match checking algorithm, Level 10 rule-list editor with priority ordering, scoring, overlay system.",
+        "result": "failure",
+        "files_affected": [],
+        "notes": "AI timed out \u2014 spent too long generating the implementation. Same pattern as Artifact 3 (SQL parser) and Artifact 4 (CSS parser). No files were produced. Will need a revised prompt, possibly splitting the implementation into smaller parts."
+      },
+      {
+        "prompt_number": 3,
+        "timestamp": "2026-02-18T21:38:50+00:00",
+        "type": "design-revision",
+        "description": "Redesigned Lex Arena as a drag-and-drop regex builder game. 8 levels instead of 10. Students drag regex building blocks from a palette into a pattern builder strip \u2014 blocks snap together to form a regex tested in real-time. Zero external dependencies (CodeMirror removed). Level 8 capstone uses rule reordering with up/down buttons instead of full drag-and-drop rule editor.",
+        "result": "success",
+        "files_affected": [],
+        "notes": "Major simplification to avoid implementation timeout. Removed CodeMirror dependency entirely. Reduced to 8 levels. Drag-and-drop blocks replace typed regex input. Generated implementation prompt for user review."
+      },
+      {
+        "prompt_number": 4,
+        "timestamp": "2026-02-18T21:50:37+00:00",
+        "type": "implementation",
+        "description": "Implementation attempt of the revised drag-and-drop Lex Arena (8 levels, zero dependencies). User instructed AI to implement all 3 files.",
+        "result": "failure",
+        "files_affected": [],
+        "notes": "AI timed out again \u2014 took too long generating the implementation even after the simplified redesign. Two consecutive implementation failures for Artifact 5. Fourth timeout across the study (Art3-P2, Art4-P2, Art5-P2, Art5-P4)."
+      },
+      {
+        "prompt_number": 5,
+        "timestamp": "2026-02-18T21:52:33+00:00",
+        "type": "design-revision",
+        "description": "Second design revision \u2014 user suggested using existing JS libraries instead of hand-coding lexer/regex/drag-drop from scratch. Identified 3 CDN libraries: moo.js (lexer engine \u2014 handles all tokenisation), SortableJS (drag-and-drop reordering), CodeMirror 5 (regex editor input). Revised 8-level concept: Levels 1-7 students type regex into CodeMirror, moo.js tokenises and highlights; Level 8 capstone uses SortableJS for rule priority reordering. game.js only needs level definitions, state machine, UI wiring.",
+        "result": "success",
+        "files_affected": [],
+        "notes": "Key insight from user: timeouts caused by AI writing lexer/regex/drag-drop engines from scratch. Libraries chosen: moo.js 0.5.2 (tokeniser), SortableJS 1.15.0 (reordering), CodeMirror 5.65.18 (editor). Awaiting user approval to implement."
+      },
+      {
+        "prompt_number": 6,
+        "timestamp": "2026-02-18T21:56:24+00:00",
+        "type": "implementation",
+        "description": "Third implementation attempt \u2014 using moo.js, SortableJS, and CodeMirror 5 to offload lexer/drag-drop/editor work. 8 levels.",
+        "result": "failure",
+        "files_affected": [],
+        "notes": "AI timed out again despite library-based strategy. Third consecutive implementation failure for Artifact 5. Fifth timeout across the study. The 3-file-at-once generation may be inherently too large \u2014 may need to generate one file at a time."
+      },
+      {
+        "prompt_number": 7,
+        "timestamp": "2026-02-18T21:59:05+00:00",
+        "type": "implementation",
+        "description": "Minimal 1-level MVP implementation. Only Level 1 (INTEGER tokens). 3 files: index.html (68 lines), style.css (198 lines), game.js (246 lines). Uses CodeMirror 5 only. No moo.js or SortableJS needed for single level. Student types regex in CodeMirror, real-time match highlighting, token stream table, match bar, hints, reference chips, overlay system.",
+        "result": "success",
+        "files_affected": [
+          "src/index.html",
+          "src/style.css",
+          "src/game.js"
+        ],
+        "notes": "Breakthrough: reduced to 1 level to fit within generation limits. All 3 files generated successfully. Strategy: build minimal working game first, then add remaining levels incrementally."
+      },
+      {
+        "prompt_number": 8,
+        "timestamp": "2026-02-18T22:01:06+00:00",
+        "type": "incremental",
+        "description": "Added Level 2 (Go Float \u2014 FLOAT tokens) to the LEVELS array in game.js. Target regex: [0-9]+\\.[0-9]+. Teaches escaped dot vs wildcard dot.",
+        "result": "success",
+        "files_affected": [
+          "src/game.js"
+        ],
+        "notes": "Incremental level addition \u2014 only edited the LEVELS array. Same source code as Level 1. Starter pattern builds on Level 1 knowledge."
+      },
+      {
+        "prompt_number": 9,
+        "timestamp": "2026-02-18T22:04:13+00:00",
+        "type": "incremental",
+        "description": "Added Levels 3 (Name Game \u2014 IDENTIFIER, target: [a-zA-Z_][a-zA-Z0-9_]*) and 4 (Reserved Words \u2014 KEYWORD, target: \\b(if|else|while|return|int|float)\\b) to game.js LEVELS array. Teaches character classes with * quantifier and word boundaries with alternation.",
+        "result": "success",
+        "files_affected": [
+          "src/game.js"
+        ],
+        "notes": "Both levels share same source code (if/else snippet). Level 3\u21924 progression teaches why keywords need word boundaries to distinguish from identifiers."
+      },
+      {
+        "prompt_number": 10,
+        "timestamp": "2026-02-18T22:05:42+00:00",
+        "type": "incremental",
+        "description": "Added Levels 5 (Operators \u2014 [+\\-*/<>=!&]{1,2}), 6 (Strung Along \u2014 \"[^\"]*\"), and 7 (No Comment \u2014 \\/\\/.*|\\/\\*[\\s\\S]*?\\*\\/) to game.js LEVELS array. Teaches character class quantifiers, negated classes, and alternation with lazy quantifiers.",
+        "result": "success",
+        "files_affected": [
+          "src/game.js"
+        ],
+        "notes": "3 levels added in one prompt. Levels 5-6 share operator/string source. Level 7 introduces comment source. 7 of 8 levels complete \u2014 only capstone (Level 8: full lexer) remains."
+      },
+      {
+        "prompt_number": 11,
+        "timestamp": "2026-02-18T22:08:02+00:00",
+        "type": "incremental",
+        "description": "Added Level 8 capstone (The Full Lexer). Modified all 3 files: index.html (rule-editor panel), style.css (rule-row styles), game.js (Level 8 data + setupRuleEditor + runCapstone + runLexer + multi-type highlighting). Students reorder 7 regex rules with up/down buttons, then run the lexer to tokenise a Fibonacci function.",
+        "result": "success",
+        "files_affected": [
+          "src/index.html",
+          "src/style.css",
+          "src/game.js"
+        ],
+        "notes": "All 8 levels now complete. Starting manual testing."
+      }
+    ],
+    "prompt_strategy": null,
+    "outcome": null,
+    "observations": "Starting manual testing at 22:08 UTC. Ended testing at 22:10 UTC.",
+    "code_written_lines": 0,
+    "code_ai_generated_lines": 1052,
+    "prompts_count": 11,
+    "challenges": [
+      "Prompt 2 timed out \u2014 AI spent too long on implementation. Third consecutive artifact with a timeout on the first implementation attempt.",
+      "Prompt 4 timed out \u2014 even the simplified drag-and-drop redesign was too large for a single implementation prompt. May need to split into multiple prompts (e.g., HTML+CSS first, then game.js separately).",
+      "Root cause identified: AI was hand-coding lexer engine, regex matching, drag-and-drop from scratch. Solution: use moo.js, SortableJS, CodeMirror 5 via CDN.",
+      "Prompt 6 timed out \u2014 even with libraries, generating all 3 files in one prompt is too large. Must split into per-file prompts."
+    ],
+    "session_closed": true,
+    "closed_timestamp": "2026-02-18T22:11:36.906613+00:00",
+    "files_produced": [
+      {
+        "file": "game.js",
+        "lines": 689,
+        "language": "JavaScript"
+      },
+      {
+        "file": "index.html",
+        "lines": 75,
+        "language": "HTML"
+      },
+      {
+        "file": "style.css",
+        "lines": 288,
+        "language": "CSS"
+      }
+    ],
+    "total_lines": 1052,
+    "wakatime": {
+      "project": "05-lexical-analyser-trainer",
+      "date": "2026-02-18",
+      "total_seconds": 0.0,
+      "total_text": "0 secs",
+      "categories": {},
+      "languages": {},
+      "files": [],
+      "machine": null,
+      "editor": null
+    },
+    "duration_estimate_note": "Session wall-clock time approx 54 mins. WakaTime active editor time: 0 secs."
+  }
+]

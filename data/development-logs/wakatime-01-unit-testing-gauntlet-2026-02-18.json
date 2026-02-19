@@ -1,0 +1,222 @@
+{
+  "data": [
+    {
+      "grand_total": {
+        "hours": 0,
+        "minutes": 4,
+        "total_seconds": 264.198,
+        "digital": "0:04",
+        "decimal": "0.07",
+        "text": "4 mins",
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      },
+      "range": {
+        "start": "2026-02-18T00:00:00Z",
+        "end": "2026-02-18T23:59:59Z",
+        "date": "2026-02-18",
+        "text": "Wed Feb 18th 2026",
+        "timezone": "Europe/Dublin"
+      },
+      "branches": [
+        {
+          "name": "Unknown",
+          "total_seconds": 264.198,
+          "digital": "0:04:24",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 24,
+          "percent": 100.0
+        }
+      ],
+      "entities": [
+        {
+          "name": "C:/dev/aiActiveLearningStudy/artifacts/01-unit-testing-gauntlet/README.md",
+          "total_seconds": 139.783,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "type": "file",
+          "project_root_count": 5,
+          "digital": "0:02:19",
+          "decimal": "0.03",
+          "text": "2 mins",
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 19,
+          "percent": 52.91
+        },
+        {
+          "name": "C:/dev/aiActiveLearningStudy/artifacts/01-unit-testing-gauntlet/src/game.js",
+          "total_seconds": 101.851,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "type": "file",
+          "project_root_count": 5,
+          "digital": "0:01:41",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 41,
+          "percent": 38.55
+        },
+        {
+          "name": "C:/dev/aiActiveLearningStudy/artifacts/01-unit-testing-gauntlet/.wakatime-project",
+          "total_seconds": 22.564,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "type": "file",
+          "project_root_count": 5,
+          "digital": "0:00:22",
+          "decimal": "0.00",
+          "text": "22 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 22,
+          "percent": 8.54
+        }
+      ],
+      "languages": [
+        {
+          "name": "Markdown",
+          "total_seconds": 139.783,
+          "digital": "0:02:19",
+          "decimal": "0.03",
+          "text": "2 mins",
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 19,
+          "percent": 52.91
+        },
+        {
+          "name": "JavaScript",
+          "total_seconds": 101.851,
+          "digital": "0:01:41",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 41,
+          "percent": 38.55
+        },
+        {
+          "name": "Other",
+          "total_seconds": 22.564,
+          "digital": "0:00:22",
+          "decimal": "0.00",
+          "text": "22 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 22,
+          "percent": 8.54
+        }
+      ],
+      "dependencies": [],
+      "machines": [
+        {
+          "name": "Andy-LeGearXPS",
+          "total_seconds": 264.198,
+          "machine_name_id": "eda54b6d-fc1b-4b23-bfc1-b884bca6acb7",
+          "digital": "0:04:24",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 24,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 264.198,
+          "digital": "0:04:24",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 24,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Windows",
+          "total_seconds": 264.198,
+          "digital": "0:04:24",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 24,
+          "percent": 100.0
+        }
+      ],
+      "categories": [
+        {
+          "name": "Writing Docs",
+          "total_seconds": 139.783,
+          "digital": "0:02:19",
+          "decimal": "0.03",
+          "text": "2 mins",
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 19,
+          "percent": 52.91
+        },
+        {
+          "name": "Coding",
+          "total_seconds": 109.687,
+          "digital": "0:01:49",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 49,
+          "percent": 41.52
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 14.728,
+          "digital": "0:00:14",
+          "decimal": "0.00",
+          "text": "14 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 14,
+          "percent": 5.57
+        }
+      ]
+    }
+  ],
+  "start": "2026-02-18T00:00:00Z",
+  "end": "2026-02-18T23:59:59Z",
+  "branches": [],
+  "available_branches": [],
+  "color": null,
+  "cumulative_total": {
+    "seconds": 264.198,
+    "text": "4 mins",
+    "digital": "0:04",
+    "decimal": "0.07"
+  },
+  "daily_average": {
+    "holidays": 0,
+    "days_minus_holidays": 1,
+    "days_including_holidays": 1,
+    "seconds": 242,
+    "seconds_including_other_language": 264,
+    "text": "4 mins",
+    "text_including_other_language": "4 mins"
+  }
+}

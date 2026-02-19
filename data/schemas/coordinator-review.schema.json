@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pedagogical Utility Review Result",
+  "description": "Schema for a module coordinator's pedagogical utility evaluation. Corresponds to Layer 3 of the three-layer evaluation protocol.",
+  "type": "object",
+  "required": ["artifact_id", "module_code", "coordinator_id", "date"],
+  "properties": {
+    "artifact_id": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "artifact_slug": { "type": "string" },
+    "module_code": { "type": "string", "pattern": "^CE[0-9]{4}$" },
+    "coordinator_id": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+
+    "pedagogical_alignment_utility": {
+      "type": "object",
+      "properties": {
+        "curricular_relevance": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "curricular_relevance_justification": { "type": "string" },
+        "problem_solving_value": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "problem_solving_value_justification": { "type": "string" },
+        "active_learning_potential": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "active_learning_potential_justification": { "type": "string" },
+        "likelihood_of_use": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "likelihood_of_use_justification": { "type": "string" }
+      }
+    },
+
+    "open_ended": {
+      "type": "object",
+      "properties": {
+        "pedagogical_strengths": { "type": "string" },
+        "pedagogical_weaknesses": { "type": "string" },
+        "suggestions_for_other_tools": { "type": "string" }
+      }
+    }
+  }
+}

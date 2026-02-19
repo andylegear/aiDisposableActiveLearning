@@ -1,0 +1,233 @@
+{
+  "study": {
+    "title": "AI-Generated Disposable Software as Active Learning Instruments in CS Education",
+    "methodology": "Design-Based Research (DBR)",
+    "target_journal": "Computer Science Education (Taylor & Francis)",
+    "start_date": "2026-02-18T13:33:15Z",
+    "current_phase": "development"
+  },
+  "artifacts": [
+    {
+      "id": 1,
+      "name": "The Unit Testing Gauntlet",
+      "slug": "01-unit-testing-gauntlet",
+      "learning_objective": "Understand the Red-Green-Refactor cycle of TDD",
+      "target_module": {
+        "code": "CS5703",
+        "name": "Software Quality",
+        "coordinator": null,
+        "coordinator_email": null
+      },
+      "status": "developed",
+      "deployment_url": null,
+      "repository_url": null,
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "development": {
+        "start_date": "2026-02-18T13:33:15Z",
+        "end_date": "2026-02-18T13:52:11Z",
+        "total_sessions": 1,
+        "total_duration_minutes": 19,
+        "lines_of_code": 1493,
+        "ai_generation_ratio": 1.0,
+        "dependency_count": 0,
+        "wakatime_active_seconds": 264.198
+      },
+      "evaluation": {
+        "dsqi_score": null,
+        "dsqi_completed": false,
+        "dsqi_partial": {
+          "M_score": 0.1904,
+          "C_score": 0.1063,
+          "P_score": null,
+          "E_score": null,
+          "automated_collected": true,
+          "collected_date": "2026-02-18"
+        },
+        "expert_reviews_received": 0,
+        "expert_reviews_target": 2,
+        "coordinator_review_received": false
+      }
+    },
+    {
+      "id": 2,
+      "name": "The Big-O Visualiser",
+      "slug": "02-big-o-visualiser",
+      "learning_objective": "Visualize and compare the time complexity of different algorithms",
+      "target_module": {
+        "code": "CE4003",
+        "name": "Algorithms and Data Structures",
+        "coordinator": null,
+        "coordinator_email": null
+      },
+      "status": "developed",
+      "deployment_url": null,
+      "repository_url": null,
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "development": {
+        "start_date": "2026-02-18T15:29:34.316039+00:00",
+        "end_date": "2026-02-18T16:05:23.262924+00:00",
+        "total_sessions": 1,
+        "total_duration_minutes": 36,
+        "lines_of_code": 1946,
+        "ai_generation_ratio": 1.0,
+        "dependency_count": 0,
+        "wakatime_active_seconds": 530.706
+      },
+      "evaluation": {
+        "dsqi_score": null,
+        "dsqi_completed": false,
+        "dsqi_partial": {
+          "M_score": 0.1262,
+          "C_score": 0.1319,
+          "P_score": null,
+          "E_score": null,
+          "automated_collected": true,
+          "collected_date": "2026-02-18"
+        },
+        "expert_reviews_received": 0,
+        "expert_reviews_target": 2,
+        "coordinator_review_received": false
+      }
+    },
+    {
+      "id": 3,
+      "name": "The SQL Injection Simulator",
+      "slug": "03-sql-injection-simulator",
+      "learning_objective": "Understand how SQL injection vulnerabilities work",
+      "target_module": {
+        "code": "CE4018",
+        "name": "Database Systems",
+        "coordinator": null,
+        "coordinator_email": null
+      },
+      "status": "developed",
+      "deployment_url": null,
+      "repository_url": null,
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "development": {
+        "start_date": "2026-02-18T19:14:19.928673+00:00",
+        "end_date": "2026-02-18T20:07:08.716245+00:00",
+        "total_sessions": 1,
+        "total_duration_minutes": 53,
+        "lines_of_code": 1631,
+        "ai_generation_ratio": 1.0,
+        "dependency_count": 0,
+        "wakatime_active_seconds": 7.307
+      },
+      "evaluation": {
+        "dsqi_score": null,
+        "dsqi_completed": false,
+        "dsqi_partial": {
+          "M_score": 0.2022,
+          "C_score": 0.1337,
+          "P_score": null,
+          "E_score": null,
+          "automated_collected": true,
+          "collected_date": "2026-02-18"
+        },
+        "expert_reviews_received": 0,
+        "expert_reviews_target": 2,
+        "coordinator_review_received": false
+      }
+    },
+    {
+      "id": 4,
+      "name": "The CSS Flexbox Trainer",
+      "slug": "04-css-flexbox-trainer",
+      "learning_objective": "Master CSS Flexbox properties for layout design",
+      "target_module": {
+        "code": "CE4026",
+        "name": "Web Development",
+        "coordinator": null,
+        "coordinator_email": null
+      },
+      "status": "developed",
+      "deployment_url": null,
+      "repository_url": null,
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "CodeMirror 5",
+        "highlight.js"
+      ],
+      "development": {
+        "start_date": "2026-02-18T20:17:48.107737+00:00",
+        "end_date": "2026-02-18T20:55:10.978870+00:00",
+        "total_sessions": 1,
+        "total_duration_minutes": 37,
+        "lines_of_code": 871,
+        "ai_generation_ratio": 1.0,
+        "dependency_count": 2
+      },
+      "dsqi": {
+        "M": 0.1429,
+        "C": 0.0838,
+        "partial": "0.4404 + 0.3P + 0.2E"
+      },
+      "evaluation": {
+        "dsqi_score": null,
+        "dsqi_completed": false,
+        "expert_reviews_received": 0,
+        "expert_reviews_target": 2,
+        "coordinator_review_received": false
+      }
+    },
+    {
+      "id": 5,
+      "name": "The Lexical Analyser Trainer",
+      "slug": "05-lexical-analyser-trainer",
+      "learning_objective": "Understand how lexical analysis breaks source code into tokens",
+      "target_module": {
+        "code": "CS4081",
+        "name": "Compiler Design",
+        "coordinator": null,
+        "coordinator_email": null
+      },
+      "status": "developed",
+      "deployment_url": null,
+      "repository_url": null,
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "development": {
+        "start_date": "2026-02-18T21:17:59.340027+00:00",
+        "end_date": "2026-02-18T22:11:36.906613+00:00",
+        "total_sessions": 1,
+        "total_duration_minutes": 54,
+        "lines_of_code": 1052,
+        "ai_generation_ratio": 1.0,
+        "dependency_count": 0,
+        "wakatime_active_seconds": 0.0
+      },
+      "dsqi": {
+        "M": 0.1978,
+        "C": 0.0983,
+        "partial": "0.4210 + 0.3P + 0.2E"
+      },
+      "evaluation": {
+        "dsqi_score": null,
+        "dsqi_completed": false,
+        "expert_reviews_received": 0,
+        "expert_reviews_target": 2,
+        "coordinator_review_received": false
+      }
+    }
+  ],
+  "expert_reviewers": [],
+  "current_phase": "development"
+}

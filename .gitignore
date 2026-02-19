@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Analysis outputs (regenerable)
+analysis/output/
+
+# Secrets / credentials
+.env
+*.key
+
+# Source/reference materials (not for public repo)
+sources/
+
+# Temporary files
+*.tmp
+*.bak

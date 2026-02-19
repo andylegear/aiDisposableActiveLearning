@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lex Arena</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Overlay -->
+  <div id="overlay" class="overlay">
+    <div id="overlay-content" class="overlay-box"></div>
+  </div>
+
+  <!-- Top Bar -->
+  <header id="top-bar">
+    <span id="level-title">Level 1: Number Crunch</span>
+    <span id="progress">Level 1 / 8</span>
+    <span id="score">Score: 0</span>
+  </header>
+
+  <!-- Game Grid -->
+  <main id="game-grid">
+    <!-- Left Column -->
+    <section id="left-col">
+      <div class="panel" id="source-panel">
+        <h3>Source Code</h3>
+        <pre><code id="source-display"></code></pre>
+      </div>
+      <div class="panel" id="token-panel">
+        <h3>Token Stream</h3>
+        <div id="token-stream"></div>
+      </div>
+    </section>
+
+    <!-- Right Column -->
+    <section id="right-col">
+      <div class="panel" id="editor-panel">
+        <h3>Regex Pattern <span id="target-type" class="badge">INTEGER</span></h3>
+        <textarea id="regex-input"></textarea>
+      </div>
+      <div class="panel" id="feedback-panel">
+        <div id="match-bar-container">
+          <div id="match-bar"></div>
+          <span id="match-pct">0%</span>
+        </div>
+        <p id="feedback-text">Type a regex pattern above...</p>
+      </div>
+      <div class="panel" id="reference-panel">
+        <h3>Regex Reference</h3>
+        <div id="reference-chips"></div>
+      </div>
+      <div class="panel" id="hints-panel">
+        <h3>Hints <span id="hint-cost">(−10 pts each)</span></h3>
+        <div id="hints-list"></div>
+      </div>
+      <div class="panel" id="rule-editor-panel" style="display:none;">
+        <h3>Lexer Rules <span class="badge" style="background:rgba(63,185,80,0.2);color:var(--accent);">Reorder for priority</span></h3>
+        <div id="rule-list"></div>
+        <button class="btn" id="btn-run-lexer" style="margin-top:12px;width:100%;">Run Lexer</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Explanation (below grid, hidden during play) -->
+  <section id="explanation-panel" class="panel" style="display:none;">
+    <h3>Concept Explained</h3>
+    <p id="explanation-text"></p>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

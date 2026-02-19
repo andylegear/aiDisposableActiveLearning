@@ -1,0 +1,250 @@
+{
+  "data": [
+    {
+      "grand_total": {
+        "hours": 0,
+        "minutes": 8,
+        "total_seconds": 480.517,
+        "digital": "0:08",
+        "decimal": "0.13",
+        "text": "8 mins",
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      },
+      "range": {
+        "start": "2026-02-18T00:00:00Z",
+        "end": "2026-02-18T23:59:59Z",
+        "date": "2026-02-18",
+        "text": "Wed Feb 18th 2026",
+        "timezone": "Europe/Dublin"
+      },
+      "branches": [
+        {
+          "name": "Unknown",
+          "total_seconds": 480.517,
+          "digital": "0:08:00",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 0,
+          "percent": 100.0
+        }
+      ],
+      "entities": [
+        {
+          "name": "C:/dev/aiActiveLearningStudy/artifacts/04-css-flexbox-trainer/README.md",
+          "total_seconds": 300.076,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "type": "file",
+          "project_root_count": 5,
+          "digital": "0:05:00",
+          "decimal": "0.08",
+          "text": "5 mins",
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 0,
+          "percent": 62.45
+        },
+        {
+          "name": "C:/dev/aiActiveLearningStudy/artifacts/04-css-flexbox-trainer/src/index.html",
+          "total_seconds": 180.441,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "type": "file",
+          "project_root_count": 5,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 37.55
+        }
+      ],
+      "languages": [
+        {
+          "name": "Markdown",
+          "total_seconds": 300.076,
+          "digital": "0:05:00",
+          "decimal": "0.08",
+          "text": "5 mins",
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 0,
+          "percent": 62.45
+        },
+        {
+          "name": "HTML",
+          "total_seconds": 180.441,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 37.55
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "\"https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js\"",
+          "total_seconds": 180.441,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 20.0
+        },
+        {
+          "name": "\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/xml.min.js\"",
+          "total_seconds": 180.441,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 20.0
+        },
+        {
+          "name": "\"https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/css/css.min.js\"",
+          "total_seconds": 180.441,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 20.0
+        },
+        {
+          "name": "\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js\"",
+          "total_seconds": 180.441,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 20.0
+        },
+        {
+          "name": "\"game.js\"",
+          "total_seconds": 180.441,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 20.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "Andy-LeGearXPS",
+          "total_seconds": 480.517,
+          "machine_name_id": "eda54b6d-fc1b-4b23-bfc1-b884bca6acb7",
+          "digital": "0:08:00",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 0,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 480.517,
+          "digital": "0:08:00",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 0,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Windows",
+          "total_seconds": 480.517,
+          "digital": "0:08:00",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 0,
+          "percent": 100.0
+        }
+      ],
+      "categories": [
+        {
+          "name": "Writing Docs",
+          "total_seconds": 267.829,
+          "digital": "0:04:27",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 27,
+          "percent": 55.74
+        },
+        {
+          "name": "Coding",
+          "total_seconds": 180.441,
+          "digital": "0:03:00",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 0,
+          "percent": 37.55
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 32.247,
+          "digital": "0:00:32",
+          "decimal": "0.00",
+          "text": "32 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 32,
+          "percent": 6.71
+        }
+      ]
+    }
+  ],
+  "start": "2026-02-18T00:00:00Z",
+  "end": "2026-02-18T23:59:59Z",
+  "branches": [],
+  "available_branches": [],
+  "color": null,
+  "cumulative_total": {
+    "seconds": 480.517,
+    "text": "8 mins",
+    "digital": "0:08",
+    "decimal": "0.13"
+  },
+  "daily_average": {
+    "holidays": 0,
+    "days_minus_holidays": 1,
+    "days_including_holidays": 1,
+    "seconds": 481,
+    "seconds_including_other_language": 481,
+    "text": "8 mins",
+    "text_including_other_language": "8 mins"
+  }
+}

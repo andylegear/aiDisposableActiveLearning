@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Artifact Registry",
+  "description": "Central registry of all five disposable software artifacts and their current state. This is the single source of truth for artifact metadata across the study.",
+  "type": "object",
+  "properties": {
+    "study": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "methodology": { "type": "string" },
+        "target_journal": { "type": "string" },
+        "start_date": { "type": ["string", "null"], "format": "date" },
+        "current_phase": {
+          "type": "string",
+          "enum": ["setup", "development", "self-evaluation", "expert-review", "coordinator-review", "analysis", "writing", "complete"]
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/artifact"
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "expert_reviewers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/reviewer"
+      }
+    }
+  },
+  "definitions": {
+    "artifact": {
+      "type": "object",
+      "required": ["id", "name", "slug", "learning_objective", "target_module", "status"],
+      "properties": {
+        "id": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "name": { "type": "string" },
+        "slug": { "type": "string", "pattern": "^[0-9]{2}-[a-z-]+$" },
+        "learning_objective": { "type": "string" },
+        "target_module": {
+          "type": "object",
+          "properties": {
+            "code": { "type": "string", "pattern": "^(CE|CS)[0-9]{4}$" },
+            "name": { "type": "string" },
+            "coordinator": { "type": ["string", "null"] },
+            "coordinator_email": { "type": ["string", "null"] }
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": ["not-started", "in-development", "developed", "self-evaluated", "expert-reviewed", "coordinator-reviewed", "complete"]
+        },
+        "deployment_url": { "type": ["string", "null"], "format": "uri" },
+        "repository_url": { "type": ["string", "null"], "format": "uri" },
+        "tech_stack": { "type": ["string", "null"] },
+        "development": {
+          "type": "object",
+          "properties": {
+            "start_date": { "type": ["string", "null"], "format": "date" },
+            "end_date": { "type": ["string", "null"], "format": "date" },
+            "total_sessions": { "type": ["integer", "null"] },
+            "total_duration_minutes": { "type": ["integer", "null"] },
+            "lines_of_code": { "type": ["integer", "null"] },
+            "ai_generation_ratio": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "dependency_count": { "type": ["integer", "null"] }
+          }
+        },
+        "evaluation": {
+          "type": "object",
+          "properties": {
+            "dsqi_score": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "dsqi_completed": { "type": "boolean", "default": false },
+            "expert_reviews_received": { "type": "integer", "default": 0 },
+            "expert_reviews_target": { "type": "integer", "default": 2 },
+            "coordinator_review_received": { "type": "boolean", "default": false }
+          }
+        }
+      }
+    },
+    "reviewer": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": ["string", "null"] },
+        "affiliation": { "type": ["string", "null"] },
+        "expertise": { "type": "string", "enum": ["software-engineering", "cs-education", "both"] },
+        "assigned_artifacts": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1, "maximum": 5 }
+        },
+        "reviews_submitted": { "type": "integer", "default": 0 }
+      }
+    }
+  }
+}

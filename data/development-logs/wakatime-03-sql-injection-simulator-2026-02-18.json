@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "grand_total": {
+        "hours": 0,
+        "minutes": 0,
+        "total_seconds": 7.307,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      },
+      "range": {
+        "start": "2026-02-18T00:00:00Z",
+        "end": "2026-02-18T23:59:59Z",
+        "date": "2026-02-18",
+        "text": "Wed Feb 18th 2026",
+        "timezone": "Europe/Dublin"
+      },
+      "branches": [
+        {
+          "name": "Unknown",
+          "total_seconds": 7.307,
+          "digital": "0:00:07",
+          "decimal": "0.00",
+          "text": "7 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "entities": [
+        {
+          "name": "C:/dev/aiActiveLearningStudy/artifacts/03-sql-injection-simulator/README.md",
+          "total_seconds": 7.307,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "type": "file",
+          "project_root_count": 5,
+          "digital": "0:00:07",
+          "decimal": "0.00",
+          "text": "7 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Markdown",
+          "total_seconds": 7.307,
+          "digital": "0:00:07",
+          "decimal": "0.00",
+          "text": "7 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "dependencies": [],
+      "machines": [
+        {
+          "name": "Andy-LeGearXPS",
+          "total_seconds": 7.307,
+          "machine_name_id": "eda54b6d-fc1b-4b23-bfc1-b884bca6acb7",
+          "digital": "0:00:07",
+          "decimal": "0.00",
+          "text": "7 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 7.307,
+          "digital": "0:00:07",
+          "decimal": "0.00",
+          "text": "7 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Windows",
+          "total_seconds": 7.307,
+          "digital": "0:00:07",
+          "decimal": "0.00",
+          "text": "7 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "categories": [
+        {
+          "name": "Writing Docs",
+          "total_seconds": 7.307,
+          "digital": "0:00:07",
+          "decimal": "0.00",
+          "text": "7 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ]
+    }
+  ],
+  "start": "2026-02-18T00:00:00Z",
+  "end": "2026-02-18T23:59:59Z",
+  "branches": [],
+  "available_branches": [],
+  "color": null,
+  "cumulative_total": {
+    "seconds": 7.307,
+    "text": "7 secs",
+    "digital": "0:00",
+    "decimal": "0.00"
+  },
+  "daily_average": {
+    "holidays": 0,
+    "days_minus_holidays": 1,
+    "days_including_holidays": 1,
+    "seconds": 7,
+    "seconds_including_other_language": 7,
+    "text": "0 secs",
+    "text_including_other_language": "0 secs"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "regex-based cyclomatic complexity (dsqi_collect.py)",
+  "files": [
+    {
+      "file": "game.js",
+      "functions": 12,
+      "average_complexity": 4.08,
+      "max_complexity": 21,
+      "total_complexity": 49
+    },
+    {
+      "file": "levels.js",
+      "functions": 1,
+      "average_complexity": 4,
+      "max_complexity": 4,
+      "total_complexity": 4
+    }
+  ],
+  "overall_average": 4.07,
+  "overall_max": 21
+}

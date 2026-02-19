@@ -1,0 +1,124 @@
+[
+  {
+    "artifact_id": 4,
+    "artifact_slug": "04-css-flexbox-trainer",
+    "session_number": 1,
+    "timestamp": "2026-02-18T20:17:48.107737+00:00",
+    "date": "2026-02-18",
+    "duration_minutes": 37,
+    "ai_tools_used": [
+      "GitHub Copilot with Claude Opus 4.6"
+    ],
+    "prompts": [
+      {
+        "prompt_number": 1,
+        "timestamp": "2026-02-18T20:17:48.107737+00:00",
+        "type": "design",
+        "summary": "Asked AI to conceive an active-learning browser game for teaching CSS Flexbox to 1st year web development students. Constraints: client-side only, zero dependencies, students should type real CSS and see real-time visual updates. AI designed 'Flexbox Forge' \u2014 a 10-level progressive training game with a live code editor, target vs preview split-screen comparison, property reference chips, iframe-based CSS isolation, and a forge/workshop dark theme.",
+        "outcome": "AI produced a detailed implementation prompt covering: 10 levels (display:flex \u2192 flex-direction \u2192 justify-content \u2192 align-items \u2192 flex-wrap \u2192 gap \u2192 flex-grow \u2192 align-self \u2192 order \u2192 combined capstone), visual design (dark navy/forge-red/amber theme), real-time preview via iframe srcdoc, property-value checking system, scoring, and 3-file structure (index.html, style.css, game.js)."
+      },
+      {
+        "prompt_number": 2,
+        "timestamp": "2026-02-18T20:25:00.000000+00:00",
+        "type": "implementation",
+        "summary": "Fed full implementation prompt to AI \u2014 included all 3 files (index.html, style.css, game.js) with 10 levels, real-time CSS parsing via custom-built parser, iframe srcdoc rendering, property-value matching, scoring, hints, and overlay system. Zero external dependencies \u2014 AI attempted to write its own CSS parser and HTML syntax highlighter from scratch.",
+        "outcome": "FAILED \u2014 LLM processing timed out. The combined complexity of implementing a bespoke CSS parser, HTML syntax highlighter, 10-level game engine with iframe rendering, and full UI in a single zero-dependency prompt exceeded the model's effective generation capacity. This is the second prompt failure across the study (first was Artifact 3 prompt 2, SQL parser)."
+      },
+      {
+        "prompt_number": 3,
+        "timestamp": "2026-02-18T20:40:00.000000+00:00",
+        "type": "design-revision",
+        "summary": "Researcher lifted the zero-dependency constraint for this artifact. Instructed AI to use external client-side CDN libraries instead of writing parsers from scratch \u2014 specifically suggested leveraging existing JS libraries for CSS editing in the browser. Shorter, simpler prompt. AI chose CodeMirror 5 (CSS mode + material-darker theme) for the live CSS editor with syntax highlighting, and highlight.js (xml mode + atom-one-dark theme) for the read-only HTML viewer. This eliminated the need for a custom CSS parser and custom HTML syntax highlighter \u2014 the two components that caused the prompt 2 timeout.",
+        "outcome": "Revised implementation approach: 2 CDN libraries (CodeMirror 5, highlight.js) handle editor + syntax highlighting. Game engine (game.js) now only needs: 10-level data, simple regex-based CSS property-value checking (not full parsing), iframe srcdoc rendering, scoring, and overlay system. Significantly reduced prompt complexity."
+      },
+      {
+        "prompt_number": 4,
+        "timestamp": "2026-02-18T20:42:00.000000+00:00",
+        "type": "implementation",
+        "summary": "Fed the revised, shorter implementation prompt with CDN libraries permitted. AI generated all 3 files: index.html (~90 lines \u2014 CDN links for CodeMirror 5 + highlight.js, 2-column CSS Grid layout with code/visual split, iframes, overlay), style.css (~330 lines \u2014 dark forge theme with CSS variables, CodeMirror overrides, highlight.js overrides, chip/hint/match-bar/overlay styling, responsive breakpoints), game.js (~340 lines \u2014 IIFE module, CodeMirror instance, 10 complete levels with data/starter/target/checkProperties/chips/hints/explanations, regex CSS parser, match % calculator, iframe srcdoc rendering, hint system with \u221210pt penalty, scoring 100+50 bonus per level, overlay state machine).",
+        "outcome": "SUCCESS \u2014 all 3 files generated in a single prompt. The CDN library approach reduced game.js from an estimated 600+ lines (with custom parser/highlighter) to ~340 lines of pure game logic. Total output: ~760 lines across 3 files."
+      },
+      {
+        "prompt_number": 5,
+        "timestamp": "2026-02-18T20:54:28.544317+00:00",
+        "type": "documentation",
+        "summary": "Asked AI to write README.md in the same format as previous artifacts (11 sections: metadata, overview with pedagogical alignment, architecture with ASCII diagram, game content with level details, game mechanics, files with cloc data, requirements, testing matrix, deployment, development log, DSQI metrics placeholder, technical summary). Replaced the template README with full documentation.",
+        "outcome": "SUCCESS \u2014 comprehensive README generated matching Artifact 3 format. 11 sections, ~400 lines, covering all 10 levels, design decisions (including rationale for CDN libraries after prompt 2 failure), 24-item test matrix, known limitations, and DSQI placeholders for session close."
+      }
+    ],
+    "prompt_strategy": "Collaborative design \u2192 failed implementation (custom parser too complex) \u2192 design revision (CDN libraries for CodeMirror + highlight.js) \u2192 simplified implementation (SUCCESS). Key learning: same pattern as Artifact 3 \u2014 offloading parser/editor complexity to established libraries makes the prompt feasible.",
+    "outcome": null,
+    "observations": "Prompt 2 failed \u2014 same root cause as Artifact 3 prompt 2: asking the AI to write a domain-specific parser from scratch (CSS this time, SQL last time) alongside a full game engine exceeds single-prompt capacity. Emerging pattern: parser-heavy artifacts are the most likely to cause prompt failures. Prompt 3 design revision lifted the zero-dependency constraint. Prompt 4 succeeded \u2014 CodeMirror and highlight.js handled the heavy lifting, letting the AI focus on game logic. This is the first artifact to use external libraries; all previous artifacts were zero-dependency. Research note: the 'disposable' quality may be slightly affected by CDN dependencies (if CDN is down, artifact doesn't work), but the pedagogical core is unaffected.",
+    "code_written_lines": 0,
+    "code_ai_generated_lines": 1055,
+    "prompts_count": 5,
+    "challenges": [
+      {
+        "type": "prompt-failure",
+        "prompt_number": 2,
+        "description": "LLM timed out generating zero-dependency CSS parser + HTML highlighter + 10-level game engine. Same pattern as Artifact 3: bespoke parser complexity is the bottleneck.",
+        "resolution": "Allowing external client-side libraries (CSS parsing, syntax highlighting) to reduce prompt complexity. Design revision needed before next implementation attempt."
+      }
+    ],
+    "manual_testing": {
+      "started": "2026-02-18T20:44:03.377695+00:00",
+      "completed": "2026-02-18T20:47:03.788029+00:00",
+      "bugs_found": [],
+      "observations": []
+    },
+    "session_closed": true,
+    "closed_timestamp": "2026-02-18T20:55:10.978870+00:00",
+    "files_produced": [
+      {
+        "file": "game.js",
+        "lines": 541,
+        "language": "JavaScript"
+      },
+      {
+        "file": "index.html",
+        "lines": 93,
+        "language": "HTML"
+      },
+      {
+        "file": "style.css",
+        "lines": 421,
+        "language": "CSS"
+      }
+    ],
+    "total_lines": 1055,
+    "wakatime": {
+      "project": "04-css-flexbox-trainer",
+      "date": "2026-02-18",
+      "total_seconds": 480.517,
+      "total_text": "8 mins",
+      "categories": {
+        "writing_docs_seconds": 267.829,
+        "coding_seconds": 180.441,
+        "ai_coding_seconds": 32.247
+      },
+      "languages": {
+        "Markdown": {
+          "seconds": 300.076,
+          "percent": 62.45
+        },
+        "HTML": {
+          "seconds": 180.441,
+          "percent": 37.55
+        }
+      },
+      "files": [
+        {
+          "name": "README.md",
+          "seconds": 300.076
+        },
+        {
+          "name": "index.html",
+          "seconds": 180.441
+        }
+      ],
+      "machine": "Andy-LeGearXPS",
+      "editor": "VS Code"
+    },
+    "duration_estimate_note": "Session wall-clock time approx 37 mins. WakaTime active editor time: 8 mins."
+  }
+]

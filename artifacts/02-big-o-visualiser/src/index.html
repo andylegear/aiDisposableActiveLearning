@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big-O Dojo</title>
+  <!-- CS5703 / CE4003 — AI-Generated Disposable Software Study — Artifact 02 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- ═══ Top Bar ═══ -->
+    <header id="top-bar" class="hidden">
+      <div id="belt-bar">
+        <div id="belt-segments"></div>
+        <div id="belt-label">White Belt</div>
+      </div>
+      <div id="status-row">
+        <span id="score-display">Score: <strong id="score-value">0</strong></span>
+        <span id="streak-display">Streak: <strong id="streak-value">0</strong><span id="mult-badge"></span></span>
+        <span id="timer-display" class="hidden">⏱ <strong id="timer-value">15</strong></span>
+      </div>
+    </header>
+
+    <!-- ═══ Main Game Area ═══ -->
+    <main id="game-main" class="hidden">
+
+      <!-- Left: code panel -->
+      <section id="code-panel">
+        <h3 id="code-header"></h3>
+        <pre id="code-block"><code id="code-content"></code></pre>
+        <!-- Arena uses a second code block -->
+        <h3 id="code-header-b" class="hidden"></h3>
+        <pre id="code-block-b" class="hidden"><code id="code-content-b"></code></pre>
+      </section>
+
+      <!-- Right: visualisation panel -->
+      <section id="viz-panel">
+        <div id="viz-instruction"></div>
+        <canvas id="viz-canvas"></canvas>
+        <div id="viz-label"></div>
+      </section>
+
+    </main>
+
+    <!-- ═══ Bottom Bar ═══ -->
+    <footer id="bottom-bar" class="hidden">
+      <div id="answer-buttons"></div>
+      <div id="explanation-box" class="hidden"></div>
+      <div id="action-row"></div>
+    </footer>
+
+    <!-- ═══ Overlay (menu, intros, level-complete, game-over) ═══ -->
+    <div id="overlay">
+      <div id="overlay-box">
+        <div id="overlay-content"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="levels.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

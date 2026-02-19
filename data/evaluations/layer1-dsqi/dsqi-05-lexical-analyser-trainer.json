@@ -1,0 +1,125 @@
+{
+  "artifact_id": 5,
+  "artifact_slug": "05-lexical-analyser-trainer",
+  "evaluator": "self (automated collection + manual scoring)",
+  "date": "2026-02-18",
+  "notes": "M and C metrics collected automatically by dsqi_collect.py. P and E metrics require human evaluators \u2014 fill in after reviews are complete.",
+  "maintenance_cost": {
+    "dependency_count": 0,
+    "dependency_count_normalized": 0.0,
+    "cyclomatic_complexity_avg": 4.4,
+    "cyclomatic_complexity_normalized": 0.2933,
+    "deployment_steps": 3,
+    "deployment_steps_normalized": 0.3,
+    "M_score": 0.1978
+  },
+  "creation_cost": {
+    "lines_of_code": 912,
+    "lines_of_code_normalized": 0.1824,
+    "ai_generation_ratio": 1.0,
+    "development_time_minutes": 54,
+    "development_time_normalized": 0.1125,
+    "C_score": 0.0983
+  },
+  "pedagogical_alignment": {
+    "concept_coverage": null,
+    "icap_level": null,
+    "icap_score": null,
+    "P_score": null
+  },
+  "pedagogical_purity": {
+    "conceptual_fidelity_raw": null,
+    "conceptual_fidelity_normalized": null,
+    "process_replicability_raw": null,
+    "process_replicability_normalized": null,
+    "E_score": null
+  },
+  "weights": {
+    "w1_maintenance": 0.3,
+    "w2_creation": 0.2,
+    "w3_pedagogical": 0.3,
+    "w4_purity": 0.2
+  },
+  "dsqi_score": null,
+  "raw_metrics": {
+    "collected_at": "2026-02-18T22:23:45.566429+00:00",
+    "collector_version": "1.0.0",
+    "cloc": {
+      "header": {
+        "cloc_url": "github.com/AlDanial/cloc",
+        "cloc_version": "2.06",
+        "elapsed_seconds": 0.398766040802002,
+        "n_files": 3,
+        "n_lines": 1052,
+        "files_per_second": 7.52320833029405,
+        "lines_per_second": 2638.13838782311
+      },
+      "JavaScript": {
+        "nFiles": 1,
+        "blank": 55,
+        "comment": 40,
+        "code": 594
+      },
+      "CSS": {
+        "nFiles": 1,
+        "blank": 18,
+        "comment": 16,
+        "code": 254
+      },
+      "HTML": {
+        "nFiles": 1,
+        "blank": 5,
+        "comment": 6,
+        "code": 64
+      },
+      "SUM": {
+        "blank": 78,
+        "comment": 62,
+        "code": 912,
+        "nFiles": 3
+      }
+    },
+    "complexity": {
+      "tool": "regex-based cyclomatic complexity (dsqi_collect.py)",
+      "files": [
+        {
+          "file": "game.js",
+          "functions": 15,
+          "average_complexity": 4.4,
+          "max_complexity": 18,
+          "total_complexity": 66
+        }
+      ],
+      "overall_average": 4.4,
+      "overall_max": 18
+    },
+    "dependency_analysis": {
+      "has_package_json": false,
+      "has_requirements_txt": false,
+      "production_dependencies": [],
+      "dependency_count": 0
+    },
+    "deployment": {
+      "method": "GitHub Pages (static)",
+      "steps_description": [
+        "git add .",
+        "git commit -m 'deploy'",
+        "git push origin main"
+      ],
+      "steps_count": 3
+    },
+    "dev_time": {
+      "wall_clock_minutes": 54,
+      "wakatime_seconds": 0,
+      "sessions": 1,
+      "source": "data\\development-logs\\sessions-05-lexical-analyser-trainer.json"
+    },
+    "ai_ratio": {
+      "ratio": 1.0,
+      "ai_generated_lines": 1052,
+      "human_written_lines": 0,
+      "total_lines": 1052,
+      "source": "data\\development-logs\\sessions-05-lexical-analyser-trainer.json"
+    }
+  }
+}
