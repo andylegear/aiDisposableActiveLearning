@@ -19,8 +19,8 @@
         "coordinator_email": null
       },
       "status": "developed",
-      "deployment_url": null,
-      "repository_url": null,
+      "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/01-unit-testing-gauntlet/src/index.html",
+      "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/01-unit-testing-gauntlet",
       "tech_stack": [
         "HTML",
         "CSS",
@@ -64,8 +64,8 @@
         "coordinator_email": null
       },
       "status": "developed",
-      "deployment_url": null,
-      "repository_url": null,
+      "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/02-big-o-visualiser/src/index.html",
+      "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/02-big-o-visualiser",
       "tech_stack": [
         "HTML",
         "CSS",
@@ -109,8 +109,8 @@
         "coordinator_email": null
       },
       "status": "developed",
-      "deployment_url": null,
-      "repository_url": null,
+      "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/03-sql-injection-simulator/src/index.html",
+      "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/03-sql-injection-simulator",
       "tech_stack": [
         "HTML",
         "CSS",
@@ -154,8 +154,8 @@
         "coordinator_email": null
       },
       "status": "developed",
-      "deployment_url": null,
-      "repository_url": null,
+      "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/04-css-flexbox-trainer/src/index.html",
+      "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/04-css-flexbox-trainer",
       "tech_stack": [
         "HTML",
         "CSS",
@@ -197,8 +197,8 @@
         "coordinator_email": null
       },
       "status": "developed",
-      "deployment_url": null,
-      "repository_url": null,
+      "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/05-lexical-analyser-trainer/src/index.html",
+      "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/05-lexical-analyser-trainer",
       "tech_stack": [
         "HTML",
         "CSS",

@@ -10,8 +10,8 @@
 | **Target Module**      | CS4081: Compiler Design                                                  |
 | **Module Coordinator** | _[To be confirmed]_                                                      |
 | **Status**             | `developed`                                                              |
-| **Deployment URL**     | _[To be added after deployment]_                                         |
-| **Repository URL**     | _[To be added after creation]_                                           |
+| **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/05-lexical-analyser-trainer/src/index.html |
+| **Repository URL**     | https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/05-lexical-analyser-trainer |
 
 ---
 

@@ -10,8 +10,8 @@
 | **Target Module**      | CE4003: Algorithms and Data Structures                                 |
 | **Module Coordinator** | _[To be confirmed]_                                                    |
 | **Status**             | `developed`                                                            |
-| **Deployment URL**     | _[To be added after deployment]_                                       |
-| **Repository URL**     | _[To be added after creation]_                                         |
+| **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/02-big-o-visualiser/src/index.html |
+| **Repository URL**     | https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/02-big-o-visualiser |
 
 ---
 

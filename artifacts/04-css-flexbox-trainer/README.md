@@ -10,8 +10,8 @@
 | **Target Module**      | CE4026: Web Development                                                |
 | **Module Coordinator** | _[To be confirmed]_                                                    |
 | **Status**             | `developed`                                                            |
-| **Deployment URL**     | _[To be added after deployment]_                                       |
-| **Repository URL**     | _[To be added after creation]_                                         |
+| **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/04-css-flexbox-trainer/src/index.html |
+| **Repository URL**     | https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/04-css-flexbox-trainer |
 
 ---
 

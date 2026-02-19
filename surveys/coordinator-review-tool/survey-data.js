@@ -19,9 +19,9 @@ const ARTIFACTS = [
     learningObjective:
       "Students will understand the Test-Driven Development cycle by writing failing tests, implementing fixes, and refactoring code.",
     liveUrl:
-      "https://your-github-pages-url/artifacts/01-unit-testing-gauntlet/src/",
+      "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/01-unit-testing-gauntlet/src/index.html",
     repoUrl:
-      "https://github.com/your-repo/artifacts/01-unit-testing-gauntlet",
+      "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/01-unit-testing-gauntlet",
   },
   {
     id: "02-big-o-visualiser",
@@ -33,8 +33,8 @@ const ARTIFACTS = [
     learningObjective:
       "Students will classify algorithm complexity, predict growth behaviour, and compare algorithmic efficiency.",
     liveUrl:
-      "https://your-github-pages-url/artifacts/02-big-o-visualiser/src/",
-    repoUrl: "https://github.com/your-repo/artifacts/02-big-o-visualiser",
+      "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/02-big-o-visualiser/src/index.html",
+    repoUrl: "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/02-big-o-visualiser",
   },
   {
     id: "03-sql-injection-simulator",
@@ -46,9 +46,9 @@ const ARTIFACTS = [
     learningObjective:
       "Students will understand how SQL injection attacks exploit string concatenation vulnerabilities and how parameterised queries prevent them.",
     liveUrl:
-      "https://your-github-pages-url/artifacts/03-sql-injection-simulator/src/",
+      "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/03-sql-injection-simulator/src/index.html",
     repoUrl:
-      "https://github.com/your-repo/artifacts/03-sql-injection-simulator",
+      "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/03-sql-injection-simulator",
   },
   {
     id: "04-css-flexbox-trainer",
@@ -60,8 +60,8 @@ const ARTIFACTS = [
     learningObjective:
       "Students will learn CSS Flexbox properties by writing CSS to match target layouts across 10 progressive levels.",
     liveUrl:
-      "https://your-github-pages-url/artifacts/04-css-flexbox-trainer/src/",
-    repoUrl: "https://github.com/your-repo/artifacts/04-css-flexbox-trainer",
+      "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/04-css-flexbox-trainer/src/index.html",
+    repoUrl: "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/04-css-flexbox-trainer",
   },
   {
     id: "05-lexical-analyser-trainer",
@@ -73,9 +73,9 @@ const ARTIFACTS = [
     learningObjective:
       "Students will understand regular expressions and lexical analysis by writing patterns that tokenise source code.",
     liveUrl:
-      "https://your-github-pages-url/artifacts/05-lexical-analyser-trainer/src/",
+      "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/05-lexical-analyser-trainer/src/index.html",
     repoUrl:
-      "https://github.com/your-repo/artifacts/05-lexical-analyser-trainer",
+      "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/05-lexical-analyser-trainer",
   },
 ];
 

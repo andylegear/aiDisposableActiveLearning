@@ -10,8 +10,8 @@
 | **Target Module**      | CS5703: Software Quality                                   |
 | **Module Coordinator** | _[To be confirmed]_                                        |
 | **Status**             | `developed`                                                |
-| **Deployment URL**     | _[To be added after deployment]_                           |
-| **Repository URL**     | _[To be added after creation]_                             |
+| **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/01-unit-testing-gauntlet/src/index.html |
+| **Repository URL**     | https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/01-unit-testing-gauntlet |
 
 ---
 

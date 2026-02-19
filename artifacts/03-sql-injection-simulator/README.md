@@ -10,8 +10,8 @@
 | **Target Module**      | CS5703: Database Systems                                               |
 | **Module Coordinator** | _[To be confirmed]_                                                    |
 | **Status**             | `developed`                                                            |
-| **Deployment URL**     | _[To be added after deployment]_                                       |
-| **Repository URL**     | _[To be added after creation]_                                         |
+| **Deployment URL**     | https://andylegear.github.io/aiDisposableActiveLearning/artifacts/03-sql-injection-simulator/src/index.html |
+| **Repository URL**     | https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/03-sql-injection-simulator |
 
 ---
 
