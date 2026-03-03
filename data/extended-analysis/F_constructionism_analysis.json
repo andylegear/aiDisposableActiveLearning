@@ -1,0 +1,185 @@
+{
+  "artifacts": {
+    "01-unit-testing-gauntlet": {
+      "name": "Unit Testing Gauntlet",
+      "meaningful_artifact": {
+        "scores": [
+          4,
+          4,
+          4
+        ],
+        "mean": 4.0,
+        "sd": 0.0,
+        "justifications": [
+          "Writing a unit test from reading a spec.  Fixing a bug.  Refactoring code.",
+          "good feedback mechanism",
+          "the scope of the output does remain constrained by the exercise desired outcomes, but the output from the student is validated by the software, which ensures the learners code is functioning correctly, and gives rich feedback to guide and reward the learner for their efforts."
+        ]
+      },
+      "learning_through_building": {
+        "scores": [
+          4,
+          5,
+          5
+        ],
+        "mean": 4.67,
+        "sd": 0.58,
+        "justifications": [
+          "Focuses on the core goals, no frills, understanding the concepts necessary to write code and tests.",
+          "I would ensure that AI tools are not available for the students else the learning becomes marginal",
+          "The level system with different cases to solve is good as the repeated test case writing reenforces syntax. the 3 steps within each level all focus on different aspects of learning, first tests then debugging then refactoring, this keeps the program engaging, reduces repetitive interaction that might lead to boredom and guessing without learning, like a standard 'abcd quiz' for instance."
+        ]
+      },
+      "combined_mean": 4.33,
+      "n_reviewers": 3
+    },
+    "02-big-o-visualiser": {
+      "name": "Big-O Visualiser",
+      "meaningful_artifact": {
+        "scores": [
+          4,
+          3,
+          3
+        ],
+        "mean": 3.33,
+        "sd": 0.58,
+        "justifications": [
+          "The graphs were a little tricky, I tried to drag a line the first time.  It would be nice to be able to undo.",
+          "By dint of multiple answer, but its hardly meaningless with the explanation displayed",
+          "I wouldn't say the output is meaningless as I still felt it reinforced learning, but the design of the interaction doesn't aim to produce outputs, its more visual stimulation. The curve selection level is an interesting part that gives a bit more freedom to the user to feel in control of their decision. "
+        ]
+      },
+      "learning_through_building": {
+        "scores": [
+          4,
+          2,
+          2
+        ],
+        "mean": 2.67,
+        "sd": 1.15,
+        "justifications": [
+          "I'm not sure \"making\" is the right term, but you need to understand code and select the right notation as well as draw the performance graph of that notation.",
+          "The user is not building, making or fixing",
+          "the tool is based on visual recognition instead of building and making. the learner is responding to something that is already built and presented to them. the curve analysis gives a taste of a building activity as they must construct a curve prediction based on the given notation. "
+        ]
+      },
+      "combined_mean": 3.0,
+      "n_reviewers": 3
+    },
+    "03-sql-injection-simulator": {
+      "name": "SQL Injection Simulator",
+      "meaningful_artifact": {
+        "scores": [
+          4,
+          5,
+          4
+        ],
+        "mean": 4.33,
+        "sd": 0.58,
+        "justifications": [
+          "A working snippet that demonstrates the weakness with some extra goals thrown in beyond the basics.",
+          "Feels like hands-on training against a DB - its a tremendous look and feel",
+          "the main output is SQL statements required to complete a specific scenario, and it is hard to guess or copy the answer without understanding the cause and solution to the problem. "
+        ]
+      },
+      "learning_through_building": {
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "mean": 4.67,
+        "sd": 0.58,
+        "justifications": [
+          "You need to understand the weakness and exploit it.",
+          "Except for the problem identfied below",
+          "The tool gets learners to understand SQL syntax by actually crafting exploits.  They learn about vulnerabilities through hands-on practice by building the SQL statements to perform various database exploits. To further boost the fixing aspect, another level could flip to the other side and secure the statements to avoid the exploits. "
+        ]
+      },
+      "combined_mean": 4.5,
+      "n_reviewers": 3
+    },
+    "04-css-flexbox-trainer": {
+      "name": "CSS Flexbox Trainer",
+      "meaningful_artifact": {
+        "scores": [
+          5,
+          4,
+          4
+        ],
+        "mean": 4.33,
+        "sd": 0.58,
+        "justifications": [
+          "CSS is notoriously tricky, covers some core tweaks to organise a UI.",
+          "They are basic, but this is the fundamental knowledge",
+          "the learner will see the effects of the CSS changes they produce and how they alter the presented elements. these artifacts are limited to the scope of the challenge per level. "
+        ]
+      },
+      "learning_through_building": {
+        "scores": [
+          5,
+          5,
+          3
+        ],
+        "mean": 4.33,
+        "sd": 1.15,
+        "justifications": [
+          "User is presented with the property and they must use the correct value to get the desired layout.",
+          "Enjoyed it",
+          "the learner is creating CSS but they remain small snippets within a controlled scope with a controlled input and outcome. "
+        ]
+      },
+      "combined_mean": 4.33,
+      "n_reviewers": 3
+    },
+    "05-lexical-analyser-trainer": {
+      "name": "Lexical Analyser Trainer",
+      "meaningful_artifact": {
+        "scores": [
+          5,
+          5,
+          3
+        ],
+        "mean": 4.33,
+        "sd": 1.15,
+        "justifications": [
+          "The patterns get complex and are useful for real world situations.",
+          "It produces genuine regular expressions",
+          "the output is limited to the scope of the answer. I think the object can be achieved by guessing instead of a direct understanding of the patterns. "
+        ]
+      },
+      "learning_through_building": {
+        "scores": [
+          5,
+          5,
+          2
+        ],
+        "mean": 4.0,
+        "sd": 1.73,
+        "justifications": [
+          "Results on the fly show instant results of your actions.",
+          "Progress bar works well in this scenario",
+          "the learner must construct expressions to answer each level, but direction and understanding of why and how are missing or not prominent enough. "
+        ]
+      },
+      "combined_mean": 4.17,
+      "n_reviewers": 3
+    }
+  },
+  "aggregate": {
+    "meaningful_grand_mean": 4.07,
+    "meaningful_sd": 0.7,
+    "building_grand_mean": 4.07,
+    "building_sd": 1.22,
+    "overall_mean": 4.07,
+    "n_observations": 15
+  },
+  "tension_analysis": {
+    "description": "Examines whether disposable (AI-generated, single-use) tools can support constructionist learning that values 'meaningful artifacts'.",
+    "meaningful_high_count": 12,
+    "meaningful_low_count": 0,
+    "building_high_count": 11,
+    "building_low_count": 3,
+    "interpretation": "High meaningful + high building → disposable tools CAN support constructionism. Low meaningful + high building → tools support activity but not meaning-making. The gap between the two dimensions reveals the 'disposability tension'."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "codebook_version": "1.0",
+  "approach": "deductive",
+  "description": "Deductive codebook for AI-assisted thematic analysis of expert and coordinator review qualitative segments. Categories derived from the study's theoretical framework.",
+  "categories": [
+    {
+      "code": "ICAP",
+      "label": "ICAP Engagement",
+      "description": "References to learning engagement modes: passive reception, active manipulation, constructive generation, or interactive co-creation. Includes mentions of cognitive engagement depth, level of student participation, or engagement mode classifications.",
+      "theoretical_source": "Chi & Wylie (2014). The ICAP Framework.",
+      "example_keywords": ["passive", "active", "constructive", "interactive", "engagement", "cognitive", "participation", "hands-on", "building", "creating", "co-creation"],
+      "example_segments": [
+        "Students actively engage rather than passively watching",
+        "The tool requires constructive responses, not just multiple choice"
+      ]
+    },
+    {
+      "code": "CONSTRUCTIONISM",
+      "label": "Constructionism",
+      "description": "References to learning through building, creating, or making meaningful artifacts. Includes mentions of the relationship between construction activities and understanding, personal relevance of what is being built, or the value of producing shareable outputs.",
+      "theoretical_source": "Papert & Harel (1991). Situating Constructionism.",
+      "example_keywords": ["build", "create", "make", "construct", "artifact", "meaningful", "hands-on", "craft", "produce", "output", "project"],
+      "example_segments": [
+        "Feels like hands-on training against a DB",
+        "The user is not building, making or fixing"
+      ]
+    },
+    {
+      "code": "USABILITY",
+      "label": "Usability",
+      "description": "References to interface design quality, navigation, visual clarity, consistency, error handling, learnability, or any of Nielsen's 10 usability heuristics. Includes comments about user experience, ease of use, or interface friction.",
+      "theoretical_source": "Nielsen (1994). Usability Engineering.",
+      "example_keywords": ["navigation", "interface", "design", "clear", "confusing", "intuitive", "layout", "responsive", "mobile", "control", "freedom", "error", "feedback"],
+      "example_segments": [
+        "User control and freedom - during an exercise, how does a user return to a previous exercise",
+        "It's clean, easy to use"
+      ]
+    },
+    {
+      "code": "PEDAGOGICAL_VALUE",
+      "label": "Pedagogical Value",
+      "description": "References to learning outcomes, curriculum alignment, teaching utility, concept coverage, assessment potential, or educational effectiveness. Includes mentions of how well the tool supports the intended learning objectives or fits into existing course structures.",
+      "theoretical_source": "Derived from TPACK framework (Koehler & Mishra, 2009) and evaluation protocol.",
+      "example_keywords": ["learning", "teaching", "curriculum", "lecture", "concept", "objective", "assessment", "students", "classroom", "semester", "module"],
+      "example_segments": [
+        "This can replace a large chunk of passive theoretical learning",
+        "Very focused on the core concept"
+      ]
+    },
+    {
+      "code": "DISPOSABILITY",
+      "label": "Disposability",
+      "description": "References to the simplicity, replaceability, scope limitation, rapid creation, or throwaway nature of the software. Includes comments about AI generation capability, minimal dependencies, single-purpose design, or the artefact being easy to regenerate or discard.",
+      "theoretical_source": "DSQI framework; Wiley (2000) on reusability paradox.",
+      "example_keywords": ["simple", "disposable", "replaceable", "single-purpose", "lightweight", "minimal", "regenerate", "AI", "generated", "quick", "scope"],
+      "example_segments": [
+        "If AI created this, it's pretty disposable",
+        "It does stick to one topic"
+      ]
+    },
+    {
+      "code": "TECHNICAL_QUALITY",
+      "label": "Technical Quality",
+      "description": "References to code quality, performance, reliability, bugs, technical implementation, browser compatibility, or software engineering concerns. Includes mentions of specific technical issues or praise for technical execution.",
+      "theoretical_source": "Software engineering best practices; ISO/IEC 25010.",
+      "example_keywords": ["bug", "performance", "code", "technical", "implementation", "browser", "compatibility", "responsive", "timer", "session", "crash"],
+      "example_segments": [
+        "There were some mobile responsive issues",
+        "The feeling of time pressure from the 15 sec timer"
+      ]
+    },
+    {
+      "code": "ADOPTION_BARRIER",
+      "label": "Adoption Barriers",
+      "description": "References to obstacles for classroom use, integration challenges, prerequisites for deployment, concerns about student access, or reasons a coordinator might hesitate to adopt the tool. Includes practical constraints and contextual limitations.",
+      "theoretical_source": "Davis (1989). Technology Acceptance Model.",
+      "example_keywords": ["barrier", "obstacle", "concern", "challenge", "difficult", "require", "ensure", "limitation", "access", "laptop", "mobile", "device"],
+      "example_segments": [
+        "I would have to ensure the students bring a laptop to class",
+        "I would ensure that AI tools are not available for the students"
+      ]
+    }
+  ],
+  "coding_instructions": {
+    "assignment_rule": "Assign one primary code and up to two secondary codes per segment. Use 'UNCODED' if no category fits.",
+    "confidence_scale": "0.0 to 1.0, where 1.0 = certain match, 0.5 = plausible but ambiguous",
+    "minimum_confidence": 0.3,
+    "segment_types": [
+      "expert_icap_justification",
+      "expert_constructionism_justification",
+      "expert_heuristic_comment",
+      "expert_E1_justification",
+      "expert_E2_justification",
+      "expert_most_positive",
+      "expert_most_negative",
+      "expert_other_comments",
+      "coordinator_Q7_benefit",
+      "coordinator_Q8_drawback"
+    ]
+  }
+}

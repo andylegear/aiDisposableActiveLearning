@@ -25,10 +25,11 @@ Five such artifacts were produced across five CS modules in 199 minutes of wall-
 | Metric | Value |
 |:--|:--|
 | Artifacts produced | 5 |
-| Total lines of code | 6,993 |
+| Total lines of code | 6,241 (cloc, code only) |
 | Total development time | 199 minutes (~3.3 hours) |
 | Lines written by human | 0 |
 | AI generation ratio | 1.0 |
+| Mean DSQI | **0.864** (range 0.790–0.911) |
 
 ---
 
@@ -62,7 +63,9 @@ aiDisposableActiveLearning/
 │   ├── artifact-registry.json         ← Master registry: metadata, URLs, DSQI scores
 │   ├── development-logs/              ← Per-artifact session logs (YAML) + WakaTime exports
 │   ├── evaluations/
-│   │   └── layer1-dsqi/               ← DSQI evaluation JSON per artifact
+│   │   ├── layer1-dsqi/               ← DSQI evaluation JSON per artifact (M, C, P, E, final)
+│   │   ├── layer2-expert-review/      ← Expert reviewer responses (3 reviewers × 5 artifacts)
+│   │   └── layer3-coordinator-review/ ← Module coordinator responses (1 per artifact)
 │   └── static-analysis/               ← Per-artifact cloc + complexity output
 │       ├── 01-unit-testing-gauntlet/
 │       ├── 02-big-o-visualiser/
@@ -85,6 +88,9 @@ aiDisposableActiveLearning/
 │
 ├── analysis/                          ← Reproducible analysis scripts
 │   ├── dsqi_collect.py                ← Computes DSQI M and C sub-scores from static analysis
+│   ├── dsqi_score.py                  ← Computes P, E and final DSQI from all evaluation layers
+│   ├── validate_data.py               ← JSON schema validation for all data files
+│   ├── study_status.py                ← Study progress dashboard
 │   └── wakatime_export.py             ← Exports WakaTime session data
 │
 ├── paper/                             ← Manuscript drafts and submission materials
@@ -99,13 +105,13 @@ aiDisposableActiveLearning/
 
 ## Artifacts
 
-| # | Name | Module | Domain | Lines | Time | DSQI Partial |
-|:-:|:-----|:-------|:-------|------:|-----:|:-------------|
-| 1 | [The Unit Testing Gauntlet](artifacts/01-unit-testing-gauntlet/) | CS5703 | TDD / Red-Green-Refactor | 1,493 | 19 min | 0.422 |
-| 2 | [The Big-O Dojo](artifacts/02-big-o-visualiser/) | CS4115 | Algorithm Complexity | 1,946 | 36 min | 0.436 |
-| 3 | [SQL Injection Lab](artifacts/03-sql-injection-simulator/) | CS4416 | SQL Injection / Defence | 1,631 | 53 min | 0.413 |
-| 4 | [Flexbox Forge](artifacts/04-css-flexbox-trainer/) | CS4141/CS4222 | CSS Flexbox Layout | 871 | 37 min | 0.440 |
-| 5 | [Lex Arena](artifacts/05-lexical-analyser-trainer/) | CS4158 | Lexical Analysis / Regex | 1,052 | 54 min | 0.421 |
+| # | Name | Module | Domain | Lines | Time | DSQI |
+|:-:|:-----|:-------|:-------|------:|-----:|:----:|
+| 1 | [The Unit Testing Gauntlet](artifacts/01-unit-testing-gauntlet/) | CS5703 | TDD / Red-Green-Refactor | 1,397 | 19 min | **0.897** |
+| 2 | [The Big-O Dojo](artifacts/02-big-o-visualiser/) | CS4115 | Algorithm Complexity | 1,604 | 36 min | **0.911** |
+| 3 | [SQL Injection Lab](artifacts/03-sql-injection-simulator/) | CS4416 | SQL Injection / Defence | 1,455 | 53 min | **0.896** |
+| 4 | [Flexbox Forge](artifacts/04-css-flexbox-trainer/) | CS4141/CS4222 | CSS Flexbox Layout | 872 | 37 min | **0.790** |
+| 5 | [Lex Arena](artifacts/05-lexical-analyser-trainer/) | CS4158 | Lexical Analysis / Regex | 913 | 54 min | **0.827** |
 
 ### Live Demos
 
@@ -131,18 +137,21 @@ DSQI = 0.3(1 − M) + 0.2(1 − C) + 0.3P + 0.2E
 |:----------|:------:|:-------|:-------|
 | **M** — Maintenance Cost | 0.3 | Automated (cyclomatic complexity, lines of code) | ✅ Collected |
 | **C** — Creation Cost | 0.2 | Automated (dev time, prompt count, WakaTime) | ✅ Collected |
-| **P** — Pedagogical Utility | 0.3 | Module coordinator survey (P₁ alignment + P₂ ICAP) | 🔄 In progress |
-| **E** — Expert Purity | 0.2 | Expert reviewer survey (heuristics, fidelity, replicability) | 🔄 In progress |
+| **P** — Pedagogical Utility | 0.3 | Module coordinator survey (P₁ alignment + P₂ ICAP) | ✅ Collected |
+| **E** — Expert Purity | 0.2 | Expert reviewer survey (heuristics, fidelity, replicability) | ✅ Collected |
 
-### Automated Results (M and C)
+### Final DSQI Results
 
-| Artifact | M | 1−M | C | 1−C | Partial DSQI |
-|:---------|:---:|:---:|:---:|:---:|:-------------|
-| 01 — Unit Testing Gauntlet | 0.190 | 0.810 | 0.106 | 0.894 | 0.422 + 0.3P + 0.2E |
-| 02 — Big-O Dojo | 0.126 | 0.874 | 0.132 | 0.868 | 0.436 + 0.3P + 0.2E |
-| 03 — SQL Injection Lab | 0.202 | 0.798 | 0.134 | 0.866 | 0.413 + 0.3P + 0.2E |
-| 04 — Flexbox Forge | 0.143 | 0.857 | 0.084 | 0.916 | 0.440 + 0.3P + 0.2E |
-| 05 — Lex Arena | 0.198 | 0.802 | 0.098 | 0.902 | 0.421 + 0.3P + 0.2E |
+| Artifact | M | C | P | E | **DSQI** |
+|:---------|:---:|:---:|:---:|:---:|:--------:|
+| 01 — Unit Testing Gauntlet | 0.190 | 0.106 | 1.000 | 0.875 | **0.897** |
+| 02 — Big-O Dojo | 0.126 | 0.132 | 1.000 | 0.875 | **0.911** |
+| 03 — SQL Injection Lab | 0.202 | 0.134 | 1.000 | 0.917 | **0.896** |
+| 04 — Flexbox Forge | 0.143 | 0.084 | 0.583 | 0.875 | **0.790** |
+| 05 — Lex Arena | 0.198 | 0.098 | 0.742 | 0.917 | **0.827** |
+| | | | | **Mean** | **0.864** |
+
+Three of five artifacts (01, 02, 03) achieved P = 1.0 — rated *Interactive* on the ICAP scale by their module coordinators with maximum curriculum alignment scores. Artifact 04 is the outlier at P = 0.583 (rated *Active*). Expert purity (E) is consistently high across the board (0.875–0.917), indicating strong conceptual fidelity and process replicability as assessed by three independent industry reviewers.
 
 ---
 
@@ -164,7 +173,7 @@ Both surveys are pure client-side web applications. Responses are downloaded as 
 - Python 3.10+
 - `pip install -r requirements.txt`
 
-### Run DSQI Collection
+### Step 1 — Collect M and C Sub-Scores
 
 ```bash
 python analysis/dsqi_collect.py --artifact 01-unit-testing-gauntlet
@@ -172,6 +181,21 @@ python analysis/dsqi_collect.py --artifact 02-big-o-visualiser
 python analysis/dsqi_collect.py --artifact 03-sql-injection-simulator
 python analysis/dsqi_collect.py --artifact 04-css-flexbox-trainer
 python analysis/dsqi_collect.py --artifact 05-lexical-analyser-trainer
+```
+
+### Step 2 — Compute Final DSQI (P, E, and composite)
+
+```bash
+python analysis/dsqi_score.py --verbose
+```
+
+This reads coordinator reviews (Layer 3) and expert reviews (Layer 2) to compute P and E, then patches the Layer 1 DSQI JSON files and `artifact-registry.json` with final scores.
+
+### Step 3 — Validate and Review
+
+```bash
+python analysis/validate_data.py --target all
+python analysis/study_status.py
 ```
 
 ---

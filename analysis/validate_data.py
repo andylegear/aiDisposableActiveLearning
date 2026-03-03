@@ -69,7 +69,7 @@ def validate_dsqi():
 def validate_expert():
     print("\n— Validating Expert Reviews (Layer 2) —")
     expert_dir = ROOT / "data" / "evaluations" / "layer2-expert-review"
-    files = list(expert_dir.glob("expert-review-*.json"))
+    files = list(expert_dir.glob("dsqi-review-*.json"))
     if not files:
         print("  (no expert review files found yet)")
         return True
@@ -79,7 +79,7 @@ def validate_expert():
 def validate_coordinator():
     print("\n— Validating Coordinator Reviews (Layer 3) —")
     coord_dir = ROOT / "data" / "evaluations" / "layer3-coordinator-review"
-    files = list(coord_dir.glob("coordinator-review-*.json"))
+    files = list(coord_dir.glob("dsqi-coordinator-*.json"))
     if not files:
         print("  (no coordinator review files found yet)")
         return True

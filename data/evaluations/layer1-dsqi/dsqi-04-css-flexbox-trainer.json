@@ -2,8 +2,8 @@
   "artifact_id": 4,
   "artifact_slug": "04-css-flexbox-trainer",
   "evaluator": "self (automated collection + manual scoring)",
-  "date": "2026-02-18",
-  "notes": "M and C metrics collected automatically by dsqi_collect.py. P and E metrics require human evaluators \u2014 fill in after reviews are complete.",
+  "date": "2026-03-03",
+  "notes": "Full DSQI computed. M and C from dsqi_collect.py; P from coordinator review; E averaged across 3 expert reviews.",
   "maintenance_cost": {
     "dependency_count": 0,
     "dependency_count_normalized": 0.0,
@@ -14,25 +14,25 @@
     "M_score": 0.1429
   },
   "creation_cost": {
-    "lines_of_code": 871,
-    "lines_of_code_normalized": 0.1742,
+    "lines_of_code": 872,
+    "lines_of_code_normalized": 0.1744,
     "ai_generation_ratio": 1.0,
     "development_time_minutes": 37,
     "development_time_normalized": 0.0771,
     "C_score": 0.0838
   },
   "pedagogical_alignment": {
-    "concept_coverage": null,
-    "icap_level": null,
-    "icap_score": null,
-    "P_score": null
+    "concept_coverage": 0.666,
+    "icap_level": "active",
+    "icap_score": 0.5,
+    "P_score": 0.583
   },
   "pedagogical_purity": {
     "conceptual_fidelity_raw": null,
-    "conceptual_fidelity_normalized": null,
+    "conceptual_fidelity_normalized": 0.9167,
     "process_replicability_raw": null,
-    "process_replicability_normalized": null,
-    "E_score": null
+    "process_replicability_normalized": 0.8333,
+    "E_score": 0.875
   },
   "weights": {
     "w1_maintenance": 0.3,
@@ -40,19 +40,19 @@
     "w3_pedagogical": 0.3,
     "w4_purity": 0.2
   },
-  "dsqi_score": null,
+  "dsqi_score": 0.7903,
   "raw_metrics": {
-    "collected_at": "2026-02-18T20:56:55.879969+00:00",
+    "collected_at": "2026-03-03T09:23:34.717272+00:00",
     "collector_version": "1.0.0",
     "cloc": {
       "header": {
         "cloc_url": "github.com/AlDanial/cloc",
         "cloc_version": "2.06",
-        "elapsed_seconds": 0.078643798828125,
+        "elapsed_seconds": 0.120104074478149,
         "n_files": 3,
-        "n_lines": 1055,
-        "files_per_second": 38.1466821885914,
-        "lines_per_second": 13414.9165696546
+        "n_lines": 1056,
+        "files_per_second": 24.9783366054396,
+        "lines_per_second": 8792.37448511473
       },
       "JavaScript": {
         "nFiles": 1,
@@ -70,12 +70,12 @@
         "nFiles": 1,
         "blank": 19,
         "comment": 7,
-        "code": 67
+        "code": 68
       },
       "SUM": {
         "blank": 121,
         "comment": 63,
-        "code": 871,
+        "code": 872,
         "nFiles": 3
       }
     },

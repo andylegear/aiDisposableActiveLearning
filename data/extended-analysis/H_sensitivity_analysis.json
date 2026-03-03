@@ -1,0 +1,427 @@
+{
+  "baseline": {
+    "weights": {
+      "w_M": 0.3,
+      "w_C": 0.2,
+      "w_P": 0.3,
+      "w_E": 0.2
+    },
+    "scores": {
+      "01-unit-testing-gauntlet": 0.8966,
+      "02-big-o-visualiser": 0.9108,
+      "03-sql-injection-simulator": 0.8959,
+      "04-css-flexbox-trainer": 0.7903,
+      "05-lexical-analyser-trainer": 0.8269
+    },
+    "ranking": {
+      "01-unit-testing-gauntlet": 2,
+      "02-big-o-visualiser": 1,
+      "03-sql-injection-simulator": 3,
+      "04-css-flexbox-trainer": 5,
+      "05-lexical-analyser-trainer": 4
+    }
+  },
+  "perturbations": [],
+  "summary": {
+    "n_combinations": 633,
+    "kendall_tau_mean": 0.7251,
+    "kendall_tau_sd": 0.267,
+    "kendall_tau_min": -0.4,
+    "kendall_tau_max": 1.0,
+    "rank_stable_pct": 30.0,
+    "dsqi_ranges": {
+      "01-unit-testing-gauntlet": {
+        "min": 0.8495,
+        "max": 0.9417,
+        "range": 0.0922,
+        "baseline": 0.8966
+      },
+      "02-big-o-visualiser": {
+        "min": 0.8773,
+        "max": 0.9371,
+        "range": 0.0598,
+        "baseline": 0.9108
+      },
+      "03-sql-injection-simulator": {
+        "min": 0.8412,
+        "max": 0.9499,
+        "range": 0.1087,
+        "baseline": 0.8959
+      },
+      "04-css-flexbox-trainer": {
+        "min": 0.7239,
+        "max": 0.8801,
+        "range": 0.1562,
+        "baseline": 0.7903
+      },
+      "05-lexical-analyser-trainer": {
+        "min": 0.7828,
+        "max": 0.8962,
+        "range": 0.1134,
+        "baseline": 0.8269
+      }
+    }
+  },
+  "component_sensitivity": [
+    {
+      "component": "w_M",
+      "perturbations": [
+        {
+          "weight_value": 0.15,
+          "delta": -0.15,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.9154,
+            "02-big-o-visualiser": 0.9188,
+            "03-sql-injection-simulator": 0.917,
+            "04-css-flexbox-trainer": 0.776,
+            "05-lexical-analyser-trainer": 0.8323
+          }
+        },
+        {
+          "weight_value": 0.2,
+          "delta": -0.1,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.9091,
+            "02-big-o-visualiser": 0.9161,
+            "03-sql-injection-simulator": 0.91,
+            "04-css-flexbox-trainer": 0.7808,
+            "05-lexical-analyser-trainer": 0.8305
+          }
+        },
+        {
+          "weight_value": 0.25,
+          "delta": -0.05,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.9028,
+            "02-big-o-visualiser": 0.9134,
+            "03-sql-injection-simulator": 0.9029,
+            "04-css-flexbox-trainer": 0.7855,
+            "05-lexical-analyser-trainer": 0.8287
+          }
+        },
+        {
+          "weight_value": 0.3,
+          "delta": 0.0,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8966,
+            "02-big-o-visualiser": 0.9108,
+            "03-sql-injection-simulator": 0.8959,
+            "04-css-flexbox-trainer": 0.7903,
+            "05-lexical-analyser-trainer": 0.8269
+          }
+        },
+        {
+          "weight_value": 0.35,
+          "delta": 0.05,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8904,
+            "02-big-o-visualiser": 0.9081,
+            "03-sql-injection-simulator": 0.8889,
+            "04-css-flexbox-trainer": 0.795,
+            "05-lexical-analyser-trainer": 0.8251
+          }
+        },
+        {
+          "weight_value": 0.4,
+          "delta": 0.1,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8841,
+            "02-big-o-visualiser": 0.9054,
+            "03-sql-injection-simulator": 0.8818,
+            "04-css-flexbox-trainer": 0.7997,
+            "05-lexical-analyser-trainer": 0.8233
+          }
+        },
+        {
+          "weight_value": 0.45,
+          "delta": 0.15,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8779,
+            "02-big-o-visualiser": 0.9028,
+            "03-sql-injection-simulator": 0.8748,
+            "04-css-flexbox-trainer": 0.8045,
+            "05-lexical-analyser-trainer": 0.8215
+          }
+        }
+      ],
+      "mean_tau": 0.9143
+    },
+    {
+      "component": "w_C",
+      "perturbations": [
+        {
+          "weight_value": 0.05,
+          "delta": -0.15,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8971,
+            "02-big-o-visualiser": 0.9187,
+            "03-sql-injection-simulator": 0.9014,
+            "04-css-flexbox-trainer": 0.7666,
+            "05-lexical-analyser-trainer": 0.8128
+          }
+        },
+        {
+          "weight_value": 0.1,
+          "delta": -0.1,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.897,
+            "02-big-o-visualiser": 0.9161,
+            "03-sql-injection-simulator": 0.8996,
+            "04-css-flexbox-trainer": 0.7745,
+            "05-lexical-analyser-trainer": 0.8176
+          }
+        },
+        {
+          "weight_value": 0.15,
+          "delta": -0.05,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8969,
+            "02-big-o-visualiser": 0.9135,
+            "03-sql-injection-simulator": 0.8979,
+            "04-css-flexbox-trainer": 0.7825,
+            "05-lexical-analyser-trainer": 0.8223
+          }
+        },
+        {
+          "weight_value": 0.2,
+          "delta": 0.0,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8966,
+            "02-big-o-visualiser": 0.9108,
+            "03-sql-injection-simulator": 0.8959,
+            "04-css-flexbox-trainer": 0.7903,
+            "05-lexical-analyser-trainer": 0.8269
+          }
+        },
+        {
+          "weight_value": 0.25,
+          "delta": 0.05,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8963,
+            "02-big-o-visualiser": 0.908,
+            "03-sql-injection-simulator": 0.894,
+            "04-css-flexbox-trainer": 0.7981,
+            "05-lexical-analyser-trainer": 0.8315
+          }
+        },
+        {
+          "weight_value": 0.3,
+          "delta": 0.1,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8963,
+            "02-big-o-visualiser": 0.9054,
+            "03-sql-injection-simulator": 0.8922,
+            "04-css-flexbox-trainer": 0.806,
+            "05-lexical-analyser-trainer": 0.8363
+          }
+        },
+        {
+          "weight_value": 0.35,
+          "delta": 0.15,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8962,
+            "02-big-o-visualiser": 0.9029,
+            "03-sql-injection-simulator": 0.8904,
+            "04-css-flexbox-trainer": 0.814,
+            "05-lexical-analyser-trainer": 0.841
+          }
+        }
+      ],
+      "mean_tau": 0.9143
+    },
+    {
+      "component": "w_P",
+      "perturbations": [
+        {
+          "weight_value": 0.15,
+          "delta": -0.15,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8746,
+            "02-big-o-visualiser": 0.8917,
+            "03-sql-injection-simulator": 0.8737,
+            "04-css-flexbox-trainer": 0.8348,
+            "05-lexical-analyser-trainer": 0.8452
+          }
+        },
+        {
+          "weight_value": 0.2,
+          "delta": -0.1,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8819,
+            "02-big-o-visualiser": 0.8981,
+            "03-sql-injection-simulator": 0.8811,
+            "04-css-flexbox-trainer": 0.82,
+            "05-lexical-analyser-trainer": 0.8391
+          }
+        },
+        {
+          "weight_value": 0.25,
+          "delta": -0.05,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8892,
+            "02-big-o-visualiser": 0.9044,
+            "03-sql-injection-simulator": 0.8885,
+            "04-css-flexbox-trainer": 0.8051,
+            "05-lexical-analyser-trainer": 0.833
+          }
+        },
+        {
+          "weight_value": 0.3,
+          "delta": 0.0,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8966,
+            "02-big-o-visualiser": 0.9108,
+            "03-sql-injection-simulator": 0.8959,
+            "04-css-flexbox-trainer": 0.7903,
+            "05-lexical-analyser-trainer": 0.8269
+          }
+        },
+        {
+          "weight_value": 0.35,
+          "delta": 0.05,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.904,
+            "02-big-o-visualiser": 0.9171,
+            "03-sql-injection-simulator": 0.9034,
+            "04-css-flexbox-trainer": 0.7755,
+            "05-lexical-analyser-trainer": 0.8209
+          }
+        },
+        {
+          "weight_value": 0.4,
+          "delta": 0.1,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.9113,
+            "02-big-o-visualiser": 0.9234,
+            "03-sql-injection-simulator": 0.9107,
+            "04-css-flexbox-trainer": 0.7606,
+            "05-lexical-analyser-trainer": 0.8147
+          }
+        },
+        {
+          "weight_value": 0.45,
+          "delta": 0.15,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.9187,
+            "02-big-o-visualiser": 0.9298,
+            "03-sql-injection-simulator": 0.9181,
+            "04-css-flexbox-trainer": 0.7458,
+            "05-lexical-analyser-trainer": 0.8086
+          }
+        }
+      ],
+      "mean_tau": 1.0
+    },
+    {
+      "component": "w_E",
+      "perturbations": [
+        {
+          "weight_value": 0.05,
+          "delta": -0.15,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.9006,
+            "02-big-o-visualiser": 0.9174,
+            "03-sql-injection-simulator": 0.8919,
+            "04-css-flexbox-trainer": 0.7743,
+            "05-lexical-analyser-trainer": 0.81
+          }
+        },
+        {
+          "weight_value": 0.1,
+          "delta": -0.1,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8993,
+            "02-big-o-visualiser": 0.9152,
+            "03-sql-injection-simulator": 0.8933,
+            "04-css-flexbox-trainer": 0.7797,
+            "05-lexical-analyser-trainer": 0.8157
+          }
+        },
+        {
+          "weight_value": 0.15,
+          "delta": -0.05,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8981,
+            "02-big-o-visualiser": 0.9131,
+            "03-sql-injection-simulator": 0.8947,
+            "04-css-flexbox-trainer": 0.785,
+            "05-lexical-analyser-trainer": 0.8214
+          }
+        },
+        {
+          "weight_value": 0.2,
+          "delta": 0.0,
+          "tau": 1.0,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8966,
+            "02-big-o-visualiser": 0.9108,
+            "03-sql-injection-simulator": 0.8959,
+            "04-css-flexbox-trainer": 0.7903,
+            "05-lexical-analyser-trainer": 0.8269
+          }
+        },
+        {
+          "weight_value": 0.25,
+          "delta": 0.05,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8952,
+            "02-big-o-visualiser": 0.9084,
+            "03-sql-injection-simulator": 0.8971,
+            "04-css-flexbox-trainer": 0.7955,
+            "05-lexical-analyser-trainer": 0.8325
+          }
+        },
+        {
+          "weight_value": 0.3,
+          "delta": 0.1,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8939,
+            "02-big-o-visualiser": 0.9063,
+            "03-sql-injection-simulator": 0.8985,
+            "04-css-flexbox-trainer": 0.8009,
+            "05-lexical-analyser-trainer": 0.8381
+          }
+        },
+        {
+          "weight_value": 0.35,
+          "delta": 0.15,
+          "tau": 0.8,
+          "scores": {
+            "01-unit-testing-gauntlet": 0.8927,
+            "02-big-o-visualiser": 0.9041,
+            "03-sql-injection-simulator": 0.8999,
+            "04-css-flexbox-trainer": 0.8062,
+            "05-lexical-analyser-trainer": 0.8438
+          }
+        }
+      ],
+      "mean_tau": 0.9143
+    }
+  ]
+}

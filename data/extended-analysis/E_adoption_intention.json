@@ -1,0 +1,82 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "01-unit-testing-gauntlet",
+      "name": "Unit Testing Gauntlet",
+      "coordinator": "Andrew Le Gear",
+      "Q5_ease_of_integration": 5,
+      "Q6_likelihood_of_use": 5,
+      "adoption_mean": 5.0,
+      "P1_average": 5,
+      "dsqi_score": 0.8966
+    },
+    {
+      "artifact_id": "02-big-o-visualiser",
+      "name": "Big-O Visualiser",
+      "coordinator": "Paddy Healy",
+      "Q5_ease_of_integration": 5,
+      "Q6_likelihood_of_use": 5,
+      "adoption_mean": 5.0,
+      "P1_average": 5,
+      "dsqi_score": 0.9108
+    },
+    {
+      "artifact_id": "03-sql-injection-simulator",
+      "name": "SQL Injection Simulator",
+      "coordinator": "Dr. Nikola S. Nikolov",
+      "Q5_ease_of_integration": 5,
+      "Q6_likelihood_of_use": 5,
+      "adoption_mean": 5.0,
+      "P1_average": 5,
+      "dsqi_score": 0.8959
+    },
+    {
+      "artifact_id": "04-css-flexbox-trainer",
+      "name": "CSS Flexbox Trainer",
+      "coordinator": "Dr. Alan Ryan",
+      "Q5_ease_of_integration": 5,
+      "Q6_likelihood_of_use": 3,
+      "adoption_mean": 4.0,
+      "P1_average": 3.33,
+      "dsqi_score": 0.7903
+    },
+    {
+      "artifact_id": "05-lexical-analyser-trainer",
+      "name": "Lexical Analyser Trainer",
+      "coordinator": "Jim Buckley",
+      "Q5_ease_of_integration": 4,
+      "Q6_likelihood_of_use": 4,
+      "adoption_mean": 4.0,
+      "P1_average": 3.67,
+      "dsqi_score": 0.8269
+    }
+  ],
+  "aggregate": {
+    "Q5_mean": 4.8,
+    "Q5_sd": 0.45,
+    "Q6_mean": 4.4,
+    "Q6_sd": 0.89,
+    "adoption_mean": 4.6,
+    "adoption_sd": 0.55,
+    "adoption_min": 4.0,
+    "adoption_max": 5.0
+  },
+  "correlations": [
+    {
+      "pair": "Adoption Mean ↔ DSQI Score",
+      "rho": 0.866,
+      "p_value": 0.0577,
+      "note": "n=5, interpret with caution"
+    },
+    {
+      "pair": "P1 Average ↔ Adoption Mean",
+      "rho": 0.9682,
+      "p_value": 0.0068
+    },
+    {
+      "pair": "Q5 (Ease) ↔ Q6 (Likelihood)",
+      "rho": 0.3953,
+      "p_value": 0.5101
+    }
+  ]
+}

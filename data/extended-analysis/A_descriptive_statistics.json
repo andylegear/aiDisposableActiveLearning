@@ -1,0 +1,380 @@
+{
+  "layer1_dsqi": [
+    {
+      "variable": "DSQI Score",
+      "n": 5,
+      "mean": 0.8641,
+      "sd": 0.0526,
+      "min": 0.7903,
+      "max": 0.9108,
+      "median": 0.8959
+    },
+    {
+      "variable": "M Score",
+      "n": 5,
+      "mean": 0.1719,
+      "sd": 0.0349,
+      "min": 0.1262,
+      "max": 0.2022,
+      "median": 0.1904
+    },
+    {
+      "variable": "C Score",
+      "n": 5,
+      "mean": 0.1108,
+      "sd": 0.0217,
+      "min": 0.0838,
+      "max": 0.1338,
+      "median": 0.1063
+    },
+    {
+      "variable": "P Score",
+      "n": 5,
+      "mean": 0.865,
+      "sd": 0.1932,
+      "min": 0.583,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "variable": "E Score",
+      "n": 5,
+      "mean": 0.8917,
+      "sd": 0.0228,
+      "min": 0.875,
+      "max": 0.9167,
+      "median": 0.875
+    }
+  ],
+  "layer1_development": [
+    {
+      "variable": "Development Time (min)",
+      "n": 5,
+      "mean": 39.8,
+      "sd": 14.4118,
+      "min": 19.0,
+      "max": 54.0,
+      "median": 37.0
+    },
+    {
+      "variable": "Lines of Code",
+      "n": 5,
+      "mean": 1398.6,
+      "sd": 436.1941,
+      "min": 871.0,
+      "max": 1946.0,
+      "median": 1493.0
+    },
+    {
+      "variable": "AI Generation Ratio",
+      "n": 5,
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "variable": "Dependency Count",
+      "n": 5,
+      "mean": 0.4,
+      "sd": 0.8944,
+      "min": 0.0,
+      "max": 2.0,
+      "median": 0.0
+    },
+    {
+      "variable": "WakaTime Active (sec)",
+      "n": 5,
+      "mean": 160.4422,
+      "sd": 236.0055,
+      "min": 0.0,
+      "max": 530.706,
+      "median": 7.307
+    },
+    {
+      "variable": "Cyclomatic Complexity (avg)",
+      "n": 5,
+      "mean": 3.236,
+      "sd": 1.5687,
+      "min": 1.18,
+      "max": 4.6,
+      "median": 4.07
+    }
+  ],
+  "layer2_expert": [
+    {
+      "variable": "H: Visibility of Status",
+      "n": 15,
+      "mean": 4.3333,
+      "sd": 1.0465,
+      "min": 2.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "H: Match with Real World",
+      "n": 15,
+      "mean": 4.4667,
+      "sd": 0.6399,
+      "min": 3.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "H: User Control & Freedom",
+      "n": 15,
+      "mean": 3.4667,
+      "sd": 1.4573,
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0
+    },
+    {
+      "variable": "H: Consistency & Standards",
+      "n": 15,
+      "mean": 4.7333,
+      "sd": 0.4577,
+      "min": 4.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "H: Error Prevention",
+      "n": 15,
+      "mean": 4.2667,
+      "sd": 1.0328,
+      "min": 1.0,
+      "max": 5.0,
+      "median": 4.0
+    },
+    {
+      "variable": "H: Recognition over Recall",
+      "n": 15,
+      "mean": 4.3333,
+      "sd": 0.8997,
+      "min": 2.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "H: Flexibility & Efficiency",
+      "n": 15,
+      "mean": 4.1333,
+      "sd": 1.0601,
+      "min": 2.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "H: Aesthetic & Minimalist",
+      "n": 15,
+      "mean": 4.6667,
+      "sd": 0.6172,
+      "min": 3.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "H: Help with Errors",
+      "n": 15,
+      "mean": 3.9333,
+      "sd": 1.1629,
+      "min": 2.0,
+      "max": 5.0,
+      "median": 4.0
+    },
+    {
+      "variable": "H: Instructional Scaffolding",
+      "n": 15,
+      "mean": 4.1333,
+      "sd": 1.1872,
+      "min": 1.0,
+      "max": 5.0,
+      "median": 4.0
+    },
+    {
+      "variable": "Mean Heuristic Score",
+      "n": 15,
+      "mean": 4.2467,
+      "sd": 0.5755,
+      "min": 3.0,
+      "max": 5.0,
+      "median": 4.3
+    },
+    {
+      "variable": "E1 Conceptual Fidelity",
+      "n": 15,
+      "mean": 4.7333,
+      "sd": 0.4577,
+      "min": 4.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "E2 Process Replicability",
+      "n": 15,
+      "mean": 4.4,
+      "sd": 0.8281,
+      "min": 3.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "Constructionism: Meaningful Artifact",
+      "n": 15,
+      "mean": 4.0667,
+      "sd": 0.7037,
+      "min": 3.0,
+      "max": 5.0,
+      "median": 4.0
+    },
+    {
+      "variable": "Constructionism: Learning through Building",
+      "n": 15,
+      "mean": 4.0667,
+      "sd": 1.2228,
+      "min": 2.0,
+      "max": 5.0,
+      "median": 5.0
+    }
+  ],
+  "layer3_coordinator": [
+    {
+      "variable": "Q1 Curriculum Relevance",
+      "n": 5,
+      "mean": 4.4,
+      "sd": 0.8944,
+      "min": 3.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "Q2 Concept Challenge",
+      "n": 5,
+      "mean": 4.0,
+      "sd": 1.4142,
+      "min": 2.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "Q3 Objective Coverage",
+      "n": 5,
+      "mean": 4.8,
+      "sd": 0.4472,
+      "min": 4.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "P1 Average",
+      "n": 5,
+      "mean": 4.4,
+      "sd": 0.8303,
+      "min": 3.33,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "Q5 Ease of Integration",
+      "n": 5,
+      "mean": 4.8,
+      "sd": 0.4472,
+      "min": 4.0,
+      "max": 5.0,
+      "median": 5.0
+    },
+    {
+      "variable": "Q6 Likelihood of Use",
+      "n": 5,
+      "mean": 4.4,
+      "sd": 0.8944,
+      "min": 3.0,
+      "max": 5.0,
+      "median": 5.0
+    }
+  ],
+  "artifact_summary": [
+    {
+      "slug": "01-unit-testing-gauntlet",
+      "name": "Unit Testing Gauntlet",
+      "dsqi_score": 0.8966,
+      "M": 0.1904,
+      "C": 0.1063,
+      "P": 1.0,
+      "E": 0.875,
+      "dev_time_min": 19,
+      "loc": 1493,
+      "mean_heuristic": 4.23,
+      "mean_E1": 5.0,
+      "mean_E2": 4.0,
+      "coord_P1": 5,
+      "coord_adoption_mean": 5.0
+    },
+    {
+      "slug": "02-big-o-visualiser",
+      "name": "Big-O Visualiser",
+      "dsqi_score": 0.9108,
+      "M": 0.1262,
+      "C": 0.1319,
+      "P": 1.0,
+      "E": 0.875,
+      "dev_time_min": 36,
+      "loc": 1946,
+      "mean_heuristic": 4.33,
+      "mean_E1": 4.33,
+      "mean_E2": 4.67,
+      "coord_P1": 5,
+      "coord_adoption_mean": 5.0
+    },
+    {
+      "slug": "03-sql-injection-simulator",
+      "name": "SQL Injection Simulator",
+      "dsqi_score": 0.8959,
+      "M": 0.2022,
+      "C": 0.1338,
+      "P": 1.0,
+      "E": 0.9167,
+      "dev_time_min": 53,
+      "loc": 1631,
+      "mean_heuristic": 4.2,
+      "mean_E1": 5.0,
+      "mean_E2": 4.33,
+      "coord_P1": 5,
+      "coord_adoption_mean": 5.0
+    },
+    {
+      "slug": "04-css-flexbox-trainer",
+      "name": "CSS Flexbox Trainer",
+      "dsqi_score": 0.7903,
+      "M": 0.1429,
+      "C": 0.0838,
+      "P": 0.583,
+      "E": 0.875,
+      "dev_time_min": 37,
+      "loc": 871,
+      "mean_heuristic": 4.3,
+      "mean_E1": 4.67,
+      "mean_E2": 4.33,
+      "coord_P1": 3.33,
+      "coord_adoption_mean": 4.0
+    },
+    {
+      "slug": "05-lexical-analyser-trainer",
+      "name": "Lexical Analyser Trainer",
+      "dsqi_score": 0.8269,
+      "M": 0.1978,
+      "C": 0.0984,
+      "P": 0.742,
+      "E": 0.9167,
+      "dev_time_min": 54,
+      "loc": 1052,
+      "mean_heuristic": 4.17,
+      "mean_E1": 4.67,
+      "mean_E2": 4.67,
+      "coord_P1": 3.67,
+      "coord_adoption_mean": 4.0
+    }
+  ]
+}

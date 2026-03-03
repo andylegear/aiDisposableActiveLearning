@@ -2,8 +2,8 @@
   "artifact_id": 5,
   "artifact_slug": "05-lexical-analyser-trainer",
   "evaluator": "self (automated collection + manual scoring)",
-  "date": "2026-02-18",
-  "notes": "M and C metrics collected automatically by dsqi_collect.py. P and E metrics require human evaluators \u2014 fill in after reviews are complete.",
+  "date": "2026-03-03",
+  "notes": "Full DSQI computed. M and C from dsqi_collect.py; P from coordinator review; E averaged across 3 expert reviews.",
   "maintenance_cost": {
     "dependency_count": 0,
     "dependency_count_normalized": 0.0,
@@ -14,25 +14,25 @@
     "M_score": 0.1978
   },
   "creation_cost": {
-    "lines_of_code": 912,
-    "lines_of_code_normalized": 0.1824,
+    "lines_of_code": 913,
+    "lines_of_code_normalized": 0.1826,
     "ai_generation_ratio": 1.0,
     "development_time_minutes": 54,
     "development_time_normalized": 0.1125,
-    "C_score": 0.0983
+    "C_score": 0.0984
   },
   "pedagogical_alignment": {
-    "concept_coverage": null,
-    "icap_level": null,
-    "icap_score": null,
-    "P_score": null
+    "concept_coverage": 0.734,
+    "icap_level": "constructive",
+    "icap_score": 0.75,
+    "P_score": 0.742
   },
   "pedagogical_purity": {
     "conceptual_fidelity_raw": null,
-    "conceptual_fidelity_normalized": null,
+    "conceptual_fidelity_normalized": 0.9167,
     "process_replicability_raw": null,
-    "process_replicability_normalized": null,
-    "E_score": null
+    "process_replicability_normalized": 0.9167,
+    "E_score": 0.9167
   },
   "weights": {
     "w1_maintenance": 0.3,
@@ -40,19 +40,19 @@
     "w3_pedagogical": 0.3,
     "w4_purity": 0.2
   },
-  "dsqi_score": null,
+  "dsqi_score": 0.8269,
   "raw_metrics": {
-    "collected_at": "2026-02-18T22:23:45.566429+00:00",
+    "collected_at": "2026-03-03T09:23:45.181908+00:00",
     "collector_version": "1.0.0",
     "cloc": {
       "header": {
         "cloc_url": "github.com/AlDanial/cloc",
         "cloc_version": "2.06",
-        "elapsed_seconds": 0.398766040802002,
+        "elapsed_seconds": 0.111629009246826,
         "n_files": 3,
-        "n_lines": 1052,
-        "files_per_second": 7.52320833029405,
-        "lines_per_second": 2638.13838782311
+        "n_lines": 1053,
+        "files_per_second": 26.8747346253572,
+        "lines_per_second": 9433.03185350038
       },
       "JavaScript": {
         "nFiles": 1,
@@ -70,12 +70,12 @@
         "nFiles": 1,
         "blank": 5,
         "comment": 6,
-        "code": 64
+        "code": 65
       },
       "SUM": {
         "blank": 78,
         "comment": 62,
-        "code": 912,
+        "code": 913,
         "nFiles": 3
       }
     },

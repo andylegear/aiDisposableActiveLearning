@@ -4,7 +4,7 @@
     "methodology": "Design-Based Research (DBR)",
     "target_journal": "Computer Science Education (Taylor & Francis)",
     "start_date": "2026-02-18T13:33:15Z",
-    "current_phase": "development"
+    "current_phase": "analysis"
   },
   "artifacts": [
     {
@@ -18,7 +18,7 @@
         "coordinator": null,
         "coordinator_email": null
       },
-      "status": "developed",
+      "status": "coordinator-reviewed",
       "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/01-unit-testing-gauntlet/src/index.html",
       "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/01-unit-testing-gauntlet",
       "tech_stack": [
@@ -37,19 +37,19 @@
         "wakatime_active_seconds": 264.198
       },
       "evaluation": {
-        "dsqi_score": null,
-        "dsqi_completed": false,
+        "dsqi_score": 0.8966,
+        "dsqi_completed": true,
         "dsqi_partial": {
           "M_score": 0.1904,
           "C_score": 0.1063,
-          "P_score": null,
-          "E_score": null,
+          "P_score": 1.0,
+          "E_score": 0.875,
           "automated_collected": true,
           "collected_date": "2026-02-18"
         },
-        "expert_reviews_received": 0,
+        "expert_reviews_received": 3,
         "expert_reviews_target": 2,
-        "coordinator_review_received": false
+        "coordinator_review_received": true
       }
     },
     {
@@ -63,7 +63,7 @@
         "coordinator": null,
         "coordinator_email": null
       },
-      "status": "developed",
+      "status": "coordinator-reviewed",
       "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/02-big-o-visualiser/src/index.html",
       "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/02-big-o-visualiser",
       "tech_stack": [
@@ -82,19 +82,19 @@
         "wakatime_active_seconds": 530.706
       },
       "evaluation": {
-        "dsqi_score": null,
-        "dsqi_completed": false,
+        "dsqi_score": 0.9108,
+        "dsqi_completed": true,
         "dsqi_partial": {
           "M_score": 0.1262,
           "C_score": 0.1319,
-          "P_score": null,
-          "E_score": null,
+          "P_score": 1.0,
+          "E_score": 0.875,
           "automated_collected": true,
           "collected_date": "2026-02-18"
         },
-        "expert_reviews_received": 0,
+        "expert_reviews_received": 3,
         "expert_reviews_target": 2,
-        "coordinator_review_received": false
+        "coordinator_review_received": true
       }
     },
     {
@@ -108,7 +108,7 @@
         "coordinator": null,
         "coordinator_email": null
       },
-      "status": "developed",
+      "status": "coordinator-reviewed",
       "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/03-sql-injection-simulator/src/index.html",
       "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/03-sql-injection-simulator",
       "tech_stack": [
@@ -127,19 +127,19 @@
         "wakatime_active_seconds": 7.307
       },
       "evaluation": {
-        "dsqi_score": null,
-        "dsqi_completed": false,
+        "dsqi_score": 0.8959,
+        "dsqi_completed": true,
         "dsqi_partial": {
           "M_score": 0.2022,
-          "C_score": 0.1337,
-          "P_score": null,
-          "E_score": null,
+          "C_score": 0.1338,
+          "P_score": 1.0,
+          "E_score": 0.9167,
           "automated_collected": true,
           "collected_date": "2026-02-18"
         },
-        "expert_reviews_received": 0,
+        "expert_reviews_received": 3,
         "expert_reviews_target": 2,
-        "coordinator_review_received": false
+        "coordinator_review_received": true
       }
     },
     {
@@ -153,7 +153,7 @@
         "coordinator": null,
         "coordinator_email": null
       },
-      "status": "developed",
+      "status": "coordinator-reviewed",
       "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/04-css-flexbox-trainer/src/index.html",
       "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/04-css-flexbox-trainer",
       "tech_stack": [
@@ -178,11 +178,17 @@
         "partial": "0.4404 + 0.3P + 0.2E"
       },
       "evaluation": {
-        "dsqi_score": null,
-        "dsqi_completed": false,
-        "expert_reviews_received": 0,
+        "dsqi_score": 0.7903,
+        "dsqi_completed": true,
+        "expert_reviews_received": 3,
         "expert_reviews_target": 2,
-        "coordinator_review_received": false
+        "coordinator_review_received": true,
+        "dsqi_partial": {
+          "M_score": 0.1429,
+          "C_score": 0.0838,
+          "P_score": 0.583,
+          "E_score": 0.875
+        }
       }
     },
     {
@@ -196,7 +202,7 @@
         "coordinator": null,
         "coordinator_email": null
       },
-      "status": "developed",
+      "status": "coordinator-reviewed",
       "deployment_url": "https://andylegear.github.io/aiDisposableActiveLearning/artifacts/05-lexical-analyser-trainer/src/index.html",
       "repository_url": "https://github.com/andylegear/aiDisposableActiveLearning/tree/main/artifacts/05-lexical-analyser-trainer",
       "tech_stack": [
@@ -220,11 +226,17 @@
         "partial": "0.4210 + 0.3P + 0.2E"
       },
       "evaluation": {
-        "dsqi_score": null,
-        "dsqi_completed": false,
-        "expert_reviews_received": 0,
+        "dsqi_score": 0.8269,
+        "dsqi_completed": true,
+        "expert_reviews_received": 3,
         "expert_reviews_target": 2,
-        "coordinator_review_received": false
+        "coordinator_review_received": true,
+        "dsqi_partial": {
+          "M_score": 0.1978,
+          "C_score": 0.0984,
+          "P_score": 0.742,
+          "E_score": 0.9167
+        }
       }
     }
   ],

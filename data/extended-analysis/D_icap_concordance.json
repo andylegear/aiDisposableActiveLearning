@@ -1,0 +1,260 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "01-unit-testing-gauntlet",
+      "name": "Unit Testing Gauntlet",
+      "classifications": {
+        "self": "interactive",
+        "experts": [
+          {
+            "reviewer": "Liam McNamara",
+            "level": "interactive"
+          },
+          {
+            "reviewer": "Peter Hall",
+            "level": "constructive"
+          },
+          {
+            "reviewer": "Tawny Whatmore",
+            "level": "constructive"
+          }
+        ],
+        "coordinator": "interactive"
+      },
+      "all_raters": [
+        {
+          "rater": "Self",
+          "level": "interactive"
+        },
+        {
+          "rater": "Liam McNamara",
+          "level": "interactive"
+        },
+        {
+          "rater": "Peter Hall",
+          "level": "constructive"
+        },
+        {
+          "rater": "Tawny Whatmore",
+          "level": "constructive"
+        },
+        {
+          "rater": "Coordinator",
+          "level": "interactive"
+        }
+      ],
+      "modal_level": "interactive",
+      "agreement_ratio": 0.6
+    },
+    {
+      "artifact_id": "02-big-o-visualiser",
+      "name": "Big-O Visualiser",
+      "classifications": {
+        "self": "interactive",
+        "experts": [
+          {
+            "reviewer": "Liam McNamara",
+            "level": "constructive"
+          },
+          {
+            "reviewer": "Peter Hall",
+            "level": "active"
+          },
+          {
+            "reviewer": "Tawny Whatmore",
+            "level": "active"
+          }
+        ],
+        "coordinator": "interactive"
+      },
+      "all_raters": [
+        {
+          "rater": "Self",
+          "level": "interactive"
+        },
+        {
+          "rater": "Liam McNamara",
+          "level": "constructive"
+        },
+        {
+          "rater": "Peter Hall",
+          "level": "active"
+        },
+        {
+          "rater": "Tawny Whatmore",
+          "level": "active"
+        },
+        {
+          "rater": "Coordinator",
+          "level": "interactive"
+        }
+      ],
+      "modal_level": "interactive",
+      "agreement_ratio": 0.4
+    },
+    {
+      "artifact_id": "03-sql-injection-simulator",
+      "name": "SQL Injection Simulator",
+      "classifications": {
+        "self": "interactive",
+        "experts": [
+          {
+            "reviewer": "Liam McNamara",
+            "level": "interactive"
+          },
+          {
+            "reviewer": "Peter Hall",
+            "level": "constructive"
+          },
+          {
+            "reviewer": "Tawny Whatmore",
+            "level": "constructive"
+          }
+        ],
+        "coordinator": "interactive"
+      },
+      "all_raters": [
+        {
+          "rater": "Self",
+          "level": "interactive"
+        },
+        {
+          "rater": "Liam McNamara",
+          "level": "interactive"
+        },
+        {
+          "rater": "Peter Hall",
+          "level": "constructive"
+        },
+        {
+          "rater": "Tawny Whatmore",
+          "level": "constructive"
+        },
+        {
+          "rater": "Coordinator",
+          "level": "interactive"
+        }
+      ],
+      "modal_level": "interactive",
+      "agreement_ratio": 0.6
+    },
+    {
+      "artifact_id": "04-css-flexbox-trainer",
+      "name": "CSS Flexbox Trainer",
+      "classifications": {
+        "self": "active",
+        "experts": [
+          {
+            "reviewer": "Liam McNamara",
+            "level": "interactive"
+          },
+          {
+            "reviewer": "Peter Hall",
+            "level": "interactive"
+          },
+          {
+            "reviewer": "Tawny Whatmore",
+            "level": "constructive"
+          }
+        ],
+        "coordinator": "active"
+      },
+      "all_raters": [
+        {
+          "rater": "Self",
+          "level": "active"
+        },
+        {
+          "rater": "Liam McNamara",
+          "level": "interactive"
+        },
+        {
+          "rater": "Peter Hall",
+          "level": "interactive"
+        },
+        {
+          "rater": "Tawny Whatmore",
+          "level": "constructive"
+        },
+        {
+          "rater": "Coordinator",
+          "level": "active"
+        }
+      ],
+      "modal_level": "active",
+      "agreement_ratio": 0.4
+    },
+    {
+      "artifact_id": "05-lexical-analyser-trainer",
+      "name": "Lexical Analyser Trainer",
+      "classifications": {
+        "self": "constructive",
+        "experts": [
+          {
+            "reviewer": "Liam McNamara",
+            "level": "interactive"
+          },
+          {
+            "reviewer": "Peter Hall",
+            "level": "interactive"
+          },
+          {
+            "reviewer": "Tawny Whatmore",
+            "level": "constructive"
+          }
+        ],
+        "coordinator": "constructive"
+      },
+      "all_raters": [
+        {
+          "rater": "Self",
+          "level": "constructive"
+        },
+        {
+          "rater": "Liam McNamara",
+          "level": "interactive"
+        },
+        {
+          "rater": "Peter Hall",
+          "level": "interactive"
+        },
+        {
+          "rater": "Tawny Whatmore",
+          "level": "constructive"
+        },
+        {
+          "rater": "Coordinator",
+          "level": "constructive"
+        }
+      ],
+      "modal_level": "constructive",
+      "agreement_ratio": 0.6
+    }
+  ],
+  "cross_tabulation": {
+    "self": {
+      "passive": 0,
+      "active": 1,
+      "constructive": 1,
+      "interactive": 3
+    },
+    "experts": {
+      "passive": 0,
+      "active": 2,
+      "constructive": 7,
+      "interactive": 6
+    },
+    "coordinator": {
+      "passive": 0,
+      "active": 1,
+      "constructive": 1,
+      "interactive": 3
+    }
+  },
+  "agreement_metrics": {
+    "fleiss_kappa": -0.1068,
+    "interpretation": "slight",
+    "P_observed": 0.32,
+    "P_expected": 0.3856
+  }
+}

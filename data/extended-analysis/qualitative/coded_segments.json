@@ -1,0 +1,777 @@
+[
+  {
+    "segment_index": 1,
+    "codes": [
+      {
+        "code": "DISPOSABILITY",
+        "confidence": "MEDIUM",
+        "rationale": "References simplicity which aligns with disposable software characteristics."
+      },
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Describes the tool as 'fun to use' which directly relates to user experience."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-01-unit-testing-gauntlet-most_positive",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "It's a simple but useful tool that is fun to use.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 2,
+    "codes": [
+      {
+        "code": "TECHNICAL_QUALITY",
+        "confidence": "HIGH",
+        "rationale": "Directly mentions browser compatibility issues with JavaScript version requirements."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-01-unit-testing-gauntlet-most_negative",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "Chrome not working with the required version of JavaScript.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 3,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Explicitly states that matching code to O notation is a 'very useful skill' - clear learning outcome reference."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-02-big-o-visualiser-most_positive",
+    "source": "expert_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "Matching code snippets to O notation is a very useful skill.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 4,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Lack of undo/redo functionality is a classic usability heuristic concern about user control and freedom."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-02-big-o-visualiser-most_negative",
+    "source": "expert_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "No undo/redo.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 5,
+    "codes": [
+      {
+        "code": "ICAP",
+        "confidence": "MEDIUM",
+        "rationale": "Describes exploits as 'fun and interesting' suggesting engaging, interactive learning experience."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-03-sql-injection-simulator-most_positive",
+    "source": "expert_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "The exploits were fun and interesting.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 6,
+    "codes": [
+      {
+        "code": "UNCLASSIFIED",
+        "confidence": "HIGH",
+        "rationale": "Generic positive comment with no specific content to categorize."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-03-sql-injection-simulator-most_negative",
+    "source": "expert_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "None, it's great.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 7,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Praises layout, simplicity, and ease of understanding - core usability attributes."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-04-css-flexbox-trainer-most_positive",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "It's very well put together, everything is laid out simply and is very easy to understand what is going on.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 8,
+    "codes": [
+      {
+        "code": "UNCLASSIFIED",
+        "confidence": "HIGH",
+        "rationale": "Generic positive response with no specific content to categorize."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-04-css-flexbox-trainer-most_negative",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "None!",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 9,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Mentions giving hints for parsing text, which relates to learning support and educational effectiveness."
+      },
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Explicitly states the tool is 'easy to use' - direct usability reference."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-05-lexical-analyser-trainer-most_positive",
+    "source": "expert_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "Gives hints as to how to parse text and is easy to use.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 10,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Suggests need for clearer explanation of exercise purpose, relating to learning objective clarity."
+      }
+    ],
+    "segment_id": "expert-liam-mcnamara-05-lexical-analyser-trainer-most_negative",
+    "source": "expert_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "Some text on the exact purpose of the exercise would help in a couple of sections.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 11,
+    "codes": [
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Explicitly mentions 'hands-on' engagement and free-form coding which indicates active/constructive engagement modes."
+      },
+      {
+        "code": "CONSTRUCTIONISM",
+        "confidence": "HIGH",
+        "rationale": "Emphasizes individual creativity in finding solutions, which aligns with constructionist learning through creation."
+      }
+    ],
+    "segment_id": "expert-peter-hall-01-unit-testing-gauntlet-most_positive",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "It's hands-on, free form coding answers - no limit on individual creativity in finding solutions",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 12,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Inability to view previous answers is a user control and navigation limitation."
+      }
+    ],
+    "segment_id": "expert-peter-hall-01-unit-testing-gauntlet-most_negative",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "Inability to view previous answers",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 13,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses evaluation criteria and real-world context for learning, directly addressing educational effectiveness."
+      }
+    ],
+    "segment_id": "expert-peter-hall-01-unit-testing-gauntlet-other_comments",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "Might be improved by understanding real world frequency of bugs and evaluating responses against that - so a simple fix which passes the test would score lower than one that passed the test but included logic that covered likely issues in a production environment.  I guess context would be the word",
+    "field": "other_comments"
+  },
+  {
+    "segment_index": 14,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Feedback on answers is a core usability principle about system feedback to users."
+      }
+    ],
+    "segment_id": "expert-peter-hall-02-big-o-visualiser-most_positive",
+    "source": "expert_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "The feedback on answers",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 15,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "MEDIUM",
+        "rationale": "Time pressure affects user experience and can be considered a usability concern."
+      }
+    ],
+    "segment_id": "expert-peter-hall-02-big-o-visualiser-most_negative",
+    "source": "expert_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "The feeling of time pressure",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 16,
+    "codes": [
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Describes an engaging, immersive experience that suggests interactive learning engagement."
+      }
+    ],
+    "segment_id": "expert-peter-hall-03-sql-injection-simulator-most_positive",
+    "source": "expert_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "Feels like you are interrogating a DB",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 17,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Describes navigation/progression issues and lack of obvious way to proceed - clear usability problems."
+      }
+    ],
+    "segment_id": "expert-peter-hall-03-sql-injection-simulator-most_negative",
+    "source": "expert_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "If you do not get the bonus questions on level 1 - you cannot progress to the next level - or at least there is no obvious way to do so",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 18,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Quick progress relates to efficiency and user satisfaction, core usability attributes."
+      }
+    ],
+    "segment_id": "expert-peter-hall-04-css-flexbox-trainer-most_positive",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "It's quick to make progress",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 19,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses hint difficulty and learning challenge balance, directly addressing educational design."
+      }
+    ],
+    "segment_id": "expert-peter-hall-04-css-flexbox-trainer-most_negative",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "Hints are a little too easy - the other hints still needed some application - I do see that you lose points so maybe thats OK",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 20,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Forgetting the task indicates poor information architecture and task clarity - usability issues."
+      }
+    ],
+    "segment_id": "expert-peter-hall-04-css-flexbox-trainer-other_comments",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "I actually forgot the task.  Even though its visually represented, the initial challenge could be presented on the game page",
+    "field": "other_comments"
+  },
+  {
+    "segment_index": 21,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Explicitly states learning needs ('cannot be learnt from reading') and educational tool requirements."
+      },
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Emphasizes need for interactive learning tool, directly referencing interactive engagement mode."
+      }
+    ],
+    "segment_id": "expert-peter-hall-05-lexical-analyser-trainer-most_positive",
+    "source": "expert_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "Great tool into the mysterious world of regular expressions - these cannot be learnt from reading - you do need an interactive tool",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 22,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Memory burden and forgetting task information indicates poor information design and usability."
+      }
+    ],
+    "segment_id": "expert-peter-hall-05-lexical-analyser-trainer-most_negative",
+    "source": "expert_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "Remembering what the task is - you get this wording between levels and its easy to forget",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 23,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses learning outcomes, repetitive learning design, and skill solidification - core educational effectiveness."
+      },
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Describes engaging, non-tiresome repetitive practice that builds muscle memory through active participation."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-01-unit-testing-gauntlet-most_positive",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "the level system delivered the learning outcomes in a repetitive way that was not tiresome, but engaging with the 3 different tasks per level. repeatedly writing test cases for instance solidified the syntax in muscle memory a bit more.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 24,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Plain text editor without syntax highlighting creates interface challenges for spotting errors."
+      },
+      {
+        "code": "TECHNICAL_QUALITY",
+        "confidence": "MEDIUM",
+        "rationale": "Lack of syntax highlighting and linting represents technical implementation limitations."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-01-unit-testing-gauntlet-most_negative",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "the code editor was challenging to spot syntax issues being in plain text with no colours or lint feedback.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 25,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses learning outcomes, preventing AI cheating, and making source code more accessible for learning."
+      },
+      {
+        "code": "USABILITY",
+        "confidence": "MEDIUM",
+        "rationale": "Mentions that source code link is 'easily missed' indicating interface design issues."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-01-unit-testing-gauntlet-other_comments",
+    "source": "expert_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "integrating the source code directly into the tooling ui would remind the learner to read through it some more as the link to the source code is easily missed at the start. Also reading the source code to 'cheat' is valuable learning in itself. making it more accessible could prevent a tired learner from asking what the answer is from AI and avoiding the learning outcomes.",
+    "field": "other_comments"
+  },
+  {
+    "segment_index": 26,
+    "codes": [
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Praises 'different ways of interacting' and varied engagement formats that cement learning."
+      },
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses how different interaction types and code analysis cement learning effectively."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-02-big-o-visualiser-most_positive",
+    "source": "expert_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "the different ways of interacting was good, instead of having all levels as a 'choose abcd' format. ending on the comparison was very good as it cemented the learning well through code analysis.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 27,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Identifies lack of prerequisite knowledge support, leading to guessing rather than learning."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-02-big-o-visualiser-most_negative",
+    "source": "expert_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "because I didn't really know about big-o notation going into the tool I did feel a bit lost and ended up guessing.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 28,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "MEDIUM",
+        "rationale": "Sound effects suggestion relates to user experience enhancement and engagement feedback."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-02-big-o-visualiser-other_comments",
+    "source": "expert_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "sound effects on scoring mechanics could give more reward and excitement to the learner.",
+    "field": "other_comments"
+  },
+  {
+    "segment_index": 29,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Emphasizes learning from attacker perspective as 'very valuable' educational approach."
+      },
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Praises UI as 'fun to use' with usable data layout - direct usability assessment."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-03-sql-injection-simulator-most_positive",
+    "source": "expert_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "learning at the point of view from an attacker is very valuable. the ui was fun to use and contained a lot of data which was laid out in a very usable way.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 30,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses hint ordering strategy to optimize learning value and minimize point loss."
+      },
+      {
+        "code": "USABILITY",
+        "confidence": "MEDIUM",
+        "rationale": "Suggests interface improvement for hint revelation order to enhance user experience."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-03-sql-injection-simulator-most_negative",
+    "source": "expert_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "the hints could be revealed from most useful (the last one) to least useful (first one). this would enable the most valuable hint to be revealed first and cause the least amount of point loss.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 1,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses how revealing solutions would benefit learner progression and learning from examples when stuck."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-03-sql-injection-simulator-other_comments",
+    "source": "expert_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "an option where no points would be given but the solution to the problem would be revealed could be beneficial to allow the learner to still progress if they were stuck on answer and would also allow the user to learn from the solution that they were stuck on.",
+    "field": "other_comments"
+  },
+  {
+    "segment_index": 2,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Praises the interface design for mimicking traditional coding environments with visual features like linting and colors."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-04-css-flexbox-trainer-most_positive",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "the code input mimics a traditional coding environment with linting/colours etc.",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 3,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Identifies interface design issues with prompts being easily missed and dialogs dismissing too quickly."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-04-css-flexbox-trainer-most_negative",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "the prompt is easily missed if not paying attention and the dialog is dismissed immediately",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 4,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Suggests interface improvement by displaying relevant options or hints to guide users better."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-04-css-flexbox-trainer-other_comments",
+    "source": "expert_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "the relevant options for a css property could be displayed somewhere to help guide the user e.g. listing what are the accepted values for the align-items property are somewhere. perhaps as a hint even.",
+    "field": "other_comments"
+  },
+  {
+    "segment_index": 5,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Positively comments on the interface design feature of showing regex components underneath input."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-05-lexical-analyser-trainer-most_positive",
+    "source": "expert_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "showing the possible regex components underneath the input",
+    "field": "most_positive"
+  },
+  {
+    "segment_index": 6,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Criticizes interface design for lack of active explanations and missing question visibility during interaction."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-05-lexical-analyser-trainer-most_negative",
+    "source": "expert_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "the regex components were not actively explained as the user selected them. the question the user had to answer was not present during the interaction stage.",
+    "field": "most_negative"
+  },
+  {
+    "segment_index": 7,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Suggests specific interface improvements like tooltips to keep users better informed and reduce information loss."
+      }
+    ],
+    "segment_id": "expert-tawny-whatmore-05-lexical-analyser-trainer-other_comments",
+    "source": "expert_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "using something like tool tips instead of dialogs could help keep the user more informed, reduce the risk of missing information and allow the user to progress at their own pace. for example showing the success ui immediately instead of allowing the user to digest the success state of the data vs the regex.",
+    "field": "other_comments"
+  },
+  {
+    "segment_index": 8,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Explicitly discusses replacing passive theoretical learning in lectures and teaching difficult programming concepts."
+      },
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Contrasts passive theoretical learning with the active, novel in-class approach provided by the tool."
+      }
+    ],
+    "segment_id": "coord-andrew-le-gear-01-unit-testing-gauntlet-Q7_benefit",
+    "source": "coordinator_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "This can replace a large chunk of passive theoretical learning in one of the lectures during the semester.  It provides a novel  in class way to teach a difficult programming concept.",
+    "field": "Q7_benefit"
+  },
+  {
+    "segment_index": 9,
+    "codes": [
+      {
+        "code": "TECHNICAL_QUALITY",
+        "confidence": "HIGH",
+        "rationale": "Identifies mobile responsiveness as a technical implementation issue affecting usability."
+      },
+      {
+        "code": "ADOPTION_BARRIER",
+        "confidence": "HIGH",
+        "rationale": "Discusses practical obstacles like requiring students to bring laptops and potential need for developer engagement."
+      }
+    ],
+    "segment_id": "coord-andrew-le-gear-01-unit-testing-gauntlet-Q8_drawback",
+    "source": "coordinator_review",
+    "artifact_id": "01-unit-testing-gauntlet",
+    "text": "I think there were some mobile responsive issues with the page.  It is probably best done on a laptop screen.  I would have to ensure the students bring a laptop to class,  or maybe engage with the developer to improve the implementation for mobile.",
+    "field": "Q8_drawback"
+  },
+  {
+    "segment_index": 10,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Highlights how the provided framework allows students to focus on specific learning objectives."
+      }
+    ],
+    "segment_id": "coord-dr.-alan-ryan-04-css-flexbox-trainer-Q7_benefit",
+    "source": "coordinator_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "As the framework is provided, the student can focus on the specific task at hand.",
+    "field": "Q7_benefit"
+  },
+  {
+    "segment_index": 11,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses limitations for complex learning objectives and the need for less scaffolding to develop student construction skills."
+      },
+      {
+        "code": "CONSTRUCTIONISM",
+        "confidence": "MEDIUM",
+        "rationale": "References the need for students to construct logic flow without hints for more complex tasks."
+      }
+    ],
+    "segment_id": "coord-dr.-alan-ryan-04-css-flexbox-trainer-Q8_drawback",
+    "source": "coordinator_review",
+    "artifact_id": "04-css-flexbox-trainer",
+    "text": "When more complex (multi-stage) tasks are the objective, this would need to provide less support so that the student has to construct the flow of logic without hints.",
+    "field": "Q8_drawback"
+  },
+  {
+    "segment_index": 12,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Emphasizes clear learning outcomes combining theory and practical application for student understanding."
+      },
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Explicitly mentions hands-on experience as a key benefit for student engagement."
+      }
+    ],
+    "segment_id": "coord-dr.-nikola-s.-nikolov-03-sql-injection-simulator-Q7_benefit",
+    "source": "coordinator_review",
+    "artifact_id": "03-sql-injection-simulator",
+    "text": "Clear and accessible explanation of the SQL injection concept through a practical example combined with hands-on experience, enabling students to understand both the theory and its real-world implications.",
+    "field": "Q7_benefit"
+  },
+  {
+    "segment_index": 13,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Discusses providing engaging, relevant material while reducing instructor effort in content construction."
+      }
+    ],
+    "segment_id": "coord-jim-buckley-05-lexical-analyser-trainer-Q7_benefit",
+    "source": "coordinator_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "Provides engaging, relevant material while relieving the ML of the effort of constructing it",
+    "field": "Q7_benefit"
+  },
+  {
+    "segment_index": 14,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Identifies multiple interface and design issues including missing prompts, confusing regex matches, and need for video examples."
+      },
+      {
+        "code": "TECHNICAL_QUALITY",
+        "confidence": "MEDIUM",
+        "rationale": "References technical implementation issues with regex matching behavior that creates confusion."
+      }
+    ],
+    "segment_id": "coord-jim-buckley-05-lexical-analyser-trainer-Q8_drawback",
+    "source": "coordinator_review",
+    "artifact_id": "05-lexical-analyser-trainer",
+    "text": "It needs a few small refinements to be truly effective: the initial exercise should be a video example. And the descriptive prompt should stay on screen as you work through each  regular-expression exercises. I also note that the regular expression matches more in the sample code than it means to: the pre dot and post dot part of a float (for integers), keywords for identifiers etc. That is quite confusing.",
+    "field": "Q8_drawback"
+  },
+  {
+    "segment_index": 15,
+    "codes": [
+      {
+        "code": "PEDAGOGICAL_VALUE",
+        "confidence": "HIGH",
+        "rationale": "Emphasizes practical learning opportunities for fundamental algorithmic concepts."
+      },
+      {
+        "code": "ICAP",
+        "confidence": "HIGH",
+        "rationale": "Highlights practical opportunities for student understanding through hands-on engagement."
+      }
+    ],
+    "segment_id": "coord-paddy-healy-02-big-o-visualiser-Q7_benefit",
+    "source": "coordinator_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "Gives students practical opportunities to come to understand one of the fundamental aspects of algorithms",
+    "field": "Q7_benefit"
+  },
+  {
+    "segment_index": 16,
+    "codes": [
+      {
+        "code": "USABILITY",
+        "confidence": "HIGH",
+        "rationale": "Identifies interface issues with timeout speed and confusing plotting interface based on user experience."
+      },
+      {
+        "code": "TECHNICAL_QUALITY",
+        "confidence": "MEDIUM",
+        "rationale": "Questions technical implementation details about algorithm constants and correctness assumptions."
+      }
+    ],
+    "segment_id": "coord-paddy-healy-02-big-o-visualiser-Q8_drawback",
+    "source": "coordinator_review",
+    "artifact_id": "02-big-o-visualiser",
+    "text": "I thought the timeout was a little too fast; the plotting was confusing -- see my botched attempts! :-)  Also, for, say, a linear-time algorithm would I have got correct marks if I plotted f(n)=20n?  I didn't even get that far but the examples seemed to assume a constant of C=1.  That's being extremely nit-picky :-).",
+    "field": "Q8_drawback"
+  }
+]

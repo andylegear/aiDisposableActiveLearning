@@ -1,0 +1,548 @@
+{
+  "artifacts": {
+    "01-unit-testing-gauntlet": {
+      "Visibility of Status": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Match with Real World": {
+        "mean": 4.33,
+        "scores": [
+          5,
+          4,
+          4
+        ],
+        "sd": 0.58
+      },
+      "User Control & Freedom": {
+        "mean": 3.0,
+        "scores": [
+          5,
+          2,
+          2
+        ],
+        "sd": 1.73
+      },
+      "Consistency & Standards": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Error Prevention": {
+        "mean": 4.33,
+        "scores": [
+          4,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Recognition over Recall": {
+        "mean": 4.33,
+        "scores": [
+          4,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Flexibility & Efficiency": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          4,
+          5
+        ],
+        "sd": 0.58
+      },
+      "Aesthetic & Minimalist": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Help with Errors": {
+        "mean": 3.67,
+        "scores": [
+          4,
+          4,
+          3
+        ],
+        "sd": 0.58
+      },
+      "Instructional Scaffolding": {
+        "mean": 4.0,
+        "scores": [
+          4,
+          4,
+          4
+        ],
+        "sd": 0.0
+      },
+      "_overall_mean": 4.23,
+      "_n_reviewers": 3
+    },
+    "02-big-o-visualiser": {
+      "Visibility of Status": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Match with Real World": {
+        "mean": 4.0,
+        "scores": [
+          5,
+          3,
+          4
+        ],
+        "sd": 1.0
+      },
+      "User Control & Freedom": {
+        "mean": 2.33,
+        "scores": [
+          2,
+          3,
+          2
+        ],
+        "sd": 0.58
+      },
+      "Consistency & Standards": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Error Prevention": {
+        "mean": 4.67,
+        "scores": [
+          4,
+          5,
+          5
+        ],
+        "sd": 0.58
+      },
+      "Recognition over Recall": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Flexibility & Efficiency": {
+        "mean": 4.33,
+        "scores": [
+          5,
+          5,
+          3
+        ],
+        "sd": 1.15
+      },
+      "Aesthetic & Minimalist": {
+        "mean": 5.0,
+        "scores": [
+          5,
+          5,
+          5
+        ],
+        "sd": 0.0
+      },
+      "Help with Errors": {
+        "mean": 4.0,
+        "scores": [
+          2,
+          5,
+          5
+        ],
+        "sd": 1.73
+      },
+      "Instructional Scaffolding": {
+        "mean": 5.0,
+        "scores": [
+          5,
+          5,
+          5
+        ],
+        "sd": 0.0
+      },
+      "_overall_mean": 4.33,
+      "_n_reviewers": 3
+    },
+    "03-sql-injection-simulator": {
+      "Visibility of Status": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Match with Real World": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "User Control & Freedom": {
+        "mean": 3.0,
+        "scores": [
+          5,
+          1,
+          3
+        ],
+        "sd": 2.0
+      },
+      "Consistency & Standards": {
+        "mean": 5.0,
+        "scores": [
+          5,
+          5,
+          5
+        ],
+        "sd": 0.0
+      },
+      "Error Prevention": {
+        "mean": 3.33,
+        "scores": [
+          5,
+          1,
+          4
+        ],
+        "sd": 2.08
+      },
+      "Recognition over Recall": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Flexibility & Efficiency": {
+        "mean": 4.33,
+        "scores": [
+          5,
+          5,
+          3
+        ],
+        "sd": 1.15
+      },
+      "Aesthetic & Minimalist": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Help with Errors": {
+        "mean": 4.33,
+        "scores": [
+          4,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Instructional Scaffolding": {
+        "mean": 3.33,
+        "scores": [
+          5,
+          1,
+          4
+        ],
+        "sd": 2.08
+      },
+      "_overall_mean": 4.2,
+      "_n_reviewers": 3
+    },
+    "04-css-flexbox-trainer": {
+      "Visibility of Status": {
+        "mean": 4.0,
+        "scores": [
+          5,
+          5,
+          2
+        ],
+        "sd": 1.73
+      },
+      "Match with Real World": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "User Control & Freedom": {
+        "mean": 4.33,
+        "scores": [
+          5,
+          5,
+          3
+        ],
+        "sd": 1.15
+      },
+      "Consistency & Standards": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Error Prevention": {
+        "mean": 4.33,
+        "scores": [
+          5,
+          4,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Recognition over Recall": {
+        "mean": 4.0,
+        "scores": [
+          5,
+          4,
+          3
+        ],
+        "sd": 1.0
+      },
+      "Flexibility & Efficiency": {
+        "mean": 3.67,
+        "scores": [
+          5,
+          2,
+          4
+        ],
+        "sd": 1.53
+      },
+      "Aesthetic & Minimalist": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Help with Errors": {
+        "mean": 4.0,
+        "scores": [
+          5,
+          5,
+          2
+        ],
+        "sd": 1.73
+      },
+      "Instructional Scaffolding": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "_overall_mean": 4.3,
+      "_n_reviewers": 3
+    },
+    "05-lexical-analyser-trainer": {
+      "Visibility of Status": {
+        "mean": 3.67,
+        "scores": [
+          4,
+          5,
+          2
+        ],
+        "sd": 1.53
+      },
+      "Match with Real World": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "User Control & Freedom": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Consistency & Standards": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Error Prevention": {
+        "mean": 4.67,
+        "scores": [
+          5,
+          5,
+          4
+        ],
+        "sd": 0.58
+      },
+      "Recognition over Recall": {
+        "mean": 4.0,
+        "scores": [
+          5,
+          5,
+          2
+        ],
+        "sd": 1.73
+      },
+      "Flexibility & Efficiency": {
+        "mean": 3.67,
+        "scores": [
+          5,
+          3,
+          3
+        ],
+        "sd": 1.15
+      },
+      "Aesthetic & Minimalist": {
+        "mean": 4.33,
+        "scores": [
+          5,
+          5,
+          3
+        ],
+        "sd": 1.15
+      },
+      "Help with Errors": {
+        "mean": 3.67,
+        "scores": [
+          4,
+          5,
+          2
+        ],
+        "sd": 1.53
+      },
+      "Instructional Scaffolding": {
+        "mean": 3.67,
+        "scores": [
+          4,
+          5,
+          2
+        ],
+        "sd": 1.53
+      },
+      "_overall_mean": 4.17,
+      "_n_reviewers": 3
+    }
+  },
+  "cross_artifact": {
+    "Visibility of Status": {
+      "grand_mean": 4.33,
+      "sd": 1.05,
+      "min": 2,
+      "max": 5
+    },
+    "Match with Real World": {
+      "grand_mean": 4.47,
+      "sd": 0.64,
+      "min": 3,
+      "max": 5
+    },
+    "User Control & Freedom": {
+      "grand_mean": 3.47,
+      "sd": 1.46,
+      "min": 1,
+      "max": 5
+    },
+    "Consistency & Standards": {
+      "grand_mean": 4.73,
+      "sd": 0.46,
+      "min": 4,
+      "max": 5
+    },
+    "Error Prevention": {
+      "grand_mean": 4.27,
+      "sd": 1.03,
+      "min": 1,
+      "max": 5
+    },
+    "Recognition over Recall": {
+      "grand_mean": 4.33,
+      "sd": 0.9,
+      "min": 2,
+      "max": 5
+    },
+    "Flexibility & Efficiency": {
+      "grand_mean": 4.13,
+      "sd": 1.06,
+      "min": 2,
+      "max": 5
+    },
+    "Aesthetic & Minimalist": {
+      "grand_mean": 4.67,
+      "sd": 0.62,
+      "min": 3,
+      "max": 5
+    },
+    "Help with Errors": {
+      "grand_mean": 3.93,
+      "sd": 1.16,
+      "min": 2,
+      "max": 5
+    },
+    "Instructional Scaffolding": {
+      "grand_mean": 4.13,
+      "sd": 1.19,
+      "min": 1,
+      "max": 5
+    }
+  },
+  "flagged_items": [
+    {
+      "artifact": "02-big-o-visualiser",
+      "heuristic": "User Control & Freedom",
+      "mean": 2.33,
+      "scores": [
+        2,
+        3,
+        2
+      ]
+    }
+  ]
+}

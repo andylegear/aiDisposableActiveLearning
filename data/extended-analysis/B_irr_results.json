@@ -1,0 +1,126 @@
+{
+  "reviewers": [
+    "Liam McNamara",
+    "Peter Hall",
+    "Tawny Whatmore"
+  ],
+  "n_artifacts": 5,
+  "variables": [
+    {
+      "variable": "H: Visibility of Status",
+      "alpha": -0.2521,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Match with Real World",
+      "alpha": -0.1926,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: User Control & Freedom",
+      "alpha": 0.1416,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Consistency & Standards",
+      "alpha": -0.2727,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Error Prevention",
+      "alpha": -0.2042,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Recognition over Recall",
+      "alpha": -0.2598,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Flexibility & Efficiency",
+      "alpha": -0.2033,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Aesthetic & Minimalist",
+      "alpha": -0.2667,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Help with Errors",
+      "alpha": -0.2761,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "H: Instructional Scaffolding",
+      "alpha": 0.1592,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "Mean Heuristic",
+      "alpha": -0.3827,
+      "interpretation": "low",
+      "level": "interval"
+    },
+    {
+      "variable": "E1 Conceptual Fidelity",
+      "alpha": 0.0455,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "E2 Process Replicability",
+      "alpha": -0.2833,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "ICAP Level",
+      "alpha": -0.0294,
+      "interpretation": "low",
+      "level": "nominal"
+    },
+    {
+      "variable": "ICAP Level (ordinal)",
+      "alpha": 0.2452,
+      "interpretation": "low",
+      "level": "ordinal"
+    },
+    {
+      "variable": "Constructionism: Meaningful",
+      "alpha": 0.0525,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    },
+    {
+      "variable": "Constructionism: Building",
+      "alpha": 0.1105,
+      "interpretation": "low",
+      "level": "ordinal",
+      "scale": "1-5"
+    }
+  ]
+}

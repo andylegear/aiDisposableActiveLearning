@@ -32,6 +32,9 @@ analysis/output/
 # Source/reference materials (not for public repo)
 sources/
 
+# Paper drafts (not ready for version control yet)
+paper/
+
 # Temporary files
 *.tmp
 *.bak

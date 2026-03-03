@@ -1,0 +1,122 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "01-unit-testing-gauntlet",
+      "name": "Unit Testing Gauntlet",
+      "wall_clock_minutes": 19,
+      "wakatime_active_seconds": 264.2,
+      "idle_ratio": 0.7682,
+      "lines_of_code": 1493,
+      "loc_per_minute": 78.6,
+      "ai_generation_ratio": 1.0,
+      "dependency_count": 0,
+      "cyclomatic_complexity_avg": 4.07,
+      "cloc_breakdown": {
+        "JavaScript": 868,
+        "CSS": 427,
+        "HTML": 102
+      },
+      "dsqi_score": 0.8966
+    },
+    {
+      "artifact_id": "02-big-o-visualiser",
+      "name": "Big-O Visualiser",
+      "wall_clock_minutes": 36,
+      "wakatime_active_seconds": 530.7,
+      "idle_ratio": 0.7543,
+      "lines_of_code": 1946,
+      "loc_per_minute": 54.1,
+      "ai_generation_ratio": 1.0,
+      "dependency_count": 0,
+      "cyclomatic_complexity_avg": 1.18,
+      "cloc_breakdown": {
+        "JavaScript": 1126,
+        "CSS": 428,
+        "HTML": 50
+      },
+      "dsqi_score": 0.9108
+    },
+    {
+      "artifact_id": "03-sql-injection-simulator",
+      "name": "SQL Injection Simulator",
+      "wall_clock_minutes": 53,
+      "wakatime_active_seconds": 7.3,
+      "idle_ratio": 0.9977,
+      "lines_of_code": 1631,
+      "loc_per_minute": 30.8,
+      "ai_generation_ratio": 1.0,
+      "dependency_count": 0,
+      "cyclomatic_complexity_avg": 4.6,
+      "cloc_breakdown": {
+        "JavaScript": 821,
+        "CSS": 570,
+        "HTML": 64
+      },
+      "dsqi_score": 0.8959
+    },
+    {
+      "artifact_id": "04-css-flexbox-trainer",
+      "name": "CSS Flexbox Trainer",
+      "wall_clock_minutes": 37,
+      "wakatime_active_seconds": 0,
+      "idle_ratio": 1.0,
+      "lines_of_code": 871,
+      "loc_per_minute": 23.5,
+      "ai_generation_ratio": 1.0,
+      "dependency_count": 2,
+      "cyclomatic_complexity_avg": 1.93,
+      "cloc_breakdown": {
+        "JavaScript": 462,
+        "CSS": 342,
+        "HTML": 68
+      },
+      "dsqi_score": 0.7903
+    },
+    {
+      "artifact_id": "05-lexical-analyser-trainer",
+      "name": "Lexical Analyser Trainer",
+      "wall_clock_minutes": 54,
+      "wakatime_active_seconds": 0.0,
+      "idle_ratio": 1.0,
+      "lines_of_code": 1052,
+      "loc_per_minute": 19.5,
+      "ai_generation_ratio": 1.0,
+      "dependency_count": 0,
+      "cyclomatic_complexity_avg": 4.4,
+      "cloc_breakdown": {
+        "JavaScript": 594,
+        "CSS": 254,
+        "HTML": 65
+      },
+      "dsqi_score": 0.8269
+    }
+  ],
+  "aggregate": {
+    "total_development_minutes": 199,
+    "total_lines_of_code": 6993,
+    "mean_dev_time_min": 39.8,
+    "sd_dev_time_min": 14.4,
+    "mean_loc": 1399.0,
+    "sd_loc": 436.0,
+    "mean_complexity": 3.24,
+    "mean_dsqi": 0.8641
+  },
+  "efficiency_ratios": [
+    {
+      "pair": "Dev Time ↔ DSQI Score",
+      "rho": -0.6,
+      "p_value": 0.2848,
+      "interpretation": "Negative = more time doesn't improve quality"
+    },
+    {
+      "pair": "LoC ↔ DSQI Score",
+      "rho": 0.9,
+      "p_value": 0.0374
+    },
+    {
+      "pair": "LoC ↔ Complexity",
+      "rho": -0.1,
+      "p_value": 0.8729
+    }
+  ]
+}

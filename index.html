@@ -43,10 +43,11 @@
         class ends.
       </p>
       <p class="text-slate-300 leading-relaxed">
-        Five such artifacts were produced across five CS modules in 199&nbsp;minutes (6,993&nbsp;lines,
+        Five such artifacts were produced across five CS modules in 199&nbsp;minutes (6,241&nbsp;lines of code,
         zero human-authored). Each is evaluated using a novel composite metric, the
         <strong class="text-white">Disposable Software Quality Index (DSQI)</strong>, combining automated
         static analysis with structured human judgement via the ICAP engagement framework.
+        The mean DSQI across all five artifacts is <strong class="text-white">0.864</strong> (range&nbsp;0.790&ndash;0.911).
       </p>
     </section>
 
@@ -133,6 +134,79 @@
               </td>
             </tr>
           </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- DSQI Results -->
+    <section>
+      <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+        <i class="fas fa-chart-bar text-indigo-400"></i> DSQI Results
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-4">
+        DSQI&nbsp;= 0.3(1&minus;M) + 0.2(1&minus;C) + 0.3P + 0.2E &mdash; combining maintenance cost
+        (M), creation cost (C), pedagogical utility (P), and expert purity (E).
+      </p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left">
+          <thead class="text-xs text-slate-400 uppercase border-b border-slate-700">
+            <tr>
+              <th class="py-3 pr-4">Artifact</th>
+              <th class="py-3 pr-4 text-center">M</th>
+              <th class="py-3 pr-4 text-center">C</th>
+              <th class="py-3 pr-4 text-center">P</th>
+              <th class="py-3 pr-4 text-center">E</th>
+              <th class="py-3 text-center">DSQI</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800">
+            <tr>
+              <td class="py-3 pr-4 text-white">01 &mdash; Unit Testing Gauntlet</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.190</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.106</td>
+              <td class="py-3 pr-4 text-center text-slate-400">1.000</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.875</td>
+              <td class="py-3 text-center font-bold text-green-400">0.897</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-white">02 &mdash; Big-O Dojo</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.126</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.132</td>
+              <td class="py-3 pr-4 text-center text-slate-400">1.000</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.875</td>
+              <td class="py-3 text-center font-bold text-green-400">0.911</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-white">03 &mdash; SQL Injection Lab</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.202</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.134</td>
+              <td class="py-3 pr-4 text-center text-slate-400">1.000</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.917</td>
+              <td class="py-3 text-center font-bold text-green-400">0.896</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-white">04 &mdash; Flexbox Forge</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.143</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.084</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.583</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.875</td>
+              <td class="py-3 text-center font-bold text-yellow-400">0.790</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-white">05 &mdash; Lex Arena</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.198</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.098</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.742</td>
+              <td class="py-3 pr-4 text-center text-slate-400">0.917</td>
+              <td class="py-3 text-center font-bold text-green-400">0.827</td>
+            </tr>
+          </tbody>
+          <tfoot class="border-t border-slate-600">
+            <tr>
+              <td class="py-3 pr-4 text-white font-semibold" colspan="5">Mean</td>
+              <td class="py-3 text-center font-bold text-white">0.864</td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </section>

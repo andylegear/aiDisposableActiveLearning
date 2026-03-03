@@ -44,13 +44,36 @@ def get_dsqi_score(slug: str):
 
 
 def count_expert_reviews(slug: str) -> int:
+    """Count how many expert reviewers reviewed this artifact."""
     if not EXPERT_DIR.exists():
         return 0
-    return len(list(EXPERT_DIR.glob(f"expert-review-{slug}-*.json")))
+    count = 0
+    for path in EXPERT_DIR.glob("dsqi-review-*.json"):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for artifact in data.get("artifacts", []):
+                if artifact.get("artifact_id") == slug:
+                    count += 1
+                    break
+        except (json.JSONDecodeError, KeyError):
+            pass
+    return count
 
 
 def has_coordinator_review(slug: str) -> bool:
-    return (COORD_DIR / f"coordinator-review-{slug}.json").exists()
+    """Check if a coordinator review exists for this artifact."""
+    if not COORD_DIR.exists():
+        return False
+    for path in COORD_DIR.glob("dsqi-coordinator-*.json"):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if data.get("artifact_id") == slug:
+                return True
+        except (json.JSONDecodeError, KeyError):
+            pass
+    return False
 
 
 def count_dev_sessions(slug: str) -> int:
