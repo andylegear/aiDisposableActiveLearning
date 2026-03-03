@@ -1,0 +1,30 @@
+{
+  "schema": "dsqi-coordinator-review-v1",
+  "timestamp": "2026-03-03T07:44:32.553Z",
+  "coordinator": {
+    "name": "Jim Buckley",
+    "email": "Jim.Buckley@ul.ie",
+    "department": "CSIS, University of Limerick"
+  },
+  "artifact_id": "05-lexical-analyser-trainer",
+  "artifact_name": "Lex Arena",
+  "module": "CS4158",
+  "module_name": "Programming Language Technology",
+  "pedagogical_alignment": {
+    "Q1_curriculum_relevance": 4,
+    "Q2_concept_challenge": 3,
+    "Q3_objective_coverage": 4,
+    "P1_average": 3.67
+  },
+  "icap": {
+    "Q4_engagement_mode": "constructive"
+  },
+  "adoption_intention": {
+    "Q5_ease_of_integration": 4,
+    "Q6_likelihood_of_use": 4
+  },
+  "open_ended": {
+    "Q7_most_significant_benefit": "Provides engaging, relevant material while relieving the ML of the effort of constructing it",
+    "Q8_most_significant_drawback": "It needs a few small refinements to be truly effective: the initial exercise should be a video example. And the descriptive prompt should stay on screen as you work through each  regular-expression exercises. I also note that the regular expression matches more in the sample code than it means to: the pre dot and post dot part of a float (for integers), keywords for identifiers etc. That is quite confusing."
+  }
+}

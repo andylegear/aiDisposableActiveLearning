@@ -1,0 +1,238 @@
+{
+  "schema": "dsqi-expert-review-v1",
+  "timestamp": "2026-02-20T11:38:35.672Z",
+  "reviewer": {
+    "name": "Tawny Whatmore",
+    "email": "tawny.whatmore@horizon-globex.ie",
+    "role": "Software Engineer",
+    "experience_years": 10,
+    "institution": "Horizon Globex"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "01-unit-testing-gauntlet",
+      "icap": {
+        "level": "constructive",
+        "justification": "The learner is generating output beyond the original by problem solving, writing code, optimising that code, rather than reproducing verbatim. I would see interactive as more of a dialogue between humans, batting thoughts back and forth, whereas this is interaction between learner and software. "
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "the scope of the output does remain constrained by the exercise desired outcomes, but the output from the student is validated by the software, which ensures the learners code is functioning correctly, and gives rich feedback to guide and reward the learner for their efforts."
+        },
+        "learning_through_building": {
+          "score": 5,
+          "justification": "The level system with different cases to solve is good as the repeated test case writing reenforces syntax. the 3 steps within each level all focus on different aspects of learning, first tests then debugging then refactoring, this keeps the program engaging, reduces repetitive interaction that might lead to boredom and guessing without learning, like a standard 'abcd quiz' for instance."
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 4,
+        "match_with_real_world": 4,
+        "user_control_and_freedom": 2,
+        "consistency_and_standards": 4,
+        "error_prevention": 4,
+        "recognition_over_recall": 4,
+        "flexibility_and_efficiency": 5,
+        "aesthetic_and_minimalist_design": 4,
+        "help_with_errors": 3,
+        "instructional_scaffolding": 4,
+        "comments": " User Control and Freedom: One issue I had was to select a block of code then press 'tab' assuming it would indent the selected code. but it actually removed the code and I couldn't do cmd z to revert, so had to rewrite instead. \n\nHelp Users Recognise and Recover from Errors: Syntax errors don't pin point the rough location of the issue, and without a linter it can be difficult to track errors when writing. "
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "the three step format; writing tests, debugging failing tests, refactoring, all directly serve the red, green, refactor cycle of development which is the main learning outcome for the tool. the gamification mechanisms exist only to sustain engagement, not to reward or punish use, and does not get in the way of the core functionality. "
+        },
+        "E2_process_replicability": {
+          "score": 3,
+          "justification": "The creation process is replicable, but it is not trivial to do and would require the educator to have an understanding of speaking to AI tooling for desired output. Depending on the scope of the desired tool, some technical software abilities may be required to refine and tweak the outputs of the AI, which could be a blocker for non technical educators. "
+        }
+      },
+      "open_ended": {
+        "most_positive": "the level system delivered the learning outcomes in a repetitive way that was not tiresome, but engaging with the 3 different tasks per level. repeatedly writing test cases for instance solidified the syntax in muscle memory a bit more. ",
+        "most_negative": "the code editor was challenging to spot syntax issues being in plain text with no colours or lint feedback. ",
+        "other_comments": "integrating the source code directly into the tooling ui would remind the learner to read through it some more as the link to the source code is easily missed at the start. Also reading the source code to 'cheat' is valuable learning in itself. making it more accessible could prevent a tired learner from asking what the answer is from AI and avoiding the learning outcomes. "
+      }
+    },
+    {
+      "artifact_id": "02-big-o-visualiser",
+      "icap": {
+        "level": "active",
+        "justification": "primarily I would say this falls into an active class because the learner is selecting their response from a group of possible answers. the learner isn't generating output, but is interacting with the tool. If the learner was asked to write a big-o function I would then consider this to be on the  constructive level."
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 3,
+          "justification": "I wouldn't say the output is meaningless as I still felt it reinforced learning, but the design of the interaction doesn't aim to produce outputs, its more visual stimulation. The curve selection level is an interesting part that gives a bit more freedom to the user to feel in control of their decision. "
+        },
+        "learning_through_building": {
+          "score": 2,
+          "justification": "the tool is based on visual recognition instead of building and making. the learner is responding to something that is already built and presented to them. the curve analysis gives a taste of a building activity as they must construct a curve prediction based on the given notation. "
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 4,
+        "match_with_real_world": 4,
+        "user_control_and_freedom": 2,
+        "consistency_and_standards": 4,
+        "error_prevention": 5,
+        "recognition_over_recall": 4,
+        "flexibility_and_efficiency": 3,
+        "aesthetic_and_minimalist_design": 5,
+        "help_with_errors": 5,
+        "instructional_scaffolding": 5,
+        "comments": "User Control and Freedom: Given this a low rating of 2 because not allowing the user to redo answers and go back to previous ones feels like it is by design, so not necessarily a bad thing in itself. \n\nFlexibility and Efficiency: One thing I felt was missing was a quick intro to Big-O notations. Possibly not an issue if concepts are presented to the learner in class or through material before interacting with the tool. "
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 4,
+          "justification": "I think the tool was very focused. it introduced a variety of visualisations to aid in understanding big-o notation, and it didn't stray into any other learning concepts. "
+        },
+        "E2_process_replicability": {
+          "score": 4,
+          "justification": "This tool doesn't contain too many complicated user flows branches to manage. Where it controls a lot of the input and outcomes it could be easier to create with AI tools. Ultimately a lot of the replicability will rely on the AI interaction abilities of the other educator. "
+        }
+      },
+      "open_ended": {
+        "most_positive": "the different ways of interacting was good, instead of having all levels as a 'choose abcd' format. ending on the comparison was very good as it cemented the learning well through code analysis. ",
+        "most_negative": "because I didn't really know about big-o notation going into the tool I did feel a bit lost and ended up guessing. ",
+        "other_comments": "sound effects on scoring mechanics could give more reward and excitement to the learner. "
+      }
+    },
+    {
+      "artifact_id": "03-sql-injection-simulator",
+      "icap": {
+        "level": "constructive",
+        "justification": "the tool is requiring the learner to generate sql queries to complete the objectives. "
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "the main output is SQL statements required to complete a specific scenario, and it is hard to guess or copy the answer without understanding the cause and solution to the problem. "
+        },
+        "learning_through_building": {
+          "score": 4,
+          "justification": "The tool gets learners to understand SQL syntax by actually crafting exploits.  They learn about vulnerabilities through hands-on practice by building the SQL statements to perform various database exploits. To further boost the fixing aspect, another level could flip to the other side and secure the statements to avoid the exploits. "
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 4,
+        "match_with_real_world": 4,
+        "user_control_and_freedom": 3,
+        "consistency_and_standards": 5,
+        "error_prevention": 4,
+        "recognition_over_recall": 4,
+        "flexibility_and_efficiency": 3,
+        "aesthetic_and_minimalist_design": 4,
+        "help_with_errors": 4,
+        "instructional_scaffolding": 4,
+        "comments": "Consistency and Standards (5): The app is designed in a very engaging way. once past the first level the interactive expectations are easily set for the future levels, and while the difficulty of the future levels increases in problem solving complexities, the UI/UX expectations remain the same. \n"
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 5,
+          "justification": "the tool is teaching about SQL syntax and the importance of SQL security through mock breach scenarios. There aren't any unrelated features like javascript field validation for example, just core sql learning. "
+        },
+        "E2_process_replicability": {
+          "score": 3,
+          "justification": "This tool requires interacting with infinite user input. validation will be required, but also lends itself to problematic inputs that need to be guarded against. it also seems like there is a moderate amount of validation in terms of facts, hints and solutions that the creator would need to consider. "
+        }
+      },
+      "open_ended": {
+        "most_positive": "learning at the point of view from an attacker is very valuable. the ui was fun to use and contained a lot of data which was laid out in a very usable way. ",
+        "most_negative": "the hints could be revealed from most useful (the last one) to least useful (first one). this would enable the most valuable hint to be revealed first and cause the least amount of point loss. ",
+        "other_comments": "an option where no points would be given but the solution to the problem would be revealed could be beneficial to allow the learner to still progress if they were stuck on answer and would also allow the user to learn from the solution that they were stuck on. "
+      }
+    },
+    {
+      "artifact_id": "04-css-flexbox-trainer",
+      "icap": {
+        "level": "constructive",
+        "justification": "writing out the CSS syntax by hand and seeing the results reinforces the learning. the exercises are still only student and tool so doesn't go as far as interactive engagement. "
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 4,
+          "justification": "the learner will see the effects of the CSS changes they produce and how they alter the presented elements. these artifacts are limited to the scope of the challenge per level. "
+        },
+        "learning_through_building": {
+          "score": 3,
+          "justification": "the learner is creating CSS but they remain small snippets within a controlled scope with a controlled input and outcome. "
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 2,
+        "match_with_real_world": 4,
+        "user_control_and_freedom": 3,
+        "consistency_and_standards": 4,
+        "error_prevention": 4,
+        "recognition_over_recall": 3,
+        "flexibility_and_efficiency": 4,
+        "aesthetic_and_minimalist_design": 4,
+        "help_with_errors": 2,
+        "instructional_scaffolding": 4,
+        "comments": "Visibility of System Status (2): It was easy to accidentally dismiss the prompt dialog per level and then not understand what the question was. this was redeemed by the preview view for the desired outcome, however it would be better if the level question was on the interactive UI and not a prompt before the interactive UI \n\nHelp Users Recognise and Recover from Errors (2): I didn't notice the mark up react to incorrect css outside of the scope of the question. it also may be easy for a user to not understand that the correct input would automatically finish the level, perhaps a 'check answer' button could provide error and success feedback at the learners pace.  "
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 4,
+          "justification": "there were no other CSS syntax required to complete the challenges outside of the scope of flex boxes. "
+        },
+        "E2_process_replicability": {
+          "score": 3,
+          "justification": "the way that the validation works in that it only progresses when the correct input is given makes it easier to manage user input validation. an understanding of interacting with AI remains the primarily challenge"
+        }
+      },
+      "open_ended": {
+        "most_positive": "the code input mimics a traditional coding environment with linting/colours etc.",
+        "most_negative": "the prompt is easily missed if not paying attention and the dialog is dismissed immediately",
+        "other_comments": "the relevant options for a css property could be displayed somewhere to help guide the user e.g. listing what are the accepted values for the align-items property are somewhere. perhaps as a hint even. "
+      }
+    },
+    {
+      "artifact_id": "05-lexical-analyser-trainer",
+      "icap": {
+        "level": "constructive",
+        "justification": "The learner is directly construction regex patterns to solve the problem. "
+      },
+      "constructionism": {
+        "meaningful_artifact": {
+          "score": 3,
+          "justification": "the output is limited to the scope of the answer. I think the object can be achieved by guessing instead of a direct understanding of the patterns. "
+        },
+        "learning_through_building": {
+          "score": 2,
+          "justification": "the learner must construct expressions to answer each level, but direction and understanding of why and how are missing or not prominent enough. "
+        }
+      },
+      "heuristics": {
+        "visibility_of_status": 2,
+        "match_with_real_world": 4,
+        "user_control_and_freedom": 4,
+        "consistency_and_standards": 4,
+        "error_prevention": 4,
+        "recognition_over_recall": 2,
+        "flexibility_and_efficiency": 3,
+        "aesthetic_and_minimalist_design": 3,
+        "help_with_errors": 2,
+        "instructional_scaffolding": 2,
+        "comments": "Visibility of System Status (2): the results UI on the right was hard to decipher. when the correct answer was achieved the result was immediately obscured by the success dialog that there was no time to digest why the pattern worked with the output. \n6. Recognition over Recall (2): the main working UI did not show the copy of the problem to solve, it was only present in a dialog before hand. the elements that needed to be combined to create the expression were not actively explained. \n\nHelp Users Recognise and Recover from Errors (2): A lot of the experience was spent guessing instead of making informed constructive choices to what patterns should be used. when the incorrect pattern was entered there was no guidance on what was wrong with it. \n\nInstructional Scaffolding (2): the second hint could be immediately selected and showed the correct answer immediately. this was my approach to completing the levels after I noticed this which did not encourage learning. "
+      },
+      "dsqi": {
+        "E1_conceptual_fidelity": {
+          "score": 4,
+          "justification": "the application focused solely on how regex can be used to filter data, but did lack an immediate explanation for each section of the pattern. "
+        },
+        "E2_process_replicability": {
+          "score": 4,
+          "justification": "This sort of application would be easy to replicate for another educator as the user input is controlled through selection of chips underneath to determine value. "
+        }
+      },
+      "open_ended": {
+        "most_positive": "showing the possible regex components underneath the input ",
+        "most_negative": "the regex components were not actively explained as the user selected them. the question the user had to answer was not present during the interaction stage. ",
+        "other_comments": "using something like tool tips instead of dialogs could help keep the user more informed, reduce the risk of missing information and allow the user to progress at their own pace. for example showing the success ui immediately instead of allowing the user to digest the success state of the data vs the regex. "
+      }
+    }
+  ]
+}

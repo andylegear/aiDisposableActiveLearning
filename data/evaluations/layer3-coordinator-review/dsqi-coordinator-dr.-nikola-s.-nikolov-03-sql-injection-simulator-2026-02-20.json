@@ -1,0 +1,30 @@
+{
+  "schema": "dsqi-coordinator-review-v1",
+  "timestamp": "2026-02-20T01:48:08.255Z",
+  "coordinator": {
+    "name": "Dr. Nikola S. Nikolov",
+    "email": "nikola.nikolov@ul.ie",
+    "department": "CSIS, University of Limerick"
+  },
+  "artifact_id": "03-sql-injection-simulator",
+  "artifact_name": "The SQL Injection Lab",
+  "module": "CS4416",
+  "module_name": "Database Systems",
+  "pedagogical_alignment": {
+    "Q1_curriculum_relevance": 5,
+    "Q2_concept_challenge": 5,
+    "Q3_objective_coverage": 5,
+    "P1_average": 5
+  },
+  "icap": {
+    "Q4_engagement_mode": "interactive"
+  },
+  "adoption_intention": {
+    "Q5_ease_of_integration": 5,
+    "Q6_likelihood_of_use": 5
+  },
+  "open_ended": {
+    "Q7_most_significant_benefit": "Clear and accessible explanation of the SQL injection concept through a practical example combined with hands-on experience, enabling students to understand both the theory and its real-world implications.",
+    "Q8_most_significant_drawback": "None"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "dsqi-coordinator-review-v1",
+  "timestamp": "2026-02-27T08:38:41.716Z",
+  "coordinator": {
+    "name": "Dr. Alan Ryan",
+    "email": "alan.t.ryan@ul.ie",
+    "department": "CSIS, University of Limerick"
+  },
+  "artifact_id": "04-css-flexbox-trainer",
+  "artifact_name": "Flexbox Forge",
+  "module": "CS4141 / CS4222",
+  "module_name": "Introduction to Programming / Software Development",
+  "pedagogical_alignment": {
+    "Q1_curriculum_relevance": 3,
+    "Q2_concept_challenge": 2,
+    "Q3_objective_coverage": 5,
+    "P1_average": 3.33
+  },
+  "icap": {
+    "Q4_engagement_mode": "active"
+  },
+  "adoption_intention": {
+    "Q5_ease_of_integration": 5,
+    "Q6_likelihood_of_use": 3
+  },
+  "open_ended": {
+    "Q7_most_significant_benefit": "As the framework is provided, the student can focus on the specific task at hand.",
+    "Q8_most_significant_drawback": "When more complex (multi-stage) tasks are the objective, this would need to provide less support so that the student has to construct the flow of logic without hints."
+  }
+}
